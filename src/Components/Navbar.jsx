@@ -4,27 +4,31 @@ import friction from '../assets/communities/friction.png';
 import searchicon from '../assets/searchicon.png';
 import arr from '../assets/arr.png';
 import closeicon from "../assets/communities/closeicon.png";
+import backgroundOne from '../assets/home/backgroundone.png';
+import backgroundTwo from '../assets/home/backgroundtwo.png';
+import backgroundThree from '../assets/home/backgroundthree.png';
+import backgroundFour from '../assets/home/backgroundfour.png';
 
 
 // Array of backgrounds and texts
 const slides = [
   {
-    backgroundImage: "url('../src/assets/home/backgroundone.png')",
+    backgroundImage: `url(${backgroundOne})`,
     title: "Are You Ready to Excel?",
     subtitle: "Challenge yourself with courses that push your boundaries."
   },
   {
-    backgroundImage: "url('../src/assets/home/backgroundtwo.png')",
+    backgroundImage: `url(${backgroundTwo})`,
     title: "Can You Innovate Fearlessly",
     subtitle: "Transform your ideas into successful startups with our<br> incubation program."
   },
   {
-    backgroundImage: "url('../src/assets/home/backgroundthree.png')",
+    backgroundImage: `url(${backgroundThree})`,
     title: "Can You Shape Your Future?",
     subtitle: "Prepare yourself for the careers of tomorrow with our<br> tailored programs."
   },
   {
-    backgroundImage: "url('../src/assets/home/backgroundfour.png')",
+    backgroundImage: `url(${backgroundFour})`,
     title: "Will You Turn Vision into Victory?",
     subtitle: "Develop and launch your business with our expert<br> guidance and support."
   },
