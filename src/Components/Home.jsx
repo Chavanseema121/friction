@@ -4,7 +4,7 @@ import "../index.css";
 // import Animation from "../Components/Animation";
 // import Mainpage from "../Components/Mainpage";
 
-// import Navbar from "./Navbar";
+import Navbar from "./Navbar";
 
 import benefitslearn from "../assets/home/benefitslearn.png";
 
@@ -334,7 +334,7 @@ export default function Home() {
 
   return (
     <div className="w-full mx-auto">
-      {/* <Navbar /> */}
+      <Navbar />
 
       {/* section one */}
 
