@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Hide scrollbar */
+.scroll-hidden::-webkit-scrollbar {
+	display: none; /* Chrome, Safari and Opera */
+  }
+  
+  .scroll-hidden {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+  }
+
+
+  
+  
+
+
+  html, body {
+	/* width: 100%; */
+	height: 100%;
+	margin: 0;
+	padding: 0;
+  }
+
+
+
+.container {
+	
+	/* width: 1440px; */
+
+	/* margin-left: 40px; */
+  /* margin-right: 40px; */
+	/* margin-right: 50px; */
+   } 
+  
+
+.scroll-animation {
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .vertical-line {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 3660px;
+    background: gray;
+    border-style: dotted;
+    margin-top: 30px;
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    width: 300px;
+    height: 96px;
+    transition: top 0.3s ease;
+  }
+  
+
+  
+  .line {
+    border-style: dotted;
+  }
+
+
+  @keyframes drop {
+    0% {
+      transform: translateY(-100vh); /* Start above the viewport */
+    }
+   
+    100% {
+      transform: translateY(0); /* End at the final position */
+    }
+  }
+  
+  .animate-drop {
+    animation: drop 2s ; /* Adjust duration and timing function as needed */
+    position: relative; /* Ensure the position is absolute to overlap correctly */
+  }
+
+
+/* Define keyframes for sliding effect */
+@keyframes slide {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  100% { transform: translateX(-500%); } /* Adjust based on number of slides */
+}
+
+/* Apply animation to the slider container */
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Adjust as needed */
+}
+
+.slides {
+  display: flex;
+  width: 500%; /* Adjust based on number of slides */
+  animation: slide 300s linear infinite;
+}
+
+.slide {
+  flex: 1 0 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.drop{
+  position: relative;
+  /* width: 20px; */
+  /* height: 20px; */
+  /* top: -30px; */
+  margin: 0 auto;
+  /* background-color; #022956 ; */
+  animation: drip;
+  animation-timing-function: cubic-bezier(1,0,.91,.19);
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.drop::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 30px solid  #FFFFFF;
+}
+
+.wave{
+  position:relative;
+  opacity: 0;
+  top: 0;
+  width: 2px;
+  height: 1px;
+  border: 7px solid #fff;
+  border-radius: 20px / 150px;
+  animation-name: ripple;
+  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+}
+
+.wave::after{
+  content: '';
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  left: -5px;
+  width: 2px;
+  height: 1px;
+  border-radius: 300px / 150px;
+  animation-name: ripple-2;
+  animation-duration: 2s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes ripple {
+  from{
+    opacity: 1;
+
+  }
+  to{
+    width: 600px;
+    height: 300px;
+    border-width: 5px;
+    top:-100px;
+    opacity: 0;
+  }
+}
+
+
+@keyframes ripple-2 {
+  0%{
+    opacity: 0;
+
+  }
+  50%{
+    opacity: 0;
+
+  }
+  100%{
+    width: 200px;
+    height: 100px;
+    border-width: 1px;
+    top: 100px;
+    left: 200px;
+  }
+  
+}
+
+@keyframes drip {
+  to{
+    /* top:190px; */
+    }
+  
+}
+
+.container:nth-child(1){
+  animation-delay: 0s;
+}
+.container:nth-child(2){
+  animation-delay: 2s;
+}
+.container:nth-child(3){
+  animation-delay: 3s;
+}
+.container:nth-child(4){
+  animation-delay: 4s;
+}
+.container:nth-child(5){
+  animation-delay: 5s;
+}
+.container:nth-child(6){
+  animation-delay: 6s;
+}
+
+/* Define the scrolling animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.scroll-content {
+  display: flex;
+  align-items: center;
+  animation: scroll-left linear infinite;
+  /* Adjust animation duration based on the width of the content */
+  animation-duration: 20s; /* Duration for complete scroll */
+}
+
+/* Adjust the width to ensure seamless scroll */
+.scroll-item {
+  flex: 0 0 auto;
+  margin: 0 15px; /* Space between images, adjust as needed */
+}
