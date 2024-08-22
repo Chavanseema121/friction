@@ -67,7 +67,7 @@ export default function Incubation() {
           <div className="flex justify-end mt-5   ml-[30px]  w-[529px]  ">
             <div
               className={`relative flex items-center justify-end ml-[140px] bg-white bg-opacity-75 rounded-md h-[64px] px-4 ${
-                isOpen ? "w-[529px]" : "w-[240px]"
+                isOpen ? "w-[557px]" : "w-[250px]"
               }`}
             >
               <div
@@ -79,7 +79,7 @@ export default function Incubation() {
                 <img
                   src={searchicon}
                   alt="Search Icon"
-                  className="w-[20px] h-[20px] ml-2 cursor-pointer"
+                  className="w-[20px] h-[20px] ml-1 mr-2 cursor-pointer"
                   onClick={handleToggle}
                   style={{ order: 1 }}
                 />
@@ -158,10 +158,10 @@ export default function Incubation() {
 
       <div className="w-full h-[730px] mx-auto p-4 flex flex-col items-center">
         <div className="text-center ">
-          <h1 className="text-[40px] text-[#022956] font-bold mb-8">
+          <h1 className="text-[40px] text-[#022956] font-bold mb-2">
             Why Incubation
           </h1>
-          <p className="text-[28px] font-semibold text-[#F27329]  mt-[39px] mb-[132px]">
+          <p className="text-[28px] font-semibold text-[#F27329]  mb-[132px]">
             Understand the vital benefits of incubation for startup growth.
           </p>
         </div>
@@ -172,9 +172,9 @@ export default function Incubation() {
               alt="groupone"
               className="w-[271px] h-[203px] mb-[68px] "
             />
-            <p className="text-center text-[24px] font-medium">
-              Gain insights and advice from
-              <br /> seasoned industry leaders.
+            <p className="text-center text-[20px] font-medium">
+              Gain insights and advice<br />  from
+              seasoned industry leaders.
             </p>
           </div>
           <div className="flex flex-col items-center">
@@ -183,9 +183,9 @@ export default function Incubation() {
               alt="grouptwo"
               className=" w-[271px] h-[203px] mb-[68px]"
             />
-            <p className="text-center text-[24px] font-medium">
-              Utilize top-notch tools, tech,
-              <br /> and facilities for growth.
+            <p className="text-center text-[20px] font-medium">
+              Utilize top-notch tools,<br />tech,
+              and facilities for growth.
             </p>
           </div>
           <div className="flex flex-col items-center">
@@ -194,8 +194,8 @@ export default function Incubation() {
               alt="groupthree"
               className=" w-[271px] h-[203px] mb-[68px]"
             />
-            <p className="text-center text-[24px] font-medium">
-              Connect with investors, peers, <br />
+            <p className="text-center text-[20px] font-medium">
+              Connect with investors, <br /> peers,
               and potential partners effectively.
             </p>
           </div>

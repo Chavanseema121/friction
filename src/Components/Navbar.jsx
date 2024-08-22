@@ -90,7 +90,7 @@ export default function Navbar() {
           <div className="flex justify-end mt-5 ml-[30px] w-[529px]">
             <div
               className={`relative flex items-center justify-end ml-[140px] bg-white bg-opacity-75 rounded-md h-[64px] px-4 ${
-                isOpen ? "w-[529px]" : "w-[240px]"
+                isOpen ? "w-[557px]" : "w-[250px]"
               }`}
             >
               <div
@@ -102,7 +102,7 @@ export default function Navbar() {
                 <img
                   src={searchicon}
                   alt="Search Icon"
-                  className="w-[20px] h-[20px] ml-2 cursor-pointer"
+                  className="w-[20px] h-[20px] ml-1 mr-2 cursor-pointer"
                   onClick={handleToggle}
                   style={{ order: 1 }}
                 />
