@@ -132,7 +132,7 @@ export default function Incubation() {
 
       {/* what is incubation */}
 
-      <div className="w-full h-[898px] mx-auto">
+      <div className="w-full h-[800px] mx-auto">
         <h1 className="font-bold text-[40px] text-[#022956] text-center mt-[61px]">
           What is Incubation
         </h1>
@@ -221,12 +221,12 @@ export default function Incubation() {
       </div>
          */}
 
-      <div className="w-full h-auto mx-auto p-4 flex flex-col items-center mt-[61px]">
+      <div className="w-full h-auto mx-auto p-4 flex flex-col items-center mt-[10px]">
         <div className="text-center mb-8">
-          <h1 className="text-[40px] font-black text-[#022956] mb-[20px]">
+          <h1 className="text-[40px] font-black text-[#022956] mb-[10px]">
             Benefits of Incubation
           </h1>
-          <p className="text-[28px] font-semibold text-[#F27329] mb-[146px]">
+          <p className="text-[28px] font-semibold text-[#F27329] mb-[100px]">
             Unlock key advantages that drive startup success through incubation
           </p>
         </div>
@@ -242,8 +242,8 @@ export default function Incubation() {
       {/* Query form section */}
 
       <div className="w-full h-[1160px]">
-        <div className="text-center mt-[77px]">
-          <h1 className="text-[40px] text-[#022956] font-black mb-[20px]">
+        <div className="text-center mt-[20px]">
+          <h1 className="text-[40px] text-[#022956] font-black mb-[10px]">
             Query Form
           </h1>
           <p className="font-semibold text-[28px] text-[#F27329] mb-[66px]">
@@ -313,10 +313,10 @@ export default function Incubation() {
               id="message"
               className="w-[440px] h-[185px] border border-[#022956] rounded-md  mb-[33px]"
             />
-            <div className=" flex justify-center">
+            <div className=" flex justify-center  mr-[120px]">
               <button
                 type="submit"
-                className="w-[190px] h-[50px] text-white py-2 rounded-md bg-[#022956] mt-[20px] "
+                className="w-[190px] h-[50px] text-white py-2 rounded-md bg-[#022956] mt-[20px]"
               >
                 Submit
               </button>

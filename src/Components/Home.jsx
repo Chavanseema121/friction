@@ -965,16 +965,15 @@ export default function Home() {
       {/* animation section */}
 
       <Section />
-      {/* <Mainpage/> */}
-
+     
       {/* section nine */}
 
-      <div className="w-full h-[703px]">
-        <div className="flex flex-col justify-center text-center mt-[40px]">
+      <div className="w-full h-[703px] mt-[100px]">
+        <div className="flex flex-col justify-center text-center ">
           <h2 className="text-[#022956] text-[40px] font-semibold">
             Join Our Community Page
           </h2>
-          <h3 className="text-[27px] text-[#F27329] font-semibold mt-[10px]">
+          <h3 className="text-[27px] text-[#F27329] font-semibold mt-[5px]">
             Discover Communities with 5 Key Steps
           </h3>
         </div>
