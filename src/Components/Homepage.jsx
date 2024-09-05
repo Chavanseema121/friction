@@ -9,6 +9,13 @@ import Footer from "./Footer";
 
 import benefitslearn from "../assets/home/benefitslearn.png";
 
+import aboutskillimg from "../assets/home/aboutskillimg.png";
+
+import goalimgones from "../assets/home/goalimgones.png";
+import goalimgtwo from "../assets/home/goalimgtwo.png";
+import mindimgone from "../assets/home/mindimgone.png";
+import mindimgtwo from "../assets/home/goalimgtwo.png";
+
 import imgone from "../assets/home/imgone.png";
 import imgtwo from "../assets/home/imgtwo.png";
 import imgthree from "../assets/home/imgthree.png";
@@ -59,7 +66,22 @@ import android from "../assets/home/android.png";
 
 import Contactus from "../assets/home/Contactus.png";
 
+import bulbimg from "../assets/home/bulbimg.png";
+import award from "../assets/home/award.png";
+import bookimg from "../assets/home/bookimg.png";
+
 import passportImage from "../assets/home/passportImage.png";
+
+import whydoprojectone from "../assets/home/whydoprojectone.png";
+import whydoprojecttwo from "../assets/home/whydoprojecttwo.png";
+
+import whydoprojectthree from "../assets/home/whydoprojectthree.png";
+
+import elevenone from "../assets/home/elevenone.png";
+import eleventwo from "../assets/home/eleventwo.png";
+
+import eleventhree from "../assets/home/eleventhree.png";
+
 const collaborators = [
   stenone,
   stentwo,
@@ -291,13 +313,143 @@ export default function Homepage() {
         </div>
       </div>
 
+      <div className="flex  flex-col justify-center items-center text-center mt-[182px]">
+        <h2 className="text-[#FF5C00] text-[30px] font-black text-center Font-Lato font-sans">
+          About Us
+        </h2>
+        <h2 className="text-[#241443] text-[40px] font-bold text-center font-poppines">
+          Empowering Minds, Shaping Futures:<br></br> Meet the FrictionLearn
+          Plan
+        </h2>
+      </div>
+
+      <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[40px] md:mt-[80px] lg:mt-[120px] space-y-7 lg:space-y-0 lg:space-x-7">
+        <div className="childleft w-full md:w-[90%] lg:w-[670px]">
+          <h2 className="text-[#241443] text-[40px] md:text-[60px] lg:text-[75px] font-black text-start font-lato leading-[45px] md:leading-[75px] lg:leading-[90px]">
+            About FrictionLearn
+          </h2>
+          <h6 className="text-[#000000] text-[16px] md:text-[21px] font-bold font-poppines leading-[24px] md:leading-[32px]">
+            Driven by the mission to make quality education accessible to all
+          </h6>
+          <p className="text-[#241443] text-[14px] md:text-[18px] lg:text-[20px] font-medium font-poppines leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
+            FrictionLearn is a gamified e-learning platform designed to bridge
+            the gap between learners and industry experts. Through dynamic,
+            personalized tasks, we provide an engaging and interactive learning
+            journey aimed at enhancing skills and career growth. Our mission is
+            to create a seamless learning experience that empowers users to
+            achieve their goals with ease and innovation.
+          </p>
+
+          <div className="flex justify-center lg:justify-start mt-[40px] md:mt-[60px] lg:mt-[73px]">
+            <button className="w-[180px] md:w-[214px] h-[50px] md:h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[16px] md:text-[18px] font-medium font-poppines flex items-center justify-center">
+              <span>Learn More</span>
+              <img
+                src={arrowone}
+                alt=""
+                className="w-[20px] md:w-[26px] h-[14px] md:h-[18px] ml-2"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div className="childright mt-[40px] md:mt-[55px] flex justify-center lg:justify-end">
+          <img
+            src={aboutskillimg}
+            alt="About Skill"
+            className="w-[300px] md:w-[500px] lg:w-[606px] h-auto"
+          />
+        </div>
+      </div>
+
       {/* section three */}
+
+      <section className="w-full h-auto mt-[40px] sm:mt-[120px] md:mt-[120px] lg:mt-[40px]">
+        <div className="heading flex justify-center items-center text-center">
+          <h2 className="text-[#FF5C00] text-[24px] md:text-[30px] font-semibold font-poppines">
+            What’s Our Main Goal
+          </h2>
+        </div>
+
+        <div className="parent flex flex-col  space-x-7 lg:flex-row mt-[40px] md:mt-[65px]  mx-[50px]">
+          <div className="childleft   bg-red-200 w-full lg:w-[700px] mt-[40px] lg:mt-0 ml-0  order-2 sm:order-1 lg:order-1">
+            <div className="grid grid-cols-2 gap-4 md:gap-10">
+              <div className="one bg-[#FFCC1F] w-full h-[150px] md:h-[200px] rounded-3xl flex items-center justify-center">
+                <h2 className="text-[#022956] text-[20px] md:text-[30px] font-black text-center font-poppines">
+                  8+ Years of Experience
+                </h2>
+              </div>
+              <div className="two w-full h-[300px] md:h-[356px] rounded-3xl">
+                <img src={goalimgones} alt="" />
+              </div>
+              <div className="two w-full h-[300px] md:h-[356px] rounded-3xl mt-[-120px] md:mt-[-150px]">
+                <img src={goalimgtwo} alt="" />
+              </div>
+              <div className="one bg-[#FFCC1F] w-full h-[150px] md:h-[200px] rounded-3xl flex flex-col items-center justify-center mt-[60px]">
+                <h2 className="text-[#022956] text-[30px] font-black text-center font-poppines">
+                  32k+
+                </h2>
+                <p className="text-[#022956] text-[20px] md:text-[30px] font-medium text-center">
+                  Positive Reviews
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="childright  w-full lg:w-[771px] order-1 sm:order-2 lg:order-1   bg-orange-300">
+            <h2 className="text-[#241443] text-[24px] md:text-[30px] lg:text-[40px] font-bold text-start font-poppines">
+              Take the Next Step Towards Your Personal And Professional Goals
+              With FrictionLearn
+            </h2>
+            <p className="text-[#241443] text-[16px] md:text-[18px] lg:text-[20px] font-medium font-poppines leading-[24px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
+              Take the next step towards achieving your Personal & Professional
+              aspirations with FrictionLearn. In a world that demands constant
+              growth & adaptability, FrictionLearn is your trusted partner on
+              the Journey to success.
+            </p>
+            <div className="subparent mt-[30px] md:mt-[40px] lg:mt-[50px]">
+              <div className="childone flex flex-col mb-[20px]">
+                <img
+                  src={mindimgone}
+                  alt=""
+                  className="w-[100px] md:w-[123px] h-[100px] md:h-[126px]"
+                />
+                <div className="subchild text-start ml-0 md:ml-[20px] mt-[10px]">
+                  <h2 className="text-[#FF5C00] text-[20px] md:text-[25px] lg:text-[30px] font-bold font-poppines">
+                    Learn From Experts
+                  </h2>
+                  <p className="text-[#241443] text-[14px] md:text-[15px] font-medium font-poppines leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[10px]">
+                    Learn directly from industry experts, gaining valuable
+                    insights, hands-on experience, and practical knowledge.
+                  </p>
+                </div>
+              </div>
+
+              <div className="childtwo flex flex-col mb-[20px]">
+                <img
+                  src={mindimgtwo}
+                  alt=""
+                  className="w-[100px] md:w-[123px] h-[100px] md:h-[126px]"
+                />
+                <div className="subchild text-start ml-0 md:ml-[20px] mt-[10px]">
+                  <h2 className="text-[#FF5C00] text-[20px] md:text-[25px] lg:text-[30px] font-bold font-poppines">
+                    Video Tutorial
+                  </h2>
+                  <p className="text-[#241443] text-[14px] md:text-[15px] font-medium font-poppines leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[10px]">
+                    Comprehensive video tutorials designed to simplify complex
+                    topics, making learning engaging and accessible anywhere.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* section four */}
 
-      <div className="grid md:grid-cols-2 gap-4 ">
-        <div className=" m-auto max-w-screen-lg lg:py-16">
-          <h2 className="text-[40px] font-black text-[#FF5C00] mb-4">
+      <div className="grid md:grid-cols-2 gap-4 mt-40 ">
+        <div className=" m-auto max-w-screen-lg lg:py-16 sm:text-center">
+          <h2 className="text-[40px] font-black text-[#FF5C00] mb-4 ">
             What Sets FrictionLearn <br></br>Apart From Other<br></br> Platforms
           </h2>
           <p className="text-[18px] font-normal font-Lato font-sans text-[#241443]">
@@ -426,6 +578,62 @@ export default function Homepage() {
 
       {/* section seven */}
 
+      <section className="purple w-full h-auto sm:h-auto md:h-[auto] lg:h-[344px] bg-[#241443] mt-[100px] ">
+        <div className="parent flex flex-col sm:flex-row flex-wrap justify-evenly sm:justify-between">
+          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px]">
+            <img
+              src={bookimg}
+              alt=""
+              className="w-[137px] h-[68px] mb-[10px] sm:mb-0"
+            />
+            <div className="subchild w-full sm:w-[428px] text-center sm:text-start ml-0 sm:ml-[20px] mt-[10px]">
+              <h2 className="text-[#FFFFFF] text-[18px] font-bold text-center sm:text-start font-poppines">
+                Get Achieve New Levels
+              </h2>
+              <p className="text-[#ffffff] text-[12px] font-medium font-poppines leading-[32px] mt-[10px]">
+                Unlock New Heights with every Stepforward
+              </p>
+            </div>
+          </div>
+
+          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px]">
+            <img
+              src={bulbimg}
+              alt=""
+              className="w-[52px] h-[57px] mb-[10px] sm:mb-0"
+            />
+            <div className="subchild w-full sm:w-[428px] text-center sm:text-start ml-0 sm:ml-[20px] mt-[10px]">
+              <h2 className="text-[#FFFFFF] text-[18px] font-bold text-center sm:text-start font-poppines">
+                Learn in Gamified way
+              </h2>
+              <p className="text-[#ffffff] text-[12px] font-medium font-poppines leading-[32px] mt-[10px]">
+                Making learning Fun & Effective to
+                <br />
+                boost your career growth in heights
+              </p>
+            </div>
+          </div>
+
+          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px]">
+            <img
+              src={award}
+              alt=""
+              className="w-[56px] h-[57px] mb-[10px] sm:mb-0"
+            />
+            <div className="subchild w-full sm:w-[428px] text-center sm:text-start ml-0 sm:ml-[20px] mt-[10px]">
+              <h2 className="text-[#FFFFFF] text-[18px] font-bold text-center sm:text-start font-poppines">
+                Award Winning Team
+              </h2>
+              <p className="text-[#ffffff] text-[12px] font-medium font-poppines leading-[32px] mt-[10px]">
+                Recognized for Excellence & Innovation
+                <br />
+                to deliver the Outstanding results
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* section eight */}
 
       <section className="bg-white">
@@ -530,6 +738,83 @@ export default function Homepage() {
       </section>
 
       {/* secton nine */}
+
+      <section className="whydoprojects w-full sm:h-auto  mt-[80px]">
+        <div className="flex flex-col justify-center items-center text-center mt-[182px] sm:mt-[40px]">
+          <h2 className="text-[#FF5C00] text-[30px] font-semibold text-center font-poppines">
+            Why do Projects
+          </h2>
+          <h2 className="text-[#241443] text-[40px] font-bold text-center font-poppines">
+            4Doing this Projects will Gain Hands-On real
+            <br /> World Project Experience with{" "}
+            <span className="text-[#FF5C00] text-[40px]">Friction</span>Learn
+          </h2>
+        </div>
+
+        <div className="parent flex flex-row  flex-wrap gap-6 justify-evenly sm:justify-center">
+          <div className="one flex flex-col w-[389px] min-h-[0] mt-[90px] sm:mt-[20px] p-[10px] border-gray-950 shadow-md rounded-lg">
+            <img
+              src={whydoprojectone}
+              alt=""
+              className="w-[76px] h-[77px] mt-[60px] mx-auto mb-[20px]"
+            />
+
+            <div className="subchild w-[330px] text-center">
+              <h2 className="text-[#241443] text-[23px] font-bold text-center font-poppines">
+                Become Job Ready
+              </h2>
+              <p className="text-[#FF5C00] text-[16px] font-medium font-poppines leading-[32px] mt-[10px]">
+                Kickstart Your Career by Building Stellar<br></br> Proof of Work
+              </p>
+            </div>
+          </div>
+
+          <div className="one flex flex-col w-[389px] min-h-[0] mt-[90px] sm:mt-[20px] p-[10px] border-gray-950 shadow-md rounded-lg">
+            <img
+              src={whydoprojecttwo}
+              alt=""
+              className="w-[69px] h-[69px] mt-[60px] mx-auto mb-[20px]"
+            />
+
+            <div className="subchild w-full text-center">
+              <h2 className="text-[#241443] text-[23px] font-bold text-center font-poppines">
+                Learn By Doing
+              </h2>
+              <p className="text-[#FF5C00] text-[16px] font-medium font-poppines leading-[32px] mt-[10px]">
+                Upskill By Building Hands-On Projects<br></br> with Levelwise
+              </p>
+            </div>
+          </div>
+
+          <div className="one flex flex-col w-[389px] min-h-[0] mt-[90px] sm:mt-[20px] p-[10px] border-gray-950 shadow-md rounded-lg">
+            <img
+              src={whydoprojectthree}
+              alt=""
+              className="w-[51px] h-[71px] mt-[60px] mx-auto mb-[20px]"
+            />
+
+            <div className="subchild w-full text-center">
+              <h2 className="text-[#241443] text-[23px] font-bold text-center font-poppines">
+                Become Job Ready
+              </h2>
+              <p className="text-[#FF5C00] text-[16px] font-medium font-poppines leading-[32px] mt-[10px]">
+                Kickstart Your Career by Building Stellar<br></br> Proof of Work
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="text-center mt-16">
+          <div className="">
+            <a
+              href="#"
+              className="inline-flex bg-[#FF5C00] text-white px-4 py-2 text-[20px] rounded-full shadow-md hover:bg-[#FF5C00] transition"
+            >
+              Explore Projects
+              <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3 mt-1" />
+            </a>
+          </div>
+        </div>
+      </section>
 
       {/* section ten */}
 
@@ -666,15 +951,19 @@ export default function Homepage() {
                 </li>
               </ul>
             </div>
-
-            <a
-              href="#"
-              className="inline-flex items-center bg-[#241443] text-white text-[18px] px-6 py-3 rounded-full shadow-lg hover:bg-[#241443] transition font-semibold"
-            >
-              Get Your License
-              {/* <span className="ml-2 text-white">→</span> */}
-              <img src={arrowone} alt="" className="ml-2"></img>
-            </a>
+            <div className="">
+              <p className="text-[#ff5c00] text-[13px] font-medium mb-2">
+                Apply for Passport/License
+              </p>
+              <a
+                href="#"
+                className="inline-flex items-center bg-[#241443] text-white text-[18px] px-6 py-3 rounded-full shadow-lg hover:bg-[#241443] transition font-semibold"
+              >
+                Get Your License
+                {/* <span className="ml-2 text-white">→</span> */}
+                <img src={arrowone} alt="" className="ml-2"></img>
+              </a>
+            </div>
           </div>
 
           {/* Right Side Image */}
@@ -697,6 +986,102 @@ export default function Homepage() {
       <SectionTewelth />
 
       {/* section thirteenth */}
+
+      <section className="main w-full sm:h-auto">
+        <div className="flex flex-col justify-center items-center text-center mt-[182px] sm:mt-[40px] md:mt-[60px]">
+          <h2 className="text-[#FF5C00] text-[30px] font-semibold text-center font-poppines">
+            Our Instructor/Mentors
+          </h2>
+          <h2 className="text-[#241443] text-[40px] font-bold text-center font-poppines">
+            From The FrictionLearn Community Mentors
+          </h2>
+          <p className="text-[#24144399] w-[869px] h-[48] text-[20px] font-medium font-poppines line-height-[32px] text-center mt-[20px] sm:w-full sm:px-4 md:w-[80%] md:px-8">
+            Expert mentors guiding you with personalized insights, real-world
+            experience, and industry connections.
+          </p>
+        </div>
+
+        <div className="parent flex flex-col sm:flex-row sm:flex-wrap sm:justify-center md:justify-evenly mt-[90px]">
+          <div className="one flex flex-col w-[389px] h-[527px] mt-[90px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%]">
+            <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
+              <img
+                src={elevenone}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+
+            <div className="subchild w-[428px] text-center mt-[50px] mx-auto sm:w-full sm:px-4">
+              <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppines">
+                Johnson
+              </h2>
+              <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppines">
+                Business Advisor
+              </h2>
+              <p className="text-[#6B7083] text-[12px] font-medium font-poppines line-height-[32px] text-center mt-[10px]">
+                Guiding entrepreneurs with strategic insights
+                <br />
+                and practical business solutions.
+              </p>
+            </div>
+          </div>
+
+          <div className="one flex flex-col w-[389px] h-[527px] mt-[90px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%]">
+            <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
+              <img
+                src={eleventwo}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+
+            <div className="subchild w-[428px] text-center mt-[50px] mx-auto sm:w-full sm:px-4">
+              <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppines">
+                Rekha
+              </h2>
+              <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppines">
+                Web Designer
+              </h2>
+              <p className="text-[#6B7083] text-[12px] font-medium font-poppines line-height-[32px] text-center mt-[10px]">
+                Crafting visually appealing and user-friendly
+                <br />
+                websites for impactful online presence.
+              </p>
+            </div>
+          </div>
+
+          <div className="one flex flex-col w-[389px] h-[527px] mt-[90px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%]">
+            <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
+              <img
+                src={eleventhree}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+
+            <div className="subchild w-[428px] text-center mt-[50px] mx-auto sm:w-full sm:px-4">
+              <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppines">
+                Sara Singh
+              </h2>
+              <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppines">
+                Business Advisor
+              </h2>
+              <p className="text-[#6B7083] text-[12px] font-medium font-poppines line-height-[32px] text-center mt-[10px]">
+                Transforming data into actionable insights
+                <br />
+                to drive business decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-row justify-center mt-[73px] sm:ml-0 sm:mt-[40px]">
+          <button className="w-[240px] h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[18px] font-medium font-poppines flex flex-row justify-center items-center">
+            <span>Explore All</span>
+            <img src={arrowone} alt="" className="w-[26px] h-[18px] ml-2" />
+          </button>
+        </div>
+      </section>
 
       {/* section fourthinth */}
 
@@ -916,47 +1301,47 @@ export default function Homepage() {
 
       {/* section twenty */}
       <div className="bg-white p-10">
-  <div
-    className="relative bg-center bg-no-repeat bg-cover rounded-[40px] overflow-hidden mx-auto max-w-screen-xl"
-    style={{ backgroundImage: `url(${Contactus})` }} // Background image here
-  >
-    {/* Semi-transparent blue overlay */}
-    <div className="absolute inset-0 bg-[#241443] opacity-100 rounded-md"></div>
-
-    {/* Content (Text and Buttons) */}
-    <div className="relative text-center py-24 lg:py-48">
-      {/* Heading */}
-      <h1 className="mb-4 text-[70px] font-bold  text-white md:text-5xl lg:text-6xl text-Source font-serif ">
-        Ready to Start Learning?
-      </h1>
-      
-      {/* Subtext */}
-      <p className="mb-8 text-[23px] font-normal text-gray-300 lg:text-[23px] text-Source font-serif">
-        Dive into our Comprehensive course catalog and begin your Gamified e-Learning Journey
-      </p>
-
-      {/* Buttons */}
-      <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-        {/* Contact Us Button */}
-        <a
-          href="#"
-          className="rounded-full inline-flex justify-center items-center py-2 px-5 text-base font-medium text-[#241443] bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-300"
+        <div
+          className="relative bg-center bg-no-repeat bg-cover rounded-[40px] overflow-hidden mx-auto max-w-screen-xl"
+          style={{ backgroundImage: `url(${Contactus})` }} // Background image here
         >
-          Contact Us
-        </a>
+          {/* Semi-transparent blue overlay */}
+          <div className="absolute inset-0 bg-[#241443] opacity-100 rounded-md"></div>
 
-        {/* Explore Courses Button */}
-        <a
-          href="#"
-          className="inline-flex justify-center items-center py-2 px-5 text-base font-medium text-white border border-white rounded-full hover:bg-white hover:text-[#241443] transition-colors"
-        >
-          Explore Courses
-        </a>
+          {/* Content (Text and Buttons) */}
+          <div className="relative text-center py-24 lg:py-48">
+            {/* Heading */}
+            <h1 className="mb-4 text-[70px] font-bold  text-white md:text-5xl lg:text-6xl text-Source font-serif ">
+              Ready to Start Learning?
+            </h1>
+
+            {/* Subtext */}
+            <p className="mb-8 text-[23px] font-normal text-gray-300 lg:text-[23px] text-Source font-serif">
+              Dive into our Comprehensive course catalog and begin your Gamified
+              e-Learning Journey
+            </p>
+
+            {/* Buttons */}
+            <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+              {/* Contact Us Button */}
+              <a
+                href="#"
+                className="rounded-full inline-flex justify-center items-center py-2 px-5 text-base font-medium text-[#241443] bg-white hover:bg-gray-200 focus:ring-4 focus:ring-gray-300"
+              >
+                Contact Us
+              </a>
+
+              {/* Explore Courses Button */}
+              <a
+                href="#"
+                className="inline-flex justify-center items-center py-2 px-5 text-base font-medium text-white border border-white rounded-full hover:bg-white hover:text-[#241443] transition-colors"
+              >
+                Explore Courses
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-
 
       {/* section footer */}
 

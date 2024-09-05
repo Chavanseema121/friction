@@ -73,7 +73,7 @@ import footerthree from "../assets/home/footerthree.png";
 export default function Footer() {
   return (
     <div className="bg-[#241443] w-full px-4 py-6 md:px-[104px] md:py-8 ">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-10 mx-auto w-full">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-10 mx-auto w-full">
         <div className="flex flex-col items-center text-white">
           <img src={footerlogo} alt="FrictionLearn Logo" className="mb-4 w-[120px] h-[63px] md:w-[150px] md:h-[79px]" />
           <h5 className="text-white text-[12px] md:text-[14px] font-medium text-center">Where Skills Meet Opportunity</h5>
@@ -81,7 +81,7 @@ export default function Footer() {
         </div>
 
         <div className="text-white flex flex-col items-left">
-          <h4 className="mb-4 text-[20px] md:text-[24px] font-bold text-center">Contact us</h4>
+          <h4 className="mb-4 text-[20px] md:text-[24px] font-bold text-left">Contact us</h4>
           <div className="flex items-center mb-2">
             <img src={footerone} alt="" className="mr-2 w-[16px] h-[12px] md:w-[19px] md:h-[15px]" />
             <p className="text-[12px] md:text-[15px] font-normal">contact@frictionlearn.com</p>
@@ -97,23 +97,20 @@ export default function Footer() {
         </div>
 
         <div className="text-white flex flex-col items-center">
-          <h4 className="mb-4 text-[20px] md:text-[24px] font-bold text-center">Office Address</h4>
-          <p className="text-[12px] md:text-[15px] font-normal text-center">
-            H.no-3-11-368/Flat no; 401,<br />
-            4th Floor, above old Indusind<br />
-            Finance Bank, Back side of<br />
-            Axis Bank, L.B Nagar, <br />
-            Hyderabad, Telangana 500068
+          <h4 className="mb-6 text-[20px] md:text-[24px] font-bold text-center">Office Address</h4>
+          <p className="text-[12px] md:text-[15px] font-normal text-center mb-4">
+             L.B Nagar, Hyderabad, <br />
+            Telangana 500068
           </p>
         </div>
 
-        <div className="text-white flex flex-col items-center">
-          <h3 className="mb-4 text-[20px] md:text-[24px] font-bold text-center">Subscribe to our Newsletter</h3>
+        <div className="text-white flex flex-col items-left">
+          <h3 className="mb-8 text-[20px] md:text-[24px] font-bold text-left">Join our Newsletter</h3>
           <div className="flex flex-col md:flex-row w-full">
             <input
               type="text"
               placeholder="*Enter your email"
-              className="placeholder:text-[#FFFFFF] placeholder:text-[12px] md:placeholder:text-[14px] font-normal p-2 rounded-md bg-[#241443] border-white border-solid border w-full md:w-auto mb-2 md:mb-0 md:mr-2"
+              className="placeholder:text-[#FFFFFF] placeholder:text-[12px] md:placeholder:text-[14px] font-normal  rounded-md bg-[#241443] border-white border-solid border w-full md:w-auto mb-2 md:mb-0 md:mr-2"
             />
             <button className="p-2 bg-white text-[#241443] rounded-md font-semibold text-[12px] md:text-[14px] w-full md:w-auto">Subscribe</button>
           </div>
