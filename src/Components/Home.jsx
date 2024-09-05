@@ -4,7 +4,11 @@ import "../index.css";
 // import Animation from "../Components/Animation";
 // import Mainpage from "../Components/Mainpage";
 
-// import Navbar from "./Navbar";
+import NewNavbar from "./NewNavbar";
+import Header from "../Components/Header"
+import SectionFifth from "../Components/SectionFifth"
+import SectionEleventh from "../Components/SectionEleventh"
+import SectionTewelth from "../Components/SectionTewelth"
 
 import benefitslearn from "../assets/home/benefitslearn.png";
 
@@ -210,7 +214,7 @@ const testimonials = [
     name: "J.Rohith",
     role: "B.Tech(CSC) at Vignan College",
     text: "I'm so excited to finish my studies with FrictionLearn. The progressive ideas and real-world projects are exactly what I need to prepare for my career. I can't wait to get started!",
-    image: lastone, 
+    image: lastone,
   },
   {
     name: "Sowmya",
@@ -249,6 +253,8 @@ const collaborators = [
 
 export default function Home() {
   const scrollContainerRef = useRef(null);
+
+  // const [selectedNode, setSelectedNode] = useState(null);
 
   const [isPaused, setIsPaused] = useState(false);
 
@@ -332,75 +338,179 @@ export default function Home() {
     };
   }, []);
 
+  // const nodes = [
+  //   {
+  //     id: 'why-do-projects',
+  //     label: 'Why Do Projects?',
+  //     connections: ['become-an-expert'],
+  //     x: 200,
+  //     y: 50,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  //   {
+  //     id: 'become-an-expert',
+  //     label: 'Become an Expert',
+  //     connections: ['gain-knowledge'],
+  //     x: 400,
+  //     y: 150,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  //   {
+  //     id: 'gain-knowledge',
+  //     label: 'Gain Knowledge',
+  //     connections: ['join-clubs-and-communities'],
+  //     x: 50,
+  //     y: 150,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  //   {
+  //     id: 'join-clubs-and-communities',
+  //     label: 'Join Clubs and Communities',
+  //     connections: ['get-insights'],
+  //     x: 150,
+  //     y: 300,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  //   {
+  //     id: 'get-insights',
+  //     label: 'Get Insights',
+  //     connections: ['learn-with-real-time-projects'],
+  //     x: 400,
+  //     y: 300,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  //   {
+  //     id: 'generate-income',
+  //     label: 'Generate income',
+  //     connections: ['learn-with-real-time-projects'],
+  //     x: 150,
+  //     y: 450,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  //   {
+  //     id: 'learn-with-real-time-projects',
+  //     label: 'Learn with real-time projects',
+  //     connections: [],
+  //     x: 400,
+  //     y: 450,
+  //     width: 150,
+  //     height: 60,
+  //   },
+  // ];
+
+  // const handleClick = (nodeId) => {
+  //   setSelectedNode(nodeId);
+  // };
+
   return (
     <div className="w-full mx-auto">
-      
-      {/* <Navbar /> */}
-
+      <NewNavbar />
+      <Header/>
       {/* section one */}
 
-      <div className="w-full h-[856px]  second-section">
-        <div className=" flex flex-col text-center justify-center">
-          <h2
-            className="text-[#022956] mt-[82px] text-[40px] font-semibold 
-           
-          "
-          >
-            {" "}
-            What We Offers
-          </h2>
-          <p
-            className="text-[15px] font-medium text-[#1D2228] mt-[20px] text-center px-1 
-           sm:text-[12] sm:font-medium  lg:text-[18px] sm:text-center sm:px-10
+      <section className="bg-white dark:bg-gray-900">
+        <div className="py-4 px-4 mx-auto max-w-screen-lg lg:py-8">
+          <div className="mb-8">
+            <h2
+              className="text-[#F27329] mt-[40px] text-[30px] font-black text-center font-Lato font-sans">
+              {" "}
+              What We Offers
+            </h2>
+            <p
+              className="text-[40px] text-Poppins font-semibold text-[#241443] mt-[30px] text-center px-1 
+           sm:text-[12] sm:font-medium  lg:text-[40px] sm:text-center sm:px-10
            
            "
-          >
-            Friction Learn is your gateway to unparalleled growth, connecting
-            you with courses that challenge you, clubs that foster creativity,
-            and communities that<br></br> inspire collaboration. Our incubation
-            program and dynamic student clubs offer hands-on experience,
-            mentorship, and peer support, ensuring you're<br></br> equipped to
-            turn your ambitions into reality.
-          </p>
-        </div>
-        <div className="flex  justify-center align-middle ">
-          <img
-            src={benefitslearn}
-            alt=""
-            className="align-middle w-[771px] h-[487px] mt-[50px]  lg:w-[771px] lg:h-[481px]  
-          sm:w-[388px] sm:h-[288px]
+            >
+             Unlock Your Potential: Growth, Creativity,<br></br> and Collaboration at FrictionLearn
+            </p>
+            <img
+              src={benefitslearn}
+              alt=""
+              className="align-middle w-full  mt-[50px]    
+         
           
           "
-          />
+            />
+          </div>
         </div>
-      </div>
+
+
+     {/* section two */}
+
+
+
+        <div className="grid md:grid-cols-2 gap-4 ">
+          <div className=" m-auto max-w-screen-lg lg:py-16">
+            <h2 className="text-[40px] font-bold text-[#F27329] mb-4 text-center">
+              What Sets FrictionLearn Apart From Other Platforms
+            </h2>
+            <p className="text-[24px] text-center">
+              Empowering students with real-world skills through industry
+              collaboration, practical projects, and dynamic communities.
+            </p>
+          </div>
+          <div className="overflow-y-scroll pr-4 sm:pr-6 lg:pr-10 scrollbar-hide py-4 h-[500px] sm:h-[600px] md:h-[650px] lg:h-[729px]">
+            <div className="space-y-4">
+              {items.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center bg-white rounded-lg shadow-md p-4 sm:p-3 lg:p-5"
+                >
+                  <img
+                    src={item.img}
+                    alt={item.title}
+                    className="w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] object-cover rounded-lg"
+                  />
+                  <div className="ml-4 sm:ml-6">
+                    <h3 className="text-[16px] sm:text-[20px] md:text-[22px] lg:text-[25px] text-[#F27329] font-semibold">
+                      {item.title}
+                    </h3>
+                    <p className="text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px] text-[#1D2228]">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <SectionFifth/>
 
       {/* section two */}
 
-      {/* <div className="w-full h-[2366px] flex  shadow-md bg-slate-200 ">
-        <div className="sticky top-[100px] self-start w-[491px] h-[249px] text-start mb-[100px]  mt-[100px] ml-[104px] mr-[166px] ">
-          <h2 className="text-[40px] font-bold text-[#022956] text-start">
+      {/* <div classNameName="w-full h-[2366px] flex  shadow-md bg-slate-200 ">
+        <div classNameName="sticky top-[100px] self-start w-[491px] h-[249px] text-start mb-[100px]  mt-[100px] ml-[104px] mr-[166px] ">
+          <h2 classNameName="text-[40px] font-bold text-[#022956] text-start">
             What Sets
             <br />
             FrictionLearn Apart
             <br />
             From Other Platforms
           </h2>
-          <p className="text-lg text-start mt-4 mb-[40px]">
+          <p classNameName="text-lg text-start mt-4 mb-[40px]">
             Discover the unique features and benefits that make FrictionLearn
             the best platform for your learning needs.
           </p>
         </div>
         <div
           ref={scrollContainerRef}
-          className="scroll-hidden overflow-y-scroll   my-[100px] mr-[50px] "
+          classNameName="scroll-hidden overflow-y-scroll   my-[100px] mr-[50px] "
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
           {items.map((item, index) => (
-            <div key={index} className="">
-              <div className="flex flex-row items-center bg-white rounded-lg shadow-md  w-[654px] h-[189px]  mb-[50px]">
-                <div className="mb-[101px]  mt-[36px]">
+            <div key={index} classNameName="">
+              <div classNameName="flex flex-row items-center bg-white rounded-lg shadow-md  w-[654px] h-[189px]  mb-[50px]">
+                <div classNameName="mb-[101px]  mt-[36px]">
                   {" "}
                   <img
                     src={item.img}
@@ -423,45 +533,9 @@ export default function Home() {
         </div>
       </div> */}
 
-<div className="w-full h-screen flex bg-white">
-      {/* Left Side (Fixed) */}
-      <div className="w-1/2 h-full sticky top-0 flex flex-col justify-center ml-10">
-        <h2 className="text-[40px] font-bold text-[#022956] mb-4">
-          What Sets FrictionLearn<br></br> Apart From Other<br></br> Platforms
-        </h2>
-        <p className="text-[24px]">
-        Empowering students with real-world skills<br></br> through industry collaboration, practical<br></br> projects, and dynamic communities.
-        </p>
-      </div>
-
-      {/* Right Side (Scrollable with Invisible Scrollbar) */}
-      <div className="w-2/3 h-full overflow-y-scroll pr-10 scrollbar-hide py-4">
-        <div className="space-y-4">
-          {items.map((item, index) => (
-            <div key={index} className="flex items-center bg-white rounded-lg shadow-md h-[189px]">
-              <img
-                src={item.img}
-                alt={item.title}
-                className="w-[100px] h-[100px] object-cover ml-[20px] rounded-lg"
-              />
-              <div className="ml-6">
-                <h3 className="text-[25px] text-[#F27329] font-semibold">
-                  {item.title}
-                </h3>
-                <p className="text-[20px] text-[#1D2228]">
-                  {item.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-      
-
       {/* section three */}
 
-      <div className="w-[full] h-[780px] mb-[20px] mx-[150px] mt-[40px]">
+      {/* <div className="w-[full] h-[780px] mb-[20px] mx-[150px] mt-[40px]">
         <div className="mt-[82px]  flex justify-center text-center">
           <h2 className="text-[#022956]  text-[40px] font-semibold">
             Training designed to meet your goals.
@@ -503,11 +577,90 @@ export default function Home() {
             />
           </div>
         </div>
+      </div> */}
+
+<div className="w-full h-auto mb-[20px] sm:mx-auto md:mx-[150px]  mt-[40px]">
+  <div className="mt-[82px] flex justify-center text-center">
+    <h2 className="text-[#022956] text-[32px] md:text-[40px] font-semibold">
+      Training designed to meet your goals.
+    </h2>
+  </div>
+  
+  {/* Desktop and Laptop View */}
+  <div className="hidden md:flex mt-[49px]">
+    <div className="left section">
+      {contents.map((content, index) => (
+        <div
+          key={index}
+          className={`w-[498px] h-[119px] shadow-lg flex cursor-pointer ${
+            index === hoveredImageIndex ? "border-2 border-orange-500" : ""
+          } ${index > 0 ? "mt-[23px]" : ""}`}
+          onMouseEnter={() => setHoveredImageIndex(index)}
+        >
+          <img
+            src={content.img}
+            alt=""
+            className="w-[48px] h-[48px] justify-center mt-[38px] ml-[32px]"
+          />
+          <div className="ml-[23px] text-start">
+            <h3 className="text-[#F27329] text-[18px] font-semibold mt-[15px] font-lato,sans">
+              {content.title}
+            </h3>
+            <p className="text-[#1D2228] text-[14px] font-normal mt-[8px]">
+              {content.description}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+    <div>
+      <img
+        src={images[hoveredImageIndex]}
+        alt="Selected"
+        className="w-[707px] h-[707px] ml-[50px]"
+      />
+    </div>
+  </div>
+
+  {/* Small Screen View */}
+  <div className="flex flex-col mt-[49px] md:hidden items-center">
+    {contents.map((content, index) => (
+      <div key={index} className="w-full max-w-[90%] flex flex-col items-center">
+        <div
+          className={`w-full h-auto shadow-lg flex cursor-pointer ${
+            index === hoveredImageIndex ? "border-2 border-orange-500" : ""
+          } ${index > 0 ? "mt-[20px]" : ""}`}
+          onMouseEnter={() => setHoveredImageIndex(index)}
+        >
+          <img
+            src={content.img}
+            alt=""
+            className="w-[48px] h-[48px] justify-center mt-[38px] ml-[32px]"
+          />
+          <div className="ml-[23px] text-start">
+            <h3 className="text-[#F27329] text-[18px] font-semibold mt-[15px] font-lato,sans">
+              {content.title}
+            </h3>
+            <p className="text-[#1D2228] text-[14px] font-normal mt-[8px]">
+              {content.description}
+            </p>
+          </div>
+        </div>
+        <img
+          src={images[index]}
+          alt="Selected"
+          className="w-full h-auto mt-[20px]"
+        />
       </div>
+    ))}
+  </div>
+</div>
+
+
 
       {/* section four */}
 
-      <div className="w-[full] h-[2019px] ml-[100px] mr-[100px] mt-[82px]">
+      {/* <div className="w-[full] h-[2019px] ml-[100px] mr-[100px] mt-[82px]">
         <div className=" flex flex-col  justify-center  text-center ">
           <h2 className="text-[#022956] mt-[52px] text-[40px] font-semibold  text-center">
             {" "}
@@ -609,258 +762,224 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+
+<section className="bg-white">
+  <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
+    <div className="mb-8">
+      <h2 className="text-[#022956] mt-[52px] text-[40px] font-semibold text-center">
+        Hear the Structure, Feel the Success
+      </h2>
+      <h3 className="text-[27px] text-[#F27329] font-semibold mt-[10px] text-center">
+        Three Pillars of Success in One Place
+        <span className="text-[#022956] text-[30px] font-semibold"> “FrictionLearn”</span>
+      </h3>
+    </div>
+
+    {/* First Section */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="text-center mx-auto mt-[50px] md:mb-[160px]">
+        <h2 className="text-[#F27329] text-[40px] font-semibold font-sans font-lato">
+          1. Engaging Learning Experience
+        </h2>
+        <p className="text-[20px] font-medium text-[#1D2228] mt-[31px]">
+          “FrictionLearn” transforms traditional education into an engaging, fun, and motivating gamified learning journey.
+        </p>
       </div>
-
-      {/* section five */}
-
-      <div className="parentdiv  w-[full] h-[1487px]">
-        <div className=" flex flex-col  justify-center  text-center mt-[22px]">
-          <h2 className="text-[#022956] text-[40px] font-semibold">
-            {" "}
-            Explore our Projects
-          </h2>
-        </div>
-
-        <div className=" flex flex-row justify-evenly">
-          <div className="divright  mt-[80px]">
-            <img src={sfiveframe} alt="" className="w-[584px] h-[995px]" />
-          </div>
-
-          <div>
-            <img src={sfivelineimg} alt="" className="w-[2px] h-[1100px]" />
-          </div>
-
-          <div className="divleft  grid grid-cols-2 gap-9  mt-[80px]">
-            <div className="parentone w-[267px] h-[380px] border shadow-lg transform transition-transform duration-300 hover:scale-110 ">
-              <img src={sfiveone} alt="" />
-              <img
-                src={sfiveline}
-                alt=""
-                className="h-[2px] w-[89px] ml-[80px]"
-              />
-              <h3 className=" text-center text-[#1D2228] font-bold text-[18px] mt-[16px] ">
-                Courses
-              </h3>
-              <p className=" text-[#1D2228] text-center  font-medium text-[12px]">
-                FrictionLearn offers interactive<br></br> courses with quizzes,
-                flashcards, <br></br>simulations, and gamified <br></br>learning
-                paths.
-              </p>
-              <img
-                src={sfione}
-                alt=""
-                className="w-[66px] h-[66px] ml-[100px] mt-[10px]"
-              />
-            </div>
-
-            <div className="parentone w-[267px] h-[380px] border shadow-lg   transform transition-transform duration-300 hover:scale-110">
-              <img src={sfivetwo} alt="" />
-              <img
-                src={sfiveline}
-                alt=""
-                className="h-[2px] w-[89px] ml-[80px]"
-              />
-              <h3 className=" text-center text-[#1D2228] font-bold text-[18px] mt-[16px]">
-                Projects
-              </h3>
-              <p className=" text-[#1D2228] text-center  font-medium text-[12px]">
-                FrictionLearn provides hands-on <br></br>projects for practical
-                experience <br></br>and skill application.
-              </p>
-              <img
-                src={sfitwo}
-                alt=""
-                className="w-[66px] h-[66px] ml-[100px]  mt-[25px] "
-              />
-            </div>
-
-            <div className="parentone w-[267px] h-[380px] border shadow-lg   transform transition-transform duration-300 hover:scale-110">
-              <img src={sfivethree} alt="" />
-              <img
-                src={sfiveline}
-                alt=""
-                className="h-[2px] w-[89px] ml-[80px] "
-              />
-              <h3 className=" text-center text-[#1D2228] font-bold text-[18px]  mt-[16px] ">
-                Incubation
-              </h3>
-              <p className=" text-[#1D2228] text-center  font-medium text-[12px]">
-                The platform hosts clubs and <br></br>events for networking,
-                collaboration,<br></br> and skill development..
-              </p>
-              <img
-                src={sfithree}
-                alt=""
-                className="w-[66px] h-[66px] ml-[100px]  mt-[10px]"
-              />
-            </div>
-
-            <div className="parentone w-[267px] h-[380px] border shadow-lg  transform transition-transform duration-300 hover:scale-110">
-              <img src={sfivefour} alt="" />
-              <img
-                src={sfiveline}
-                alt=""
-                className="h-[2px] w-[89px] ml-[80px]"
-              />
-              <h3 className=" text-center text-[#1D2228] font-bold text-[18px] mt-[16px] ">
-                Clubs and Events
-              </h3>
-              <p className=" text-[#1D2228] text-center  font-medium text-[12px]">
-                FrictionLearn offers interactive <br></br>courses with quizzes,
-                flashcards,<br></br> simulations, and gamified<br></br> learning
-                paths.
-              </p>
-              <img
-                src={sfifour}
-                alt=""
-                className="w-[66px] h-[66px] ml-[100px]  mt-[10px] "
-              />
-            </div>
-
-            <div className="flex justify-center items-center col-span-2">
-              <div className="w-[267px] h-[380px] border shadow-lg  transform transition-transform duration-300 hover:scale-110">
-                <img src={sfivefive} alt="" />
-                <img
-                  src={sfiveline}
-                  alt=""
-                  className="h-[2px] w-[89px] ml-[80px] "
-                />
-                <h3 className=" text-center text-[#1D2228] font-bold text-[18px] mt-[16px] ">
-                  Communities
-                </h3>
-                <p className=" text-[#1D2228] text-center  font-medium text-[12px]">
-                  Vibrant groups fostering<br></br> networking, collaboration,
-                  and shared <br></br>learning experiences..
-                </p>
-                <img
-                  src={sfifive}
-                  alt=""
-                  className="w-[66px] h-[66px] ml-[100px]  mt-[25px]"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="flex justify-center mt-[20px]">
+        <img src={sfourgroupone} alt="" className="w-full max-w-[500px] h-auto" />
       </div>
+    </div>
+
+    {/* Second Section */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="text-center mx-auto mt-[50px] md:order-2 md:mb-[160px]">
+        <h2 className="text-[#F27329] text-[40px] font-semibold font-sans font-lato">
+          2. Structured Course Levels:
+        </h2>
+        <p className="text-[20px] font-medium text-[#1D2228] mt-[31px]">
+          Our 24-level courses, spanning 1st to 3rd year, guide students in exploring career paths and offer welcome kits.
+        </p>
+      </div>
+      <div className="flex justify-center mt-[20px] md:order-1">
+        <img src={sfourgrouptwo} alt="" className="w-full max-w-[500px] h-auto" />
+      </div>
+    </div>
+
+    {/* Third Section */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="text-center mx-auto mt-[50px] md:mb-[160px]">
+        <h2 className="text-[#F27329] text-[40px] font-semibold font-sans font-lato">
+          3. AI-Focused Learning Support:
+        </h2>
+        <p className="text-[20px] font-medium text-[#1D2228] mt-[31px]">
+          FrictionLearn uses dedicated AI to clarify doubts and offer personalized support, enhancing students' learning experience.
+        </p>
+      </div>
+      <div className="flex justify-center mt-[20px]">
+        <img src={sfourgroupone} alt="" className="w-full max-w-[500px] h-auto" />
+      </div>
+    </div>
+
+    {/* Fourth Section */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="text-center mx-auto mt-[50px] md:order-2 md:mb-[160px]">
+        <h2 className="text-[#F27329] text-[40px] font-semibold font-sans font-lato">
+          4. Incubation for Idea Generators:
+        </h2>
+        <p className="text-[20px] font-medium text-[#1D2228] mt-[31px]">
+          Starting in the second year, our Incubation programs offer mentorship and resources to turn students' innovative ideas into reality.
+        </p>
+      </div>
+      <div className="flex justify-center mt-[20px] md:order-1">
+        <img src={sfourgrouptwo} alt="" className="w-full max-w-[500px] h-auto" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
       {/* section six  */}
 
-      <div className="passport  w-[full] h-[800px] mx-[116px] ">
-        <div className=" flex flex-col  justify-center  text-center mt-[22px]">
-          <h2 className="text-[#022956] text-[40px] font-semibold">
-            {" "}
+
+      <div className="passport w-full h-auto mx-auto px-4 lg:px-[116px] ">
+        <div className="flex flex-col justify-center text-center ">
+          <h2 className="text-[#022956] text-[28px] lg:text-[40px] font-semibold">
             Professional Certification Passport
           </h2>
         </div>
 
-        <div className="parentdiv flex flex-row justify-center gap-16 ">
-          <div className="leftside-term w-[full]  justify-items-start align-middle mt-[268px] ">
-            <h2 className=" text-[#F27329] text-[32px] font-medium font-sans-serif-[lato] text-center">
-              Validate skills, earn recognized<br></br> credentials, unlock job
-              <br></br> opportunities{" "}
+        <div className="parentdiv flex flex-col-reverse lg:flex-row justify-center items-center lg:gap-16 mt-8 lg:mt-0">
+          {/* Left Side Content */}
+          <div className="leftside-term w-full lg:w-auto lg:justify-items-center lg:text-center lg:mt-[150px]">
+            <h2 className="text-[#F27329] text-[24px] lg:text-[32px] font-medium font-sans-serif-[lato] text-center lg:text-center">
+              Validate skills, earn recognized
+              <br /> credentials, unlock job
+              <br /> opportunities
             </h2>
-            <button className="text-[#022956]  border border-zinc-950 px-5  items-center  ml-[150px] mt-[50px]   text-[16px] font-bold w-[190] h-[48px]">
+            <button className="text-[#022956] border border-zinc-950 px-5 mt-[30px] lg:mt-[50px] text-[16px] font-bold w-[190px] h-[48px] mx-auto lg:ml-[150px] block">
               Get it Now
             </button>
           </div>
 
-          <div className="rightside-item w-[580px] h-[580px]  mt-[80px]">
-            <img src={ssiximg} alt="" className="" />
+          {/* Right Side Image */}
+          <div className="rightside-item w-[320px] h-[320px] sm:w-[400px] sm:h-[400px] lg:w-[580px] lg:h-[580px] mt-4 lg:mt-[50px]">
+            <img
+              src={ssiximg}
+              alt="Certification Passport"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
 
       {/* section seven */}
 
-      <div className="w-[full] h-[739px]">
-        <div className=" flex flex-col  justify-center  text-center mt-[22px]">
-          <h2 className="text-[#022956] text-[40px] font-semibold">
-            {" "}
+      
+
+      <div className="w-full h-auto px-4 py-8 lg:py-12">
+        <div className="flex flex-col justify-center text-center mt-[22px]">
+          <h2 className="text-[#022956] text-[28px] lg:text-[40px] font-semibold">
             What Are Clubs?
           </h2>
-          <h3 className="text-[27px] text-[#F27329] font-semibold  mt-[2px]">
+          <h3 className="text-[20px] lg:text-[27px] text-[#F27329] font-semibold mt-[2px]">
             Create your Club in just 5 Simple Steps
           </h3>
         </div>
 
-        <div className="flex justify-center flex-row gap-[150px] ">
-          <div className="w-[246px] h-[241px] flex flex-col items-center mt-[54px]">
-            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[70px] font-semibold  text-center ">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-[150px] mt-8 lg:mt-12">
+          <div className="w-[246px] h-auto flex flex-col items-center mt-6 lg:mt-[54px]">
+            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[48px] lg:text-[70px] font-semibold">
               1
             </div>
-            <div className="leftside content text-center mt-[10px]">
-              <h2 className="text-[#F27329] text-[22px] font-semibold font-sans mt-[5px]">
+            <div className="leftside content text-center mt-4 lg:mt-[10px]">
+              <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[5px]">
                 Create Your Club
               </h2>
-              <p className="text-[16px] font-medium text-[#1D2228] mt-[15px] text-center">
-                Register on FrictionLearn to <br></br>establish club
+              <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px]">
+                Register on FrictionLearn to
+                <br />
+                establish your club.
               </p>
             </div>
           </div>
 
-          <div className="w-[246px] h-[241px]  flex flex-col  justify-center items-center mt-[36px]">
-            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[70px] font-semibold ">
+          <div className="w-[246px] h-auto flex flex-col items-center mt-6 lg:mt-[36px]">
+            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[48px] lg:text-[70px] font-semibold">
               2
             </div>
-            <div className="leftside content mt-[10px] text-center ">
-              <h2 className="text-[#F27329] text-[22px] font-semibold font-sans font-lato mt-[5px] ">
+            <div className="leftside content text-center mt-4 lg:mt-[10px]">
+              <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[5px]">
                 Name Your Club
               </h2>
-              <p className="text-[16px] font-medium text-[#1D2228]  mt-[15px] text-center ">
-                {" "}
-                Choose a meaningful club name<br></br>reflecting its purpose
-              </p>{" "}
+              <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px]">
+                Choose a meaningful club name
+                <br />
+                reflecting its purpose.
+              </p>
             </div>
           </div>
 
-          <div className="w-[246px] h-[241px] flex flex-col items-center mt-[54px]">
-            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[70px] font-semibold  ">
+          <div className="w-[246px] h-auto flex flex-col items-center mt-6 lg:mt-[54px]">
+            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[48px] lg:text-[70px] font-semibold">
               3
             </div>
-            <div className="leftside content text-center mt-[10px]">
-              <h2 className="text-[#F27329] text-[22px] font-semibold font-sans mt-[5px]">
+            <div className="leftside content text-center mt-4 lg:mt-[10px]">
+              <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[5px]">
                 Invite Peer Members
               </h2>
-              <p className="text-[16px] font-medium text-[#1D2228] mt-[15px]  text-center">
-                Invite friends and classmates<br></br>to join your club.
+              <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px]">
+                Invite friends and classmates
+                <br />
+                to join your club.
               </p>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-center gap-[192px]  mt-[30px] ">
-          <div className="w-[246px] h-[241px] flex flex-col items-center mt-[24px]">
-            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[70px] font-semibold  ">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-[192px] mt-8 lg:mt-[30px]">
+          <div className="w-[246px] h-auto flex flex-col items-center mt-6 lg:mt-[24px]">
+            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[48px] lg:text-[70px] font-semibold">
               4
             </div>
-            <div className="leftside content text-center mt-[5px]">
-              <h2 className="text-[#F27329] text-[22px] font-semibold font-sans mt-[5px]">
+            <div className="leftside content text-center mt-4 lg:mt-[5px]">
+              <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[5px]">
                 Plan and Discuss
               </h2>
-              <p className="text-[16px] font-medium text-[#1D2228] mt-[15px] text-center">
-                Regularly meet to discuss,<br></br>share skills, and plan
+              <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px]">
+                Regularly meet to discuss,
+                <br />
+                share skills, and plan.
               </p>
             </div>
           </div>
 
-          <div className="w-[246px] h-[241px] flex flex-col items-center mt-[24px]">
-            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[70px] font-semibold  ">
+          <div className="w-[246px] h-auto flex flex-col items-center mt-6 lg:mt-[24px]">
+            <div className="w-[38px] h-[88px] flex items-center justify-center text-[#022956] text-[48px] lg:text-[70px] font-semibold">
               5
             </div>
-            <div className="leftside content text-center mt-[5px]">
-              <h2 className="text-[#F27329] text-[22px] font-semibold font-sans mt-[5px]">
-                Create Your Club
+            <div className="leftside content text-center mt-4 lg:mt-[5px]">
+              <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[5px]">
+                Organize Your Club
               </h2>
-              <p className="text-[16px] font-medium text-[#1D2228] mt-[15px] text-center">
-                Organize events, workshops,<br></br>and study sessions
+              <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px]">
+                Organize events, workshops,
+                <br />
+                and study sessions.
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* section eight */}
 
+      <SectionEleventh/>
+
+      <SectionTewelth/>
+
+      {/* section eight */}
+      {/* 
       <div className="w-[full] h-[583px]  mt-[50px]">
         <div className="text-center mb-[50px] ">
           <h2 className="text-[#022956] text-[40px] font-semibold">
@@ -960,14 +1079,105 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </div> */}
+
+<div className="w-full h-auto mt-[50px]">
+  <div className="text-center mb-[50px] px-4">
+    <h2 className="text-[#022956] text-[28px] lg:text-[40px] font-semibold">
+      What Are Events?
+    </h2>
+    <h3 className="text-[20px] lg:text-[27px] text-[#F27329] font-semibold mt-[10px] mb-[30px] lg:mb-[90px]">
+      Organize Your Event in 4 Simple Steps
+    </h3>
+  </div>
+
+  <div className="flex flex-col lg:flex-row justify-evenly items-center relative space-y-12 lg:space-y-0 lg:space-x-0">
+    
+    {/* First Item */}
+    <div className="flex flex-col lg:w-[246px] lg:h-auto lg:items-center">
+      <img
+        src={eightimg}
+        alt=""
+        className="w-[127px] h-[136px] mx-auto lg:mt-[10px]"
+      />
+      <div className="text-center mt-[10px]">
+        <h2 className="text-[#F27329] text-[18px] lg:text-[20px] font-semibold">
+          Join Event
+        </h2>
+        <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px] w-full lg:w-[246px] h-auto">
+          Explore clubs, join events that interest.
+        </p>
       </div>
+    </div>
+
+    {/* Connector Line */}
+    <div className="hidden lg:block absolute left-[19%] top-[25%] transform -translate-y-1/2 w-[240px] h-[1px] border-t-2 border-dotted bg-gray-400"></div>
+
+    {/* Second Item */}
+    <div className="flex flex-col lg:w-[246px] lg:h-auto lg:items-center">
+      <img
+        src={eightimgone}
+        alt=""
+        className="w-[127px] h-[136px] mx-auto lg:mb-[20px]"
+      />
+      <div className="text-center mt-[10px]">
+        <h2 className="text-[#F27329] text-[18px] lg:text-[20px] font-semibold">
+          Engage with Industry Leaders
+        </h2>
+        <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px] w-full lg:w-[246px] h-auto">
+          Connect with global leaders in interactive sessions.
+        </p>
+      </div>
+    </div>
+
+    {/* Connector Line */}
+    <div className="hidden lg:block absolute left-[42%] top-[25%] transform -translate-y-1/2 w-[250px] h-[1px] border-t-2 border-dotted bg-gray-400"></div>
+
+    {/* Third Item */}
+    <div className="flex flex-col lg:w-[246px] lg:h-auto lg:items-center">
+      <img
+        src={eightthree}
+        alt=""
+        className="w-[127px] h-[136px] mx-auto lg:mt-[15px]"
+      />
+      <div className="text-center mt-[10px]">
+        <h2 className="text-[#F27329] text-[18px] lg:text-[20px] font-semibold">
+          Network with Peers
+        </h2>
+        <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px] w-full lg:w-[246px] h-auto">
+          Discuss skills, insights, and collaborate at events.
+        </p>
+      </div>
+    </div>
+
+    {/* Connector Line */}
+    <div className="hidden lg:block absolute left-[65%] top-[25%] transform -translate-y-1/2 w-[220px] h-[1px] border-t-2 border-dotted bg-gray-400"></div>
+
+    {/* Fourth Item */}
+    <div className="flex flex-col lg:w-[246px] lg:h-auto lg:items-center">
+      <img
+        src={eightfour}
+        alt=""
+        className="w-[127px] h-[136px] mx-auto lg:mb-[10px]"
+      />
+      <div className="text-center mt-[10px]">
+        <h2 className="text-[#F27329] text-[18px] lg:text-[20px] font-semibold">
+          Host Your Event
+        </h2>
+        <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[15px] text-center">
+          Event: Learning and Community Engagement Showcase
+        </p>
+      </div>
+    </div>
+  </div>
+</div> 
 
       {/* animation section */}
 
       <Section />
-     
-      {/* section nine */}
 
+      {/* section nine */}
+      {/* 
       <div className="w-full h-[703px] mt-[100px]">
         <div className="flex flex-col justify-center text-center ">
           <h2 className="text-[#022956] text-[40px] font-semibold">
@@ -1067,54 +1277,185 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div className="w-full h-auto mt-[50px] lg:mt-[100px]">
+        <div className="flex flex-col justify-center text-center px-4">
+          <h2 className="text-[#022956] text-[28px] lg:text-[40px] font-semibold">
+            Join Our Community Page
+          </h2>
+          <h3 className="text-[20px] lg:text-[27px] text-[#F27329] font-semibold mt-[5px]">
+            Discover Communities with 5 Key Steps
+          </h3>
+        </div>
+
+        <div className="flex flex-wrap justify-center lg:justify-evenly gap-8 lg:gap-4 mt-[20px]">
+          <div className="w-full sm:w-auto h-auto flex flex-col justify-center items-center mt-[20px] lg:mt-[54px]">
+            <img
+              src={snineone}
+              alt=""
+              className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] mt-[20px]"
+            />
+            <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[20px] lg:mt-[37px]">
+              Join Interest Groups
+            </h2>
+            <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[10px] lg:mt-[15px] text-center">
+              Connect with communities for
+              <br />
+              tailored networking and career
+              <br />
+              growth
+            </p>
+          </div>
+
+          <div className="w-full sm:w-auto h-auto flex flex-col justify-center items-center mt-[20px] lg:mt-[54px]">
+            <img
+              src={sninetwo}
+              alt=""
+              className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] mt-[20px]"
+            />
+            <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[20px] lg:mt-[37px]">
+              Engage in Incubation Discussions
+            </h2>
+            <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[10px] lg:mt-[15px] text-center">
+              Engage in Startup incubation
+              <br />
+              discussions for entrepreneurial
+              <br />
+              feedback
+            </p>
+          </div>
+
+          <div className="w-full sm:w-auto h-auto flex flex-col justify-center items-center mt-[20px] lg:mt-[54px]">
+            <img
+              src={sninethree}
+              alt=""
+              className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] mt-[20px]"
+            />
+            <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[20px] lg:mt-[37px]">
+              Explore Career Opportunities
+            </h2>
+            <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[10px] lg:mt-[15px] text-center">
+              Career paths, community
+              <br />
+              opportunities, guided by
+              <br />
+              experienced mentors
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap justify-center lg:justify-evenly gap-8 lg:gap-4 mt-[20px]">
+          <div className="w-full sm:w-auto h-auto flex flex-col justify-center items-center mt-[20px] lg:mt-[54px]">
+            <img
+              src={sninefour}
+              alt=""
+              className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] mt-[20px]"
+            />
+            <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[20px] lg:mt-[37px]">
+              Collaborate on Projects
+            </h2>
+            <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[10px] lg:mt-[15px] text-center">
+              Collaborate on projects to
+              <br />
+              achieve shared goals together
+            </p>
+          </div>
+
+          <div className="w-full sm:w-auto h-auto flex flex-col justify-center items-center mt-[20px] lg:mt-[54px]">
+            <img
+              src={sninefive}
+              alt=""
+              className="w-[100px] h-[100px] lg:w-[120px] lg:h-[120px] mt-[20px]"
+            />
+            <h2 className="text-[#F27329] text-[18px] lg:text-[22px] font-semibold font-sans mt-[20px] lg:mt-[49px]">
+              Attend Exclusive Events
+            </h2>
+            <p className="text-[14px] lg:text-[16px] font-medium text-[#1D2228] mt-[10px] lg:mt-[15px] text-center">
+              Participate in community
+              <br />
+              events to learn, connect, grow.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* section ten */}
 
-      <div className="w-full h-[293px]">
-  <div className="flex flex-col justify-center text-center mt-[182px]">
-    <h2 className="text-[#022956] text-[40px] font-semibold">
-      Our Valued Collaborators
-    </h2>
-  </div>
-  <div className="overflow-hidden mt-[100px] scroll-container">
-    <div className="scroll-content">
-      {collaborators.map((logo, index) => (
-        <img
-          key={index}
-          src={logo}
-          alt={`logo ${index + 1}`}
-          className="inline-block mx-4"
-          style={{ height: "80px", width: "auto", margin: "0 100px" }} // Adjust size as needed
-        />
-      ))}
-      {/* Duplicate content to ensure continuous scrolling */}
-      {collaborators.map((logo, index) => (
-        <img
-          key={`duplicate-${index}`}
-          src={logo}
-          alt={`logo ${index + 1}`}
-          className="inline-block mx-4"
-          style={{ height: "80px", width: "auto", margin: "0 100px" }} // Adjust size as needed
-        />
-      ))}
-    </div>
-  </div>
-</div>
+      {/* <div className="w-full h-[293px]">
+        <div className="flex flex-col justify-center text-center mt-[182px]">
+          <h2 className="text-[#022956] text-[40px] font-semibold">
+            Our Valued Collaborators
+          </h2>
+        </div>
+        <div className="overflow-hidden mt-[100px] scroll-container">
+          <div className="scroll-content">
+            {collaborators.map((logo, index) => (
+              <img
+                key={index}
+                src={logo}
+                alt={`logo ${index + 1}`}
+                className="inline-block mx-4"
+                style={{ height: "80px", width: "auto", margin: "0 100px" }} // Adjust size as needed
+              />
+            ))}
+            
+            {collaborators.map((logo, index) => (
+              <img
+                key={`duplicate-${index}`}
+                src={logo}
+                alt={`logo ${index + 1}`}
+                className="inline-block mx-4"
+                style={{ height: "80px", width: "auto", margin: "0 100px" }} // Adjust size as needed
+              />
+            ))}
+          </div>
+        </div>
+      </div> */}
 
+      <div className="w-full h-auto mt-[50px] lg:h-[293px]">
+        <div className="flex flex-col justify-center text-center mt-[50px] lg:mt-[182px]">
+          <h2 className="text-[#022956] text-[28px] lg:text-[40px] font-semibold">
+            Our Valued Collaborators
+          </h2>
+        </div>
+        <div className="overflow-hidden mt-[50px] lg:mt-[100px] scroll-container">
+          <div className="scroll-content whitespace-nowrap animate-scroll">
+            {collaborators.map((logo, index) => (
+              <img
+                key={index}
+                src={logo}
+                alt={`logo ${index + 1}`}
+                className="inline-block mx-4"
+                style={{ height: "50px", width: "auto", margin: "0 50px" }} // Adjust size as needed
+              />
+            ))}
+            {/* Duplicate content to ensure continuous scrolling */}
+            {collaborators.map((logo, index) => (
+              <img
+                key={`duplicate-${index}`}
+                src={logo}
+                alt={`logo ${index + 1}`}
+                className="inline-block mx-4"
+                style={{ height: "50px", width: "auto", margin: "0 50px" }} // Adjust size as needed
+              />
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* section guidence */}
 
-      {/* <div className="eleventhsection  w-[full]">
+      <div className="eleventhsection w-full">
         <div className="mt-[100px] mb-[62px] flex justify-center text-center">
-          <h1 className="text-[#022956] text-[40px] font-medium  font-sans-serif-[lato]">
+          <h1 className="text-[#022956] text-[40px] font-medium font-sans-serif-[lato]">
             Guidance from the Best
           </h1>
         </div>
 
         <div className="flex flex-col items-center">
           <div
-            className={`first-element flex items-center space-x-20 bg-[#E7F2FF]  h-[182px] p-6 mb-[85px] w-[1300px]  ${
+            className={`first-element flex items-center space-x-20 bg-[#E7F2FF] h-[182px] p-6 mb-[85px] w-[1350px] ${
               isInView.first ? "animate-fadeInLeft" : ""
             }`}
           >
@@ -1131,7 +1472,7 @@ export default function Home() {
               <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
                 Business Advisor
               </p>
-              <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px] ">
+              <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
                 Guiding entrepreneurs with strategic insights
                 <br /> and practical business solutions.
               </p>
@@ -1143,40 +1484,43 @@ export default function Home() {
               isInView.second ? "animate-fadeInRight" : ""
             }`}
           >
-            <div className=" ml-[227px] mb-[104px]  mt-[104px] text-right">
+            <div className="ml-[227px] mb-[104px] mt-[104px] text-right">
               <h2 className="text-[30px] font-bold text-[#022956]">Rekha</h2>
               <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-                Web Design Professiona
+                Web Design Professional
               </p>
-              <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato]  mt-[20px] ">
-                Crafting visually appealing and user-friendly<br></br>websites
-                for impactful online presence..
+              <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
+                Crafting visually appealing and user-friendly
+                <br />
+                websites for impactful online presence.
               </p>
             </div>
 
-            <div className="relative w-[283px]  h-[282px] transform rotate-90 overflow-hidden  rounded-[10%]">
+            <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
               <img
                 src={guidencetwo}
                 alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]  "
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
               />
             </div>
           </div>
 
+          {/* Repeat similar structure for the remaining elements */}
+          {/* third-element */}
           <div
-            className={`third-element flex items-center space-x-20 bg-[#E7F2FF]  h-[182px] p-6 mb-[85px] w-[1333px] ${
+            className={`third-element flex items-center space-x-20 bg-[#E7F2FF] h-[182px] p-6 mb-[85px] w-[1333px] ${
               isInView.third ? "animate-fadeInLeft" : ""
             }`}
           >
-            <div className="relative w-[283px]  h-[282px] transform rotate-90 overflow-hidden  rounded-[10%]">
+            <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
               <img
                 src={guidencethree}
                 alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%] "
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
               />
             </div>
 
-            <div className=" ml-[227px] mb-[104px]  mt-[104px]">
+            <div className="ml-[227px] mb-[104px] mt-[104px]">
               <h2 className="text-[30px] font-bold text-[#022956]">
                 David Martinez
               </h2>
@@ -1184,51 +1528,55 @@ export default function Home() {
                 Cybersecurity Specialist
               </p>
               <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-                Securing digital assets by identifying<br></br> vulnerabilities
-                and implementing robust defenses..
+                Securing digital assets by identifying
+                <br />
+                vulnerabilities and implementing robust defenses.
               </p>
             </div>
           </div>
 
+          {/* fourth-element */}
           <div
             className={`fourth-element flex items-center justify-end space-x-20 bg-[#FBEBE1] h-[182px] p-6 mb-[85px] w-[1333px] ${
               isInView.fourth ? "animate-fadeInRight" : ""
             }`}
           >
-            <div className=" ml-[227px] mb-[104px]  mt-[104px] text-right">
+            <div className="ml-[227px] mb-[104px] mt-[104px] text-right">
               <h2 className="text-[30px] font-bold text-[#022956]">Spandana</h2>
               <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
                 Marketing Strategist
               </p>
-              <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px] ">
-                Designing innovative marketing strategies to <br></br>drive
-                brand growth and engagement..
+              <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
+                Designing innovative marketing strategies to
+                <br />
+                drive brand growth and engagement.
               </p>
             </div>
 
-            <div className="relative w-[283px]  h-[282px] transform rotate-90 overflow-hidden  rounded-[10%]">
+            <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
               <img
                 src={guidencefour}
                 alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]  "
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
               />
             </div>
           </div>
 
+          {/* fifth-element */}
           <div
             className={`fifth-element flex items-center space-x-20 bg-[#E7F2FF] h-[182px] p-6 mb-[85px] w-[1333px] ${
               isInView.fifth ? "animate-fadeInLeft" : ""
             }`}
           >
-            <div className="relative w-[283px]  h-[282px] transform rotate-90 overflow-hidden  rounded-[10%]">
+            <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
               <img
                 src={guidencefive}
                 alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%] "
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
               />
             </div>
 
-            <div className=" ml-[227px] mb-[104px]  mt-[104px]">
+            <div className="ml-[227px] mb-[104px] mt-[104px]">
               <h2 className="text-[30px] font-bold text-[#022956]">
                 Sara Singh
               </h2>
@@ -1236,51 +1584,55 @@ export default function Home() {
                 Business Analytics Guru
               </p>
               <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-                Transforming data into actionable insights to<br></br> drive
-                business decisions..
+                Transforming data into actionable insights to
+                <br />
+                drive business decisions.
               </p>
             </div>
           </div>
 
+          {/* sixth-element */}
           <div
             className={`sixth-element flex items-center justify-end space-x-20 bg-[#FBEBE1] h-[182px] p-6 mb-[85px] w-[1333px] ${
               isInView.sixth ? "animate-fadeInRight" : ""
             }`}
           >
-            <div className=" ml-[227px] mb-[104px]  mt-[104px] text-right">
+            <div className="ml-[227px] mb-[104px] mt-[104px] text-right">
               <h2 className="text-[30px] font-bold text-[#022956]">Radhika</h2>
               <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
                 Graphic Design Professional
               </p>
               <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-                Creating compelling visual designs to enhance brand<br></br>{" "}
-                identity and communication..
+                Creating compelling visual designs to enhance brand
+                <br />
+                identity and communication.
               </p>
             </div>
 
-            <div className="relative w-[283px]  h-[282px] transform rotate-90 overflow-hidden  rounded-[10%]">
+            <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
               <img
                 src={guidencesix}
                 alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]  "
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
               />
             </div>
           </div>
 
+          {/* seventh-element */}
           <div
             className={`seventh-element flex items-center space-x-20 bg-blue-100 h-[182px] p-6 mb-[85px] w-[1333px] ${
               isInView.seventh ? "animate-fadeInLeft" : ""
             }`}
           >
-            <div className="relative w-[283px]  h-[282px] transform rotate-90 overflow-hidden  rounded-[10%]">
+            <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
               <img
                 src={guidenceseven}
                 alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%] "
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
               />
             </div>
 
-            <div className=" ml-[227px] mb-[104px]  mt-[104px]">
+            <div className="ml-[227px] mb-[104px] mt-[104px]">
               <h2 className="text-[30px] font-bold text-[#022956]">
                 Santhosh Ram
               </h2>
@@ -1288,215 +1640,229 @@ export default function Home() {
                 Business Advisor
               </p>
               <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-                Providing strategic guidance and practical<br></br> solutions
-                for business growth and success..
+                Providing strategic guidance and practical
+                <br />
+                solutions for business growth and success.
               </p>
             </div>
           </div>
         </div>
-      </div> */}
-
-<div className="eleventhsection w-full">
-  <div className="mt-[100px] mb-[62px] flex justify-center text-center">
-    <h1 className="text-[#022956] text-[40px] font-medium font-sans-serif-[lato]">
-      Guidance from the Best
-    </h1>
-  </div>
-
-  <div className="flex flex-col items-center">
-    <div
-      className={`first-element flex items-center space-x-20 bg-[#E7F2FF] h-[182px] p-6 mb-[85px] w-[1350px] ${
-        isInView.first ? "animate-fadeInLeft" : ""
-      }`}
-    >
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidenceone}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
       </div>
 
-      <div className="ml-[227px] mb-[104px] mt-[104px]">
-        <h2 className="text-[30px] font-bold text-[#022956]">Johnson</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Business Advisor
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Guiding entrepreneurs with strategic insights
-          <br /> and practical business solutions.
-        </p>
-      </div>
-    </div>
+      <div className="eleventhsection w-full">
+        <div className="mt-[50px] mb-[32px] flex justify-center text-center">
+          <h1 className="text-[#022956] text-[28px] md:text-[40px] font-medium">
+            Guidance from the Best
+          </h1>
+        </div>
 
-    <div
-      className={`second-element flex items-center justify-end space-x-20 bg-[#FBEBE1] h-[182px] p-6 mb-[85px] w-[1333px] ${
-        isInView.second ? "animate-fadeInRight" : ""
-      }`}
-    >
-      <div className="ml-[227px] mb-[104px] mt-[104px] text-right">
-        <h2 className="text-[30px] font-bold text-[#022956]">Rekha</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Web Design Professional
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Crafting visually appealing and user-friendly
-          <br />
-          websites for impactful online presence.
-        </p>
-      </div>
+        <div className="flex flex-col  items-center">
+          <div
+            className={`first-element flex flex-col sm:flex-row md:flex-row items-center md:space-x-20 bg-[#E7F2FF]  mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1350px] ${
+              isInView.first ? "animate-fadeInLeft" : ""
+            }`}
+          >
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidenceone}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
 
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidencetwo}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
-      </div>
-    </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                Johnson
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Business Advisor
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Guiding entrepreneurs with strategic insights
+                <br className="hidden md:block" />
+                and practical business solutions.
+              </p>
+            </div>
+          </div>
 
-    {/* Repeat similar structure for the remaining elements */}
-    {/* third-element */}
-    <div
-      className={`third-element flex items-center space-x-20 bg-[#E7F2FF] h-[182px] p-6 mb-[85px] w-[1333px] ${
-        isInView.third ? "animate-fadeInLeft" : ""
-      }`}
-    >
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidencethree}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
-      </div>
+          <div
+            className={`second-element flex flex-col md:flex-row items-center justify-end md:space-x-20 bg-[#FBEBE1] mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1333px] ${
+              isInView.second ? "animate-fadeInRight" : ""
+            }`}
+          >
+            <div className="order-2 md:order-1 text-center md:text-right">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                Rekha
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Web Design Professional
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Crafting visually appealing and user-friendly
+                <br className="hidden md:block" />
+                websites for impactful online presence.
+              </p>
+            </div>
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidencetwo}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+          </div>
 
-      <div className="ml-[227px] mb-[104px] mt-[104px]">
-        <h2 className="text-[30px] font-bold text-[#022956]">David Martinez</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Cybersecurity Specialist
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Securing digital assets by identifying
-          <br />
-          vulnerabilities and implementing robust defenses.
-        </p>
-      </div>
-    </div>
+          {/* Repeat similar structure for the remaining elements */}
 
-    {/* fourth-element */}
-    <div
-      className={`fourth-element flex items-center justify-end space-x-20 bg-[#FBEBE1] h-[182px] p-6 mb-[85px] w-[1333px] ${
-        isInView.fourth ? "animate-fadeInRight" : ""
-      }`}
-    >
-      <div className="ml-[227px] mb-[104px] mt-[104px] text-right">
-        <h2 className="text-[30px] font-bold text-[#022956]">Spandana</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Marketing Strategist
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Designing innovative marketing strategies to
-          <br />
-          drive brand growth and engagement.
-        </p>
-      </div>
+          <div
+            className={`third-element flex flex-col md:flex-row items-center md:space-x-20 bg-[#E7F2FF] mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1333px] ${
+              isInView.third ? "animate-fadeInLeft" : ""
+            }`}
+          >
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidencethree}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
 
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidencefour}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
-      </div>
-    </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                David Martinez
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Cybersecurity Specialist
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Securing digital assets by identifying
+                <br className="hidden md:block" />
+                vulnerabilities and implementing robust defenses.
+              </p>
+            </div>
+          </div>
 
-    {/* fifth-element */}
-    <div
-      className={`fifth-element flex items-center space-x-20 bg-[#E7F2FF] h-[182px] p-6 mb-[85px] w-[1333px] ${
-        isInView.fifth ? "animate-fadeInLeft" : ""
-      }`}
-    >
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidencefive}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
-      </div>
+          {/* fourth-element */}
+          <div
+            className={`fourth-element flex flex-col md:flex-row items-center justify-end md:space-x-20 bg-[#FBEBE1]  mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1333px] ${
+              isInView.fourth ? "animate-fadeInRight" : ""
+            }`}
+          >
+            <div className=" order-2 md:order-1 text-center md:text-right">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                Spandana
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Marketing Strategist
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Designing innovative marketing strategies to
+                <br className="hidden md:block" />
+                drive brand growth and engagement.
+              </p>
+            </div>
 
-      <div className="ml-[227px] mb-[104px] mt-[104px]">
-        <h2 className="text-[30px] font-bold text-[#022956]">Sara Singh</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Business Analytics Guru
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Transforming data into actionable insights to
-          <br />
-          drive business decisions.
-        </p>
-      </div>
-    </div>
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidencefour}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+          </div>
 
-    {/* sixth-element */}
-    <div
-      className={`sixth-element flex items-center justify-end space-x-20 bg-[#FBEBE1] h-[182px] p-6 mb-[85px] w-[1333px] ${
-        isInView.sixth ? "animate-fadeInRight" : ""
-      }`}
-    >
-      <div className="ml-[227px] mb-[104px] mt-[104px] text-right">
-        <h2 className="text-[30px] font-bold text-[#022956]">Radhika</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Graphic Design Professional
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Creating compelling visual designs to enhance brand
-          <br />
-          identity and communication.
-        </p>
-      </div>
+          {/* fifth-element */}
+          <div
+            className={`fifth-element flex flex-col md:flex-row items-center md:space-x-20 bg-[#E7F2FF]  mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1333px] ${
+              isInView.fifth ? "animate-fadeInLeft" : ""
+            }`}
+          >
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidencefive}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
 
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidencesix}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
-      </div>
-    </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                Sara Singh
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Business Analytics Guru
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Transforming data into actionable insights to
+                <br className="hidden md:block" />
+                drive business decisions.
+              </p>
+            </div>
+          </div>
 
-    {/* seventh-element */}
-    <div
-      className={`seventh-element flex items-center space-x-20 bg-blue-100 h-[182px] p-6 mb-[85px] w-[1333px] ${
-        isInView.seventh ? "animate-fadeInLeft" : ""
-      }`}
-    >
-      <div className="relative w-[283px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-        <img
-          src={guidenceseven}
-          alt="Mentor"
-          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-        />
-      </div>
+          {/* sixth-element */}
+          <div
+            className={`sixth-element flex flex-col md:flex-row items-center justify-end md:space-x-20 bg-[#FBEBE1] mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1333px] ${
+              isInView.sixth ? "animate-fadeInRight" : ""
+            }`}
+          >
+            <div className="order-2 md:order-1 text-center md:text-right">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                Radhika
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Graphic Design Professional
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Creating compelling visual designs to enhance brand
+                <br className="hidden md:block" />
+                identity and communication.
+              </p>
+            </div>
 
-      <div className="ml-[227px] mb-[104px] mt-[104px]">
-        <h2 className="text-[30px] font-bold text-[#022956]">Santhosh Ram</h2>
-        <p className="text-[16px] text-[#1D2228] font-medium font-sans-serif-[lato]">
-          Business Advisor
-        </p>
-        <p className="text-[14px] text-[#1D2228] font-medium font-sans-serif-[lato] mt-[20px]">
-          Providing strategic guidance and practical
-          <br />
-          solutions for business growth and success.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidencesix}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+          </div>
 
+          {/* seventh-element */}
+          <div
+            className={`seventh-element flex flex-col md:flex-row items-center md:space-x-20 bg-blue-100 mb-[40px] md:mb-[85px] w-full md:w-[90%] lg:w-[1333px] ${
+              isInView.seventh ? "animate-fadeInLeft" : ""
+            }`}
+          >
+            <div className="relative w-[150px] h-[150px] md:w-[283px] md:h-[282px] transform rotate-90 overflow-hidden rounded-[10%] mb-4 md:mb-0">
+              <img
+                src={guidenceseven}
+                alt="Mentor"
+                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+              />
+            </div>
+
+            <div className="text-center md:text-left">
+              <h2 className="text-[20px] md:text-[30px] font-bold text-[#022956]">
+                Santhosh Ram
+              </h2>
+              <p className="text-[14px] md:text-[16px] text-[#1D2228] font-medium">
+                Business Advisor
+              </p>
+              <p className="text-[12px] md:text-[14px] text-[#1D2228] font-medium mt-[10px] md:mt-[20px]">
+                Providing strategic guidance and practical
+                <br className="hidden md:block" />
+                solutions for business growth and success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* section eleventh */}
 
-      <div className="w-full h-[377px]">
+      {/* <div className="w-full h-[377px]">
         <div className="flex flex-col justify-center text-center mt-[20px]">
           <h2 className="text-[#022956] text-[40px] font-semibold font-sans font-lato">
             Our Growth at a Glance
@@ -1536,11 +1902,54 @@ export default function Home() {
             />
           </div>
         </div>
-      </div>
+      </div> */}
+
+<div className="w-full h-[377px]">
+  <div className="flex flex-col justify-center text-center mt-[20px]">
+    <h2 className="text-[#022956] text-[28px] md:text-[40px] font-semibold font-sans font-lato">
+      Our Growth at a Glance
+    </h2>
+  </div>
+  <div className="mx-[10px] md:mx-[30px] mt-[20px] md:mt-[102px]">
+    <div className="grid grid-cols-3 gap-[20px] md:grid-cols-6 md:gap-[37px]">
+      <img
+        src={twelveone}
+        alt=""
+        className="w-full h-auto transform transition-transform duration-300 hover:scale-125"
+      />
+      <img
+        src={twelvetwo}
+        alt=""
+        className="w-full h-auto transform transition-transform duration-300 hover:scale-125"
+      />
+      <img
+        src={twelvethree}
+        alt=""
+        className="w-full h-auto transform transition-transform duration-300 hover:scale-125"
+      />
+      <img
+        src={twelvefour}
+        alt=""
+        className="w-full h-auto transform transition-transform duration-300 hover:scale-125"
+      />
+      <img
+        src={twelvefive}
+        alt=""
+        className="w-full h-auto transform transition-transform duration-300 hover:scale-125"
+      />
+      <img
+        src={twelvesix}
+        alt=""
+        className="w-full h-auto transform transition-transform duration-300 hover:scale-125"
+      />
+    </div>
+  </div>
+</div>
+
 
       {/* section lastone */}
 
-      <div className="relative w-[full] h-[798px]">
+      {/* <div className="relative w-[full] h-[798px]">
         <div className=" flex flex-col  justify-center  text-center mt-[80px]">
           <h2 className="text-[#022956] text-[40px] font-semibold font-sans font-lato">
             Experience Our Impact Through Their Words
@@ -1590,7 +1999,56 @@ export default function Home() {
             {testimonials[current].text}
           </p>
         </div>
-      </div>
+      </div> */}
+
+<div className="relative w-full h-auto pb-16">
+  <div className="flex flex-col justify-center text-center mt-[20px] md:mt-[80px]">
+    <h2 className="text-[#022956] text-[24px] md:text-[40px] font-semibold font-sans font-lato">
+      Experience Our Impact Through Their Words
+    </h2>
+  </div>
+  <div className="flex overflow-hidden justify-center items-center w-full h-auto space-x-4 md:space-x-7 mt-6 md:mt-8">
+    {testimonials.map((testimonial, index) => {
+      const isActive = index === current;
+
+      return (
+        <div
+          key={index}
+          className={`transition-all duration-500 ease-in-out ${isActive ? "scale-110" : "scale-75 blur-sm"} ${isActive ? "opacity-100" : "opacity-50"}`}
+          style={{
+            transform: isActive ? "scale(1.1)" : "scale(0.75)",
+            opacity: isActive ? 1 : 0.5,
+            width: isActive ? "186px" : "150px",
+            height: isActive ? "205px" : "150px",
+          }}
+          onMouseEnter={() => handleMouseEnterIn(index)}
+        >
+          <div className="rounded-lg flex flex-col items-center w-[195px] h-[205px] mx-2">
+            <img
+              src={testimonial.image}
+              alt={testimonial.name}
+              className={`${isActive ? "filter-none" : "filter grayscale"}`}
+            />
+          </div>
+        </div>
+      );
+    })}
+  </div>
+  <div className="text-center mt-4 md:mt-6">
+    <h3 className="text-[#1D2228] text-[16px] md:text-[20px] font-medium">
+      {testimonials[current].name}
+    </h3>
+    <p className="text-[#1D2228] text-[14px] md:text-[16px] font-light">
+      {testimonials[current].role}
+    </p>
+  </div>
+  <div className="mt-[20px] md:mt-[50px] mx-4 md:mx-[20px] text-center font-medium">
+    <p className="text-[#1D2228] text-[14px] md:text-[36px] mx-2 md:mx-[100px] font-light">
+      {testimonials[current].text}
+    </p>
+  </div>
+</div>
+
 
       {/* section footer */}
 

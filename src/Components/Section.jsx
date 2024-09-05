@@ -68,11 +68,12 @@ export default function Section() {
   return (
     <div className="w-full flex flex-col h-[3650px]  mb-[50px]">
       <div className=" flex flex-col justify-center text-center mb-[50px]">
-        <h2 className="text-[#022956] mt-[82px] text-[40px] font-semibold ">
+        <h2 className="text-[#FF5C00] mt-[82px] text-[30px] font-black font-Lato font-sans ">
           What is Incubation Program?
         </h2>
-        <p className="text-[27px] text-[#F27329] font-medium mt-[10px]">
-          Find out what incubation entails and how it can help you.
+        <p className="text-[40px] text-[#241443] font-semibold mt-[10px] text-Poppins">
+        Find Your Idea to get Life in Real World with Our <span className="text-[#FF5C00]">Friction</span>Learn <br></br>
+        Dynamic Incubation Program
         </p>
       </div>
 
@@ -91,7 +92,7 @@ export default function Section() {
           </div>
           <div className="text-box  ml-[10px]  ">
             <div className="content">
-              <h3 className=" text-[#F27329] text-[30px] font-black ml-[65px]">
+              <h3 className=" text-[#241443] text-[30px] font-black ml-[65px]">
                 Introduction to Incubation
               </h3>
               <img
@@ -99,7 +100,7 @@ export default function Section() {
                 className="content-imag w-[302px] h-[254px] ml-[100px] mt-[10px]"
                 alt="Content"
               />
-              <p className="text-center  text-[#1D2228] text-[18px] mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px] mt-[20px]">
                 Incubation programs offer the support and mentorship <br></br>to
                 unlock your startup potential.
               </p>
@@ -119,7 +120,7 @@ export default function Section() {
           </div>
           <div className="text-box mr-[150px] mt-[35px] ">
             <div className="content">
-              <h3 className=" text-[#F27329] text-[30px] font-black ml-[10px]">
+              <h3 className=" text-[#241443] text-[30px] font-black ml-[10px]">
                 Advantages of Incubation
               </h3>
               <img
@@ -127,7 +128,7 @@ export default function Section() {
                 className="content-imag w-[302px] h-[254px] ml-[50px] mt-[10px] "
                 alt="Content"
               />
-              <p className="text-center  text-[#1D2228] text-[18px]  mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px]  mt-[20px]">
                 It sharpens your business ideas, offers expert guidance,
                 <br></br> and provides resources to accelerate startup growth..
               </p>
@@ -148,7 +149,7 @@ export default function Section() {
           </div>
           <div className="text-box  ml-[10px] mt-[35px] ">
             <div className="content">
-              <h3 className=" text-[#F27329] text-[30px] font-black ml-[65px]">
+              <h3 className=" text-[#241443] text-[30px] font-black ml-[65px]">
                 Operational Mechanism
               </h3>
               <img
@@ -156,7 +157,7 @@ export default function Section() {
                 className="content-imag w-[302px] h-[254px] ml-[100px] mt-[10px] "
                 alt="Content"
               />
-              <p className="text-center  text-[#1D2228] text-[18px]   mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px]   mt-[20px]">
                 Validate ideas, build prototypes, and prepare for market{" "}
                 <br></br>entry through structured mentorship.
               </p>
@@ -177,7 +178,7 @@ export default function Section() {
           </div>
           <div className="text-box mr-[150px] mt-[35px]   ">
             <div className="content">
-              <h3 className=" text-[#F27329] text-[30px] font-black ml-[50px]">
+              <h3 className=" text-[#241443] text-[30px] font-black ml-[50px]">
                 How Will You Benefit?
               </h3>
               <img
@@ -185,7 +186,7 @@ export default function Section() {
                 className="content-imag w-[302px] h-[254px] ml-[60px] mt-[10px] text-center"
                 alt="Content"
               />
-              <p className="text-center  text-[#1D2228] text-[18px]  mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px]  mt-[20px]">
                 Navigate the incubation process with these steps.
               </p>
             </div>
@@ -211,7 +212,7 @@ export default function Section() {
             <div className="content">
               <h3 className="  text-[22px] font-semibold  text-center">Join</h3>
 
-              <p className="text-center  text-[#1D2228] text-[18px]  mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px]  mt-[20px]">
                 Join the incubation program to start your<br></br>{" "}
                 entrepreneurial journey.
               </p>
@@ -249,7 +250,7 @@ export default function Section() {
                 Interview by Mentors
               </h3>
 
-              <p className="text-center  text-[#1D2228] text-[18px] mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px] mt-[20px]">
                 Engage in one-on-one sessions with<br></br> industry mentors to
                 refine your<br></br> business model..
               </p>
@@ -287,7 +288,7 @@ export default function Section() {
                 Evaluation Process
               </h3>
 
-              <p className="text-center  text-[#1D2228] text-[18px]  mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px]  mt-[20px]">
                 Receive feedback and guidance during <br></br>the evaluation of
                 your business idea.
               </p>
@@ -324,7 +325,7 @@ export default function Section() {
                 Finalizing
               </h3>
 
-              <p className="text-center  text-[#1D2228] text-[18px] mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px] mt-[20px]">
                 Finalize your business plan and prepare<br></br> for
                 presentation.
               </p>
@@ -362,7 +363,7 @@ export default function Section() {
                 Selection
               </h3>
 
-              <p className="text-center  text-[#1D2228] text-[18px]  mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px]  mt-[20px]">
                 Selected startups receive incubation<br></br> support based on
                 potential and<br></br> feasibility.
               </p>
@@ -385,7 +386,7 @@ export default function Section() {
           </div>
           <div className="text-box  ml-[10px]  ">
             <div className="content">
-              <h3 className=" text-[#F27329] text-[30px] font-black ml-[105px]">
+              <h3 className=" text-[#241443] text-[30px] font-black ml-[105px]">
                 Incubation Insights
               </h3>
               <img
@@ -393,7 +394,7 @@ export default function Section() {
                 className="content-imag w-[302px] h-[254px] ml-[100px] "
                 alt="Content"
               />
-              <p className="text-center  text-[#1D2228] text-[18px] mt-[20px]">
+              <p className="text-center  text-[#FF5C00] text-[18px] mt-[20px]">
                 Validate ideas, build prototypes, and prepare for market
                 <br></br> entry through structured mentorship. <br></br>to
                 unlock your startup's potential.
@@ -405,7 +406,7 @@ export default function Section() {
         <div className="button w-[190px] h-[48px] flex text-center justify-center align-middle ml-[400px] animate-endanimation">
           <button
             id="apply-button"
-            className="w-[190px] h-[48px] text-[16px] text-[#FFFFFF] font-bold bg-[#022956]  transform transition-transform duration-300  rounded-md hover:text-[#022956] hover:bg-white hover:border border-[#022956]"
+            className="w-[190px] h-[48px] text-[16px] text-[#FFFFFF] font-bold bg-[#241443]  transform transition-transform duration-300  rounded-md hover:text-[#022956] hover:bg-white hover:border border-[#022956]"
           >
             Apply Now
           </button>

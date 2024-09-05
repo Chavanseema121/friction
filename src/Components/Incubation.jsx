@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import groupone from "../assets/incubation/groupone.png";
 import grouptwo from "../assets/incubation/grouptwo.png";
@@ -48,25 +49,27 @@ export default function Incubation() {
           <div className="flex items-center bg-white bg-opacity-75 rounded-md w-[402px] h-[62px] ml-[10px] mt-[20px]">
             <ul className="flex justify-between gap-5 search">
               <li className="text-[#1D2228] text-[18px] font-bold ml-[20px] my-[28px] flex">
-                Courses{" "}
-                <img
-                  src={arr}
-                  alt=""
-                  className="w-[11.13px] h-[7.13px] ml-[10px] mt-[10px]"
-                />
+                <Link to="/courses" className="flex items-center">
+                  Courses
+                  <img
+                    src={arr}
+                    alt=""
+                    className="w-[15px] h-[10px] ml-[8px] mt-[5px]"
+                  />
+                </Link>
               </li>
               <li className="text-[#1D2228] text-[18px] font-bold mr-[10px] ml-[10px] my-[28px]">
-                Communities
+                <Link to="/community">Communities</Link>
               </li>
               <li className="text-[#1D2228] text-[18px] font-bold my-[28px]">
-                Incubation
+                <Link to="/incubation">Incubation</Link>
               </li>
             </ul>
           </div>
           {/* search bar */}
-          <div className="flex justify-end mt-5   ml-[30px]  w-[529px]  ">
+          <div className="flex justify-end mt-3   ml-[30px]  w-[529px]  ">
             <div
-              className={`relative flex items-center justify-end ml-[140px] bg-white bg-opacity-75 rounded-md h-[64px] px-4 ${
+              className={`relative flex items-center justify-end ml-[140px] bg-white bg-opacity-75 rounded-md h-[62px] px-4 ${
                 isOpen ? "w-[557px]" : "w-[250px]"
               }`}
             >
@@ -103,9 +106,9 @@ export default function Incubation() {
                 />
               </div>
               <div className="text-[16px]">
-              <button className=" w-[180px] h-[42px]   px-[20px] py-[10px] bg-[#022956] text-white rounded-md">
-                Join Incubation
-              </button>
+                <button className=" w-[180px] h-[42px]   px-[20px] py-[10px] bg-[#022956] text-white rounded-md">
+                  Join Incubation
+                </button>
               </div>
             </div>
             {/* <button className="ml-4 px-4 py-2 bg-blue-600 text-white rounded-md">Join Community</button> */}
@@ -132,7 +135,7 @@ export default function Incubation() {
 
       {/* what is incubation */}
 
-      <div className="w-full h-[800px] mx-auto">
+      {/* <div className="w-full h-[800px] mx-auto">
         <h1 className="font-bold text-[40px] text-[#022956] text-center mt-[61px]">
           What is Incubation
         </h1>
@@ -148,6 +151,40 @@ export default function Incubation() {
             className="w-[787px] h-[512px]  mt-[98px]"
           ></img>
         </div>
+      </div> */}
+
+      <div className="py-4 px-4 mx-auto max-w-screen-lg lg:py-8">
+        <div className="mb-8">
+          <h2
+            className="text-[#F27329] mt-[40px] text-[40px] font-semibold text-center
+           
+          "
+          >
+            {" "}
+            What We Offers
+          </h2>
+          <p
+            className="text-[15px] font-medium text-[#1D2228] mt-[30px] text-center px-1 
+           sm:text-[12] sm:font-medium  lg:text-[20px] sm:text-center sm:px-10
+           
+           "
+          >
+            Friction Learn is your gateway to unparalleled growth, connecting
+            you with courses that challenge you, clubs that foster creativity,
+            and communities that inspire collaboration. Our incubation program
+            and dynamic student clubs offer hands-on experience, mentorship, and
+            peer support, ensuring you're equipped to turn your ambitions into
+            reality.
+          </p>
+          <img
+            src={incubation}
+            alt=""
+            className="align-middle w-full  mt-[50px]    
+         
+          
+          "
+          />
+        </div>
       </div>
 
       {/* how incubation work */}
@@ -156,7 +193,7 @@ export default function Incubation() {
 
       {/* why incubation section*/}
 
-      <div className="w-full h-[730px] mx-auto p-4 flex flex-col items-center">
+      {/* <div className="w-full h-[730px] mx-auto p-4 flex flex-col items-center">
         <div className="text-center ">
           <h1 className="text-[40px] text-[#022956] font-bold mb-2">
             Why Incubation
@@ -173,8 +210,8 @@ export default function Incubation() {
               className="w-[271px] h-[203px] mb-[68px] "
             />
             <p className="text-center text-[20px] font-medium">
-              Gain insights and advice<br />  from
-              seasoned industry leaders.
+              Gain insights and advice
+              <br /> from seasoned industry leaders.
             </p>
           </div>
           <div className="flex flex-col items-center">
@@ -184,8 +221,9 @@ export default function Incubation() {
               className=" w-[271px] h-[203px] mb-[68px]"
             />
             <p className="text-center text-[20px] font-medium">
-              Utilize top-notch tools,<br />tech,
-              and facilities for growth.
+              Utilize top-notch tools,
+              <br />
+              tech, and facilities for growth.
             </p>
           </div>
           <div className="flex flex-col items-center">
@@ -195,8 +233,57 @@ export default function Incubation() {
               className=" w-[271px] h-[203px] mb-[68px]"
             />
             <p className="text-center text-[20px] font-medium">
-              Connect with investors, <br /> peers,
-              and potential partners effectively.
+              Connect with investors, <br /> peers, and potential partners
+              effectively.
+            </p>
+          </div>
+        </div>
+      </div> */}
+
+      <div className="w-full h-auto mx-auto p-4 flex flex-col items-center">
+        <div className="text-center">
+          <h1 className="text-[40px] text-[#022956] font-bold mb-2">
+            Why Incubation
+          </h1>
+          <p className="text-[28px] font-semibold text-[#F27329] mb-[132px]">
+            Understand the vital benefits of incubation for startup growth.
+          </p>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-center lg:gap-[169px] gap-10 lg:mx-[125px]">
+          <div className="flex flex-col items-center">
+            <img
+              src={groupone}
+              alt="groupone"
+              className="w-[271px] h-[203px] mb-[68px]"
+            />
+            <p className="text-center text-[20px] font-medium">
+              Gain insights and advice
+              <br />
+              from seasoned industry leaders.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src={grouptwo}
+              alt="grouptwo"
+              className="w-[271px] h-[203px] mb-[68px]"
+            />
+            <p className="text-center text-[20px] font-medium">
+              Utilize top-notch tools,
+              <br />
+              tech, and facilities for growth.
+            </p>
+          </div>
+          <div className="flex flex-col items-center">
+            <img
+              src={groupthree}
+              alt="groupthree"
+              className="w-[271px] h-[203px] mb-[68px]"
+            />
+            <p className="text-center text-[20px] font-medium">
+              Connect with investors,
+              <br />
+              peers, and potential partners effectively.
             </p>
           </div>
         </div>
@@ -239,9 +326,31 @@ export default function Incubation() {
         </div>
       </div>
 
-      {/* Query form section */}
+      {/* <div className="w-full h-auto mx-auto p-4 flex flex-col items-center mt-[10px]">
+  <div className="text-center mb-8">
+    <h1 className="text-[40px] font-black text-[#022956] mb-[10px]">
+      Benefits of Incubation
+    </h1>
+    <p className="text-[28px] font-semibold text-[#F27329] mb-[100px]">
+      Unlock key advantages that drive startup success through incubation
+    </p>
+  </div>
+  <div className="text-center mx-[107px] w-full">
+    <img
+      src={Benefitstruride}
+      alt="Benefitstruride"
+      className="w-full h-auto max-w-[1013px] md:w-[1013px] md:h-[512px] sm:max-h-[80vh] sm:max-w-[90%] sm:object-contain"
+    />
+  </div>
+</div> */}
 
-      <div className="w-full h-[1160px]">
+
+
+
+
+
+      {/* Query form section */}
+      <div className="w-full h-auto p-4">
         <div className="text-center mt-[20px]">
           <h1 className="text-[40px] text-[#022956] font-black mb-[10px]">
             Query Form
@@ -251,9 +360,9 @@ export default function Incubation() {
           </p>
         </div>
 
-        <div className="flex  justify-center mx-[120px]">
-          {/* left side */}
-          <div className="flex flex-col flex-1 items-left ml-[100px]">
+        <div className="flex flex-col-reverse lg:flex-row justify-center lg:mx-[120px]">
+          {/* Left side - Form */}
+          <div className="flex flex-col flex-1 items-center lg:items-start lg:ml-[100px]">
             <label
               htmlFor="name"
               className="block text-[#022956] text-[22px] font-semibold mb-[12px]"
@@ -263,7 +372,7 @@ export default function Incubation() {
             <input
               type="text"
               id="name"
-              className="w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
+              className="w-full lg:w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
             />
 
             <label
@@ -275,7 +384,7 @@ export default function Incubation() {
             <input
               type="text"
               id="email"
-              className="w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
+              className="w-full lg:w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
             />
 
             <label
@@ -287,7 +396,7 @@ export default function Incubation() {
             <input
               type="text"
               id="college-name"
-              className="w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
+              className="w-full lg:w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
             />
 
             <label
@@ -299,7 +408,7 @@ export default function Incubation() {
             <input
               type="text"
               id="student-or-other"
-              className="w-[440px] h-[52px] border border-[#022956] rounded-md  mb-[33px]"
+              className="w-full lg:w-[440px] h-[52px] border border-[#022956] rounded-md mb-[33px]"
             />
 
             <label
@@ -308,12 +417,12 @@ export default function Incubation() {
             >
               Message
             </label>
-            <input
-              type="text"
+            <textarea
               id="message"
-              className="w-[440px] h-[185px] border border-[#022956] rounded-md  mb-[33px]"
+              className="w-full lg:w-[440px] h-[185px] border border-[#022956] rounded-md mb-[33px]"
             />
-            <div className=" flex justify-center  mr-[120px]">
+
+            <div className="flex justify-center lg:justify-start">
               <button
                 type="submit"
                 className="w-[190px] h-[50px] text-white py-2 rounded-md bg-[#022956] mt-[20px]"
@@ -323,12 +432,12 @@ export default function Incubation() {
             </div>
           </div>
 
-          {/* right side */}
-          <div className="flex-1 flex justify-center items-center">
+          {/* Right side - Image */}
+          <div className="flex-1 flex justify-center items-center mt-[30px] lg:mt-0">
             <img
               src={queryform}
               alt="Query Form"
-              className="w-[455px] h-[711px]"
+              className="w-full lg:w-[455px] h-auto lg:h-[711px]"
             />
           </div>
         </div>

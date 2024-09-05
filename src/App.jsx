@@ -53,12 +53,12 @@ import react from "react";
 
 
 import React from "react";
-import {  Routes, Route, useLocation } from "react-router-dom";
-import Home from "./Components/Home";
+import {  Routes, Route} from "react-router-dom";
+import Homepage from "./Components/Homepage";
 import Courses from "./Components/Courses";
 import Incubation from "./Components/Incubation";
 import Community from "./Components/Community";
-import Navbar from "./Components/Navbar";
+// import NewNavbar from "./Components/NewNavbar";
 
 
       {/* <Incubation/> */}
@@ -106,16 +106,16 @@ import Navbar from "./Components/Navbar";
       {/* <Home/> */}
       {/* <Community/> */}
       function App() {
-        const location = useLocation(); // Get the current route
+       
       
         // Conditionally render Navbar only on the Home page
-        const showNavbar = location.pathname === "/";
+      
       
         return (
           <>
-            {showNavbar && <Navbar />} {/* Render Navbar only if on the Home page */}
+            {/* <NewNavbar /> Render Navbar only if on the Home page */}
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Homepage />} />
               <Route path="/courses" element={<Courses />} />
               <Route path="/incubation" element={<Incubation />} />
               <Route path="/community" element={<Community />} />
