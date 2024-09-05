@@ -14,7 +14,7 @@ import aboutskillimg from "../assets/home/aboutskillimg.png";
 import goalimgones from "../assets/home/goalimgones.png";
 import goalimgtwo from "../assets/home/goalimgtwo.png";
 import mindimgone from "../assets/home/mindimgone.png";
-import mindimgtwo from "../assets/home/goalimgtwo.png";
+import mindimgtwo from "../assets/home/mindimgtwo.png";
 
 import imgone from "../assets/home/imgone.png";
 import imgtwo from "../assets/home/imgtwo.png";
@@ -371,7 +371,7 @@ export default function Homepage() {
         </div>
 
         <div className="parent flex flex-col  space-x-7 lg:flex-row mt-[40px] md:mt-[65px]  mx-[50px]">
-          <div className="childleft   bg-red-200 w-full lg:w-[700px] mt-[40px] lg:mt-0 ml-0  order-2 sm:order-1 lg:order-1">
+          <div className="childleft w-full lg:w-[700px] mt-[40px] lg:mt-0 ml-0  order-2 sm:order-1 lg:order-1">
             <div className="grid grid-cols-2 gap-4 md:gap-10">
               <div className="one bg-[#FFCC1F] w-full h-[150px] md:h-[200px] rounded-3xl flex items-center justify-center">
                 <h2 className="text-[#022956] text-[20px] md:text-[30px] font-black text-center font-poppines">
@@ -395,7 +395,7 @@ export default function Homepage() {
             </div>
           </div>
 
-          <div className="childright  w-full lg:w-[771px] order-1 sm:order-2 lg:order-1   bg-orange-300">
+          <div className="childright  w-full lg:w-[771px] order-1 sm:order-2 lg:order-1">
             <h2 className="text-[#241443] text-[24px] md:text-[30px] lg:text-[40px] font-bold text-start font-poppines">
               Take the Next Step Towards Your Personal And Professional Goals
               With FrictionLearn
@@ -407,7 +407,7 @@ export default function Homepage() {
               the Journey to success.
             </p>
             <div className="subparent mt-[30px] md:mt-[40px] lg:mt-[50px]">
-              <div className="childone flex flex-col mb-[20px]">
+              <div className="childone flex flex-row mb-[20px]">
                 <img
                   src={mindimgone}
                   alt=""
@@ -424,7 +424,7 @@ export default function Homepage() {
                 </div>
               </div>
 
-              <div className="childtwo flex flex-col mb-[20px]">
+              <div className="childtwo flex flex-row mb-[20px]">
                 <img
                   src={mindimgtwo}
                   alt=""
