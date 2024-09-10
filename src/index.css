@@ -248,7 +248,7 @@
   align-items: center;
   animation: scroll-left linear infinite;
   /* Adjust animation duration based on the width of the content */
-  animation-duration: 20s; /* Duration for complete scroll */
+  animation-duration: 5s; /* Duration for complete scroll */
 }
 
 /* Adjust the width to ensure seamless scroll */

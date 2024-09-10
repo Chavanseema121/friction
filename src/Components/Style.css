@@ -198,3 +198,92 @@ body {
 .container:nth-child(6) {
   animation-delay: 6s;
 }
+
+
+/* Style for the timeline in mobile view */
+@media (max-width: 768px) {
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px; /* Position of the vertical line */
+    width: 2px;
+    height: 100%;
+    background-color: #333; /* Vertical line color */
+  }
+
+  /* Each step container */
+  .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding-left: 60px; /* Ensure spacing from the left */
+    margin-bottom: 40px; /* Space between each section */
+  }
+
+  /* Circle with the step number */
+  .circle {
+    position: absolute;
+    left: 5px; /* Position it next to the vertical line */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333; /* Circle background color */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
+
+  /* Right-side content (image and text) */
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px; /* Space between circle and content */
+  }
+
+  /* Image styling */
+  .content img {
+    width: 100%;
+    max-width: 300px; /* Limit the image width for mobile */
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  /* Text styling */
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+  }
+
+  /* Apply Now Button styling */
+  .button-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .apply-btn {
+    padding: 15px 30px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}
+
+
+

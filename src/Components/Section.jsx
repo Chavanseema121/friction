@@ -22,6 +22,8 @@ import line from "../assets/home/line.png";
 // import hori from '../assets/hori.png';
 // import vertical from '../assets/vertical line.png';
 
+import "../Components/Style.css"
+
 const images = {
   imgoneone,
   imgtwotwo,
@@ -66,7 +68,7 @@ export default function Section() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col h-[3650px]  mb-[50px]">
+    <div className="w-full flex flex-col h-auto  mb-[50px]">
       <div className=" flex flex-col justify-center text-center mb-[50px]">
         <h2 className="text-[#FF5C00] mt-[82px] text-[30px] font-black font-Lato font-sans ">
           What is Incubation Program?
