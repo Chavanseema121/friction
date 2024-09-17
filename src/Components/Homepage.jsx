@@ -248,7 +248,7 @@ export default function Homepage() {
 
   return (
     <div className="w-full h-auto">
-      <NewNavbar />
+      
       <Header />
 
       {/* section one */}
@@ -544,7 +544,7 @@ export default function Homepage() {
         </div>
       </div> */}
 
-<div className="grid grid-cols-2 md:grid-cols-2 gap-4 px-4 sm:px-6 md:px-10 mt-10 md:mt-20">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 sm:px-6 md:px-10 mt-10 md:mt-20">
   {/* Left Side - Content */}
   <div className="m-auto max-w-screen-lg py-8 md:py-16">
     <h2 className="text-[24px] sm:text-[28px] md:text-[40px] font-black text-[#FF5C00] mb-4">

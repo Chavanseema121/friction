@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import friction from "../assets/home/friction.png"; // Your logo path
 import heart from "../assets/home/heart.png"; // Your heart icon path
 import cart from "../assets/home/cart.png"; // Your cart icon path
 import arr from "../assets/arr.png"; // Your dropdown arrow path
 import newsearch from "../assets/home/newsearch.png";
-import newsearchone from "../assets/home/newsearchone.png" // Your search icon path
+import newsearchone from "../assets/home/newsearchone.png"; // Your search icon path
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State to toggle the mobile menu
@@ -14,31 +15,30 @@ function Navbar() {
       <nav className="bg-white border-b border-gray-200">
         {/* Top Section for Desktop and Mobile */}
         <div className="container mx-auto flex items-center justify-between py-3">
-          
-        <div className="md:hidden flex items-center justify-between">
-      {/* Logo for Mobile */}
-      <img src={friction} alt="FrictionLearn Logo" className="w-[138px] h-[69px]" />
+          <div className="md:hidden flex items-center justify-between">
+            {/* Logo for Mobile */}
+            <img src={friction} alt="FrictionLearn Logo" className="w-[138px] h-[69px]" />
 
-      {/* Search Button */}
-      <div className="flex items-center">
-        <button className="flex items-center px-6 py-2 text-blue-600">
-          <img src={newsearchone} alt="Search" className="w-[32px] h-[32px] mr-2" />
-        </button>
-      </div>
+            {/* Search Button */}
+            <div className="flex items-center">
+              <button className="flex items-center px-6 py-2 text-blue-600">
+                <img src={newsearchone} alt="Search" className="w-[32px] h-[32px] mr-2" />
+              </button>
+            </div>
 
-      {/* Hamburger Menu */}
-      <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
-        <svg
-          className="w-6 h-6 text-black"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-        </svg>
-      </button>
-    </div>
+            {/* Hamburger Menu */}
+            <button onClick={() => setIsOpen(!isOpen)} className="focus:outline-none">
+              <svg
+                className="w-6 h-6 text-black"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
 
           {/* Desktop: Logo (hidden on mobile) */}
           <div className="hidden md:flex items-center">
@@ -74,7 +74,6 @@ function Navbar() {
           </div>
 
           {/* User Actions: Signup and Icons for Mobile */}
-          
 
           {/* Desktop User Actions */}
           <div className="hidden md:flex items-center space-x-2 mr-[50px]">
@@ -106,21 +105,21 @@ function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden flex flex-col items-center space-y-4 py-4">
-            <a href="#home" className="text-lg font-semibold text-[#241443] hover:underline">
+            <Link to="/" className="text-lg font-semibold text-[#241443] hover:underline">
               Home
-            </a>
-            <a href="#courses" className="text-lg font-semibold text-[#241443] hover:underline">
+            </Link>
+            <Link to="/courses" className="text-lg font-semibold text-[#241443] hover:underline">
               Courses
-            </a>
-            <a href="#about" className="text-lg font-semibold text-[#241443] hover:underline">
+            </Link>
+            <Link to="/about" className="text-lg font-semibold text-[#241443] hover:underline">
               About Us
-            </a>
-            <a href="#services" className="text-lg font-semibold text-[#241443] hover:underline">
+            </Link>
+            <Link to="/services" className="text-lg font-semibold text-[#241443] hover:underline">
               Services
-            </a>
-            <a href="#contact" className="text-lg font-semibold text-[#241443] hover:underline">
+            </Link>
+            <Link to="/contact" className="text-lg font-semibold text-[#241443] hover:underline">
               Contact Us
-            </a>
+            </Link>
           </div>
         )}
 
@@ -128,35 +127,35 @@ function Navbar() {
         <div className="hidden md:flex justify-between items-center py-2 text-purple-800">
           {/* Navigation Links */}
           <div className="flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px]">
-            <a href="#home" className="hover:underline">
+            <Link to="/" className="hover:underline">
               Home
-            </a>
+            </Link>
             <div className="flex">
-              <a href="#courses" className="hover:underline">
+              <Link to="/courses" className="hover:underline">
                 Courses
-              </a>
+              </Link>
               <img
                 src={arr}
                 alt=""
                 className="w-[15px] h-[10px] ml-[8px] mt-[14px]"
               />
             </div>
-            <a href="#about" className="hover:underline">
+            <Link to="/about" className="hover:underline">
               About Us
-            </a>
+            </Link>
             <div className="flex">
-              <a href="#services" className="hover:underline">
+              <Link to="/services" className="hover:underline">
                 Services
-              </a>
+              </Link>
               <img
                 src={arr}
                 alt=""
                 className="w-[15px] h-[10px] ml-[8px] mt-[14px]"
               />
             </div>
-            <a href="#contact" className="hover:underline">
+            <Link to="/contact" className="hover:underline">
               Contact Us
-            </a>
+            </Link>
           </div>
 
           {/* Desktop Icons */}
