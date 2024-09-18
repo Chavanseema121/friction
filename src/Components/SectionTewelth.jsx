@@ -1,11 +1,16 @@
 import React from 'react';
 import righticon from "../assets/home/righticon.png";
 import choose from "../assets/home/choose.png";
+import star from "../assets/home/star.png"
 
 function WhyChooseUsSection() {
   return (
     <div className="bg-[#241443] mx-auto text-white p-4 sm:p-8">
+
+    <div className="flex items-center justify-center">
+    <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mb-5" />
     <h1 className="text-[24px] sm:text-[30px] font-black text-center mb-4 text-[#FF5C00]">Why Choose Us!</h1>
+    </div>
     <p className="text-[18px] sm:text-[24px] text-left sm:text-left mb-2 font-semibold text-Poppins text-[#FFFFFF]">
       Don't Know How To Start With<br /> FrictionLearn
     </p>

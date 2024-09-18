@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NewNavbar from "./NewNavbar";
+// import NewNavbar from "./NewNavbar";
 import Header from "../Components/Header";
 import SectionFifth from "../Components/SectionFifth";
 import SectionEleventh from "../Components/SectionEleventh";
@@ -39,8 +39,10 @@ import sthreethree from "../assets/home/sthreethree.png";
 import sthreefour from "../assets/home/sthreefour.png";
 import sthreefive from "../assets/home/sthreefive.png";
 
-import sfourgroupone from "../assets/home/sfourgroupone.png";
-import sfourgrouptwo from "../assets/home/sfourgrouptwo.png";
+// import sfourgroupone from "../assets/home/sfourgroupone.png";
+// import sfourgrouptwo from "../assets/home/sfourgrouptwo.png";
+
+import updatesection from "../assets/home/updatesection.png"
 
 import lastone from "../assets/home/lastone.png";
 import lasttwo from "../assets/home/lasttwo.png";
@@ -290,7 +292,7 @@ export default function Homepage() {
     <div className="mb-8">
       <div className="flex items-center justify-center mb-8">
         <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-        <h2 className="text-[#FF5C00] text-[24px] sm:text-[20px] md:text-[35px] lg:text-[30px] font-black font-sans text-center">
+        <h2 className="text-[#FF5C00] text-[20px] sm:text-[20px] md:text-[30px] lg:text-[30px] font-black font-sans text-center">
           What We Offer
         </h2>
       </div>
@@ -347,7 +349,7 @@ export default function Homepage() {
 <div className="flex flex-col justify-center items-center text-center mt-[40px] md:mt-[50px] lg:mt-[60px]">
    <div className="flex items-center justify-center mb-6">
    <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-  <h2 className="text-[#FF5C00] text-[28px] sm:text-[30px] md:text-[35px] font-black text-center font-lato">
+  <h2 className="text-[#FF5C00] text-[20px] sm:text-[30px] lg:text-[30px] font-black text-center font-lato">
     About Us
   </h2>
   </div>
@@ -385,7 +387,7 @@ export default function Homepage() {
   </div>
 </div>
 
-<div className="flex justify-center lg:justify-start mt-[20px] md:mt-[50px] lg:mt-[60px] ml-[20px] md:ml-[40px] lg:ml-[50px]">
+<div className="flex justify-center lg:justify-start mt-[20px] md:mt-[40px] lg:mt-[40px] ml-[30px] md:ml-[30px] lg:ml-[30px]">
   <button className="w-[160px] sm:w-[180px] md:w-[214px] h-[45px] sm:h-[50px] md:h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-medium font-poppins flex items-center justify-center">
     <span>Learn More</span>
     <img
@@ -398,11 +400,11 @@ export default function Homepage() {
 
 
       {/* section three */}
-      <section className="w-full h-auto mt-[120px] sm:mt-[80px] md:mt-[120px] lg:mt-[40px]">
+      <section className="w-full h-auto mt-[80px] sm:mt-[40px] lg:mt-[40px]">
   <div className="heading flex justify-center items-center text-center">
     <div className="flex items-center justify-center mb-8">
       <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-      <h2 className="text-[#FF5C00] text-[24px] md:text-[30px] font-semibold font-poppins">
+      <h2 className="text-[#FF5C00] text-[20px] lg:text-[30px] font-black font-poppins">
         What’s Our Main Goal
       </h2>
     </div>
@@ -595,7 +597,7 @@ export default function Homepage() {
       <div className="w-full h-auto mb-[20px] sm:mx-auto mt-[40px]">
       <div className="flex flex-col justify-center text-center px-4 md:px-8 lg:px-12">
   <div className="flex items-center justify-center mb-2 md:mb-6 lg:mb-2">
-    <img src={star} alt="star" className="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px] mr-[-10px] sm:mb-10" />
+    <img src={star} alt="star" className="w-[40px] h-[40px]  mr-[-10px]  mb-[-5px]" />
     <h2 className="text-[#FF5C00] text-[18px] sm:text-[18px] md:text-[30px] lg:text-[30px] font-black font-Lato font-sans">
       Tailored Training to Achieve Your Goals
     </h2>
@@ -688,7 +690,7 @@ export default function Homepage() {
 
       <section className="purple w-full h-auto lg:h-[344px] bg-[#241443] mt-[100px]">
         <div className="parent flex flex-col sm:flex-row flex-wrap justify-evenly sm:justify-between">
-          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px]">
+          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px] mx-auto">
             <img src={bookimg} alt="" className="w-[50px] h-[68px]" />
             <div className="subchild w-full sm:w-[428px] text-center sm:text-start ml-0 sm:ml-[20px] mt-[10px]">
               <h2 className="text-[#FFFFFF] text-[18px] font-bold text-center sm:text-start font-poppins">
@@ -700,7 +702,7 @@ export default function Homepage() {
             </div>
           </div>
 
-          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px]">
+          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px] mx-auto">
             <img
               src={bulbimg}
               alt=""
@@ -718,7 +720,7 @@ export default function Homepage() {
             </div>
           </div>
 
-          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px]">
+          <div className="one flex flex-col sm:flex-row items-center justify-center w-full sm:w-[361px] h-auto sm:h-[72px] mt-[20px] sm:mt-[120px] mx-auto">
             <img
               src={award}
               alt=""
@@ -740,114 +742,67 @@ export default function Homepage() {
 
       {/* section eight */}
 
-      <section className="bg-white">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-12">
-          <div className="mb-8">
-            <h2 className="text-[#FF5C00] mt-[52px] text-[24px] md:text-[30px] font-black text-center">
-              Our Strategic Success Framework
-            </h2>
-            <h3 className="text-[28px] md:text-[40px] text-[#241443] font-semibold mt-[10px] text-center text-Poppins">
-              Experience the Structure, Embrace the Success
-              <span className="block md:inline text-[#022956] text-[22px] md:text-[30px] font-semibold">
-                “FrictionLearn”
-              </span>
-            </h3>
-          </div>
-
-          {/* First Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="text-center mx-auto mt-[50px] md:mb-[160px]">
-              <h2 className="text-[#241443] text-[28px] md:text-[40px] font-semibold font-sans font-lato">
-                1. Engaging Learning Experience
-              </h2>
-              <p className="text-[18px] md:text-[22px] font-medium text-[#FF5C00] mt-[31px] text-Poppins">
-                “Friction<span className="text-[#241443]">Learn</span>”
-                transforms traditional education into an engaging, fun, and
-                motivating gamified learning journey.
-              </p>
+      <div className="flex flex-col items-center justify-center px-6 py-12 md:px-12 lg:px-24">
+            <div className="flex items-center justify-center">
+            <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
+            <h2 className="text-[#FF5C00] text-[15px] lg:text-[30px] font-black mb-2">Our Strategic Success Framework</h2>
             </div>
-            <div className="flex justify-center mt-[20px]">
-              <img
-                src={sfourgroupone}
-                alt=""
-                className="w-full max-w-[300px] md:max-w-[500px] h-auto"
-              />
+            <h1 className="text-[20px] lg:text-[40px] font-semibold text-center mb-10 text-[#241443]">
+                Experience the Structure, Embrace the Success
+            </h1>
+            <div className="flex flex-col lg:flex-row items-center justify-between">
+                {/* Image Section */}
+                <div className="mb-8 lg:mb-0 lg:mr-12">
+                    <img src={updatesection} alt="Strategic Framework" className="w-full h-auto" />
+                </div>
+                {/* Content Section */}
+                <div className="max-w-lg text-left space-y-6">
+                    <div>
+                        <h3 className="font-semibold text-[14px] lg:text-[26px] text-[#241443]">1. Engaging Learning Experience:</h3>
+                        <p className="text-[#FF5C00] text-[14px] lg:text-[18px] text-Poppins font-Lato font-sans">
+                            "FrictionLearn" transforms traditional education into an engaging, fun, 
+                            and motivating gamified learning journey.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="font-semibold text-[14px] lg:text-[26px] text-[#241443]">2. Structured Course Levels:</h3>
+                        <p className="text-[#FF5C00] text-[14px] lg:text-[18px] text-Poppins font-Lato font-sans">
+                            Our 24-level courses guide students from 1st to 3rd year in exploring 
+                            future paths, with welcome kits promoting professional growth.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="font-semibold text-[14px] lg:text-[26px] text-[#241443]">3. AI-Focused Learning Support:</h3>
+                        <p className="text-[#FF5C00] text-[14px] lg:text-[18px] text-Poppins font-Lato font-sans">
+                            FrictionLearn uses dedicated own AI to clarify doubts and offer 
+                            personalized support, enhancing students' learning experience.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="font-semibold text-[14px] lg:text-[26px] text-[#241443]">4. Incubation for Idea Generators:</h3>
+                        <p className="text-[#FF5C00] text-[14px] lg:text-[18px] text-Poppins font-Lato font-sans">
+                            Starting in the second year, our Incubation programs provide mentorship 
+                            and resources to help students develop innovative ideas.
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          {/* Second Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="text-center mx-auto mt-[50px] md:order-2 md:mb-[160px]">
-              <h2 className="text-[#241443] text-[28px] md:text-[40px] font-semibold font-sans font-lato">
-                2. Structured Course Levels:
-              </h2>
-              <p className="text-[18px] md:text-[22px] font-medium text-[#FF5C00] mt-[31px]">
-                Our 24-level courses guide students from 1st to 3rd year in
-                exploring future paths, with welcome kits promoting professional
-                growth.
-              </p>
-            </div>
-            <div className="flex justify-center mt-[20px] md:order-1">
-              <img
-                src={sfourgrouptwo}
-                alt=""
-                className="w-full max-w-[300px] md:max-w-[500px] h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Third Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="text-center mx-auto mt-[50px] md:mb-[160px]">
-              <h2 className="text-[#241443] text-[28px] md:text-[40px] font-semibold font-sans font-lato">
-                3. AI-Focused Learning Support:
-              </h2>
-              <p className="text-[18px] md:text-[22px] font-medium text-[#FF5C00] mt-[31px]">
-                Friction<span className="text-[#241443]">Learn</span> uses
-                dedicated AI to clarify doubts and offer personalized support,
-                enhancing students' learning experience.
-              </p>
-            </div>
-            <div className="flex justify-center mt-[20px]">
-              <img
-                src={sfourgroupone}
-                alt=""
-                className="w-full max-w-[300px] md:max-w-[500px] h-auto"
-              />
-            </div>
-          </div>
-
-          {/* Fourth Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="text-center mx-auto mt-[50px] md:order-2 md:mb-[160px]">
-              <h2 className="text-[#241443] text-[28px] md:text-[40px] font-semibold font-sans font-lato">
-                4. Incubation for Idea Generators:
-              </h2>
-              <p className="text-[18px] md:text-[22px] font-medium text-[#FF5C00] mt-[31px]">
-                Starting in the second year, our Incubation programs provide
-                mentorship and resources to help students develop innovative
-                ideas.
-              </p>
-            </div>
-            <div className="flex justify-center mt-[20px] md:order-1">
-              <img
-                src={sfourgrouptwo}
-                alt=""
-                className="w-full max-w-[300px] md:max-w-[500px] h-auto"
-              />
-            </div>
-          </div>
+            <button className="mt-12 bg-[#241443] text-white py-3 px-6 rounded-full hover:bg-purple-700">
+                Explore Courses &rarr;
+            </button>
         </div>
-      </section>
 
       {/* secton nine */}
 
-      <section className="whydoprojects w-full sm:h-auto mt-[80px]">
-        <div className="flex flex-col justify-center items-center text-center mt-[182px] sm:mt-[40px] px-4">
-          <h2 className="text-[#FF5C00] text-[24px] sm:text-[30px] font-semibold text-center font-poppines">
+      <section className="whydoprojects w-full sm:h-auto mt-[40px]">
+        <div className="flex flex-col justify-center items-center text-center px-4">
+         <div  className="flex items-center justify-center">
+          <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
+          <h2 className="text-[#FF5C00] text-[15px] sm:text-[30px] lg:text-[30px] font-black text-center font-poppines">
             Why do Projects
           </h2>
-          <h2 className="text-[#241443] text-[28px] sm:text-[40px] font-bold text-center font-poppines mt-4">
+         </div>
+          <h2 className="text-[#241443] text-[20px] lg:text-[40px] font-semibold text-center font-poppines mt-4">
             Doing these Projects will Gain Hands-On real
             <br className="hidden sm:block" />
             World Project Experience with{" "}
@@ -860,7 +815,7 @@ export default function Homepage() {
 
         <div className="parent flex flex-row flex-wrap gap-6 justify-evenly sm:justify-center px-4 sm:px-0">
           {/* First Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[60px] sm:mt-[20px] p-[10px] border-gray-950 shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] border-gray-950 shadow-xl rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
             <img
               src={whydoprojectone}
               alt=""
@@ -878,7 +833,7 @@ export default function Homepage() {
           </div>
 
           {/* Second Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[60px] sm:mt-[20px] p-[10px] border-gray-950 shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] border-gray-950 shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
             <img
               src={whydoprojecttwo}
               alt=""
@@ -896,7 +851,7 @@ export default function Homepage() {
           </div>
 
           {/* Third Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[60px] sm:mt-[20px] p-[10px] border-gray-950 shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] border-gray-950 shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
             <img
               src={whydoprojectthree}
               alt=""
@@ -932,9 +887,12 @@ export default function Homepage() {
 
       <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
+        <div className="flex items-center justify-center">
+        <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mb-5" />
           <h3 className="text-[#FF5C00] text-[24px] sm:text-[30px] font-black mb-4">
             Our Career Passport/License
           </h3>
+        </div>
           <h2 className="text-[#241443] text-[28px] sm:text-[36px] lg:text-[40px] font-semibold mb-8">
             Digitize your resume, unlock opportunities, and{" "}
             <br className="hidden lg:block" />
@@ -1104,9 +1062,12 @@ export default function Homepage() {
       {/* section thirteenth */}
       <section className="main w-full sm:h-auto">
         <div className="flex flex-col justify-center items-center text-center mt-[182px] sm:mt-[40px] md:mt-[60px]">
+          <div className="flex items-center justify-center">
+          <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
           <h2 className="text-[#FF5C00] text-[30px] font-semibold text-center font-poppins">
             Our Instructor/Mentors
           </h2>
+          </div>
           <h2 className="text-[#241443] text-[40px] font-bold text-center font-poppins">
             From The FrictionLearn Community Mentors
           </h2>
@@ -1208,9 +1169,12 @@ export default function Homepage() {
       <section className="bg-white mt-[100px]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl">
           <div className="text-center mb-8">
+            <div  className="flex items-center justify-center" >
+            <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
             <h1 className="text-[#FF5C00] text-[30px] font-black">
               Become an Instructor/Mentor
             </h1>
+            </div>
           </div>
 
           <div className="flex flex-col md:flex-row gap-16 items-center justify-center">
@@ -1291,8 +1255,12 @@ export default function Homepage() {
       {/* section eighteenth */}
 
       <div className="relative w-full h-auto pb-16">
-        <div className="flex flex-col justify-center text-center mt-[20px] md:mt-[80px]">
-          <h2 className="text-[#022956] text-[24px] md:text-[40px] font-semibold font-sans font-lato">
+        <div className="flex flex-col justify-center text-center mt-[20px] md:mt-[40px]">
+         <div  className="flex items-center justify-center">
+         <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
+         <h1 className="text-[#FF5C00] text-[15px] lg:text-[30px] text-center font-black">Our Testimonials</h1>
+         </div>
+          <h2 className="text-[#022956] text-[20px] lg:text-[40px] font-semibold font-sans font-lato">
             Experience Our Impact Through Their Words
           </h2>
         </div>

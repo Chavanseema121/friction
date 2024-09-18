@@ -87,14 +87,14 @@ export default function Aboutus() {
 
       <section>
         <div>
-          <div className="flex  flex-col justify-center items-center text-center mt-[42px]">
-          <div className="flex items-center justify-center mb-8">
+          <div className="flex  flex-col justify-center items-center text-center mt-[30px]">
+          <div className="flex items-center justify-center mb-4">
           <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-            <h2 className="text-[#FF5C00] text-[30px] font-black text-center font-poppines">
+            <h2 className="text-[#FF5C00] text-[18px] lg:text-[24px] font-black text-center font-poppines">
               About Us
             </h2>
           </div>
-            <h2 className="text-[#241443] lg:text-[40px] mt-[20px] px-1 sm:text-[23px] text-[22px] font-bold text-center font-poppines">
+            <h2 className="text-[#241443] lg:text-[40px] sm:text-[23px] text-[20px] font-semibold text-center font-poppines">
               Empowering Minds, Shaping <br></br> FuturesMeet the FrictionLearn
               Plan
             </h2>
@@ -149,7 +149,7 @@ export default function Aboutus() {
       
       <section className="w-full mt-[82px]  p-4 sm:p-8 lg:p-0">
       <div className="flex mb-8">
-         <img src={star} alt="star" className="w-[46px] h-[46px]" />
+         <img src={star} alt="star" className="w-[36px] h-[36px]" />
          <h1 className="text-[#FF5C00] text-[30px] lg:text-[50px] font-lato font-black text-center lg:text-left lg:ml-[55px]">
           Our Mission
         </h1>
