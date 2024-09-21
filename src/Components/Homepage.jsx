@@ -7,6 +7,8 @@ import SectionTewelth from "../Components/SectionTewelth";
 import Section from "./Section";
 import Footer from "./Footer";
 
+import incubationsector from "../assets/home/incubationsector.png"
+
 import benefitslearn from "../assets/home/benefitslearn.png";
 
 import aboutskillimg from "../assets/home/aboutskillimg.png";
@@ -888,8 +890,8 @@ export default function Homepage() {
       <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
         <div className="flex items-center justify-center">
-        <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mb-5" />
-          <h3 className="text-[#FF5C00] text-[24px] sm:text-[30px] font-black mb-4">
+        <img src={star} alt="star" className="w-[36px] h-[36px] lg:mr-[-10px]  mr-[-30px] mb-5 " />
+          <h3 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black mb-4">
             Our Career Passport/License
           </h3>
         </div>
@@ -908,7 +910,7 @@ export default function Homepage() {
             <h1 className="text-[#FF5C00] text-[20px] sm:text-[22px] font-black mb-4 font-Lato font-sans">
               Benefits of Passport/License
             </h1>
-            <p className="text-[#241443] text-[16px] sm:text-[18px] mb-8 text-Poppins font-normal">
+            <p className="text-[#241443] text-[11px] lg:text-[18px] mb-8 text-Poppins font-normal">
               FrictionLearn's Career Passport empowers students by validating
               their skills through a 4-level assessment. Upon completion,
               students receive a digital license with a QR code linking to their
@@ -916,9 +918,9 @@ export default function Homepage() {
               and enhancing visibility within the platform.
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 gap-y-4 mb-8">
               <ul className="space-y-4">
-                <li className="flex items-center text-[#241443] text-[18px] sm:text-[22px] font-medium">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -935,7 +937,7 @@ export default function Homepage() {
                   </span>
                   Verified Career Credentials
                 </li>
-                <li className="flex items-center text-[#241443] text-[18px] sm:text-[22px] font-medium">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -952,7 +954,7 @@ export default function Homepage() {
                   </span>
                   QR-Linked Resume
                 </li>
-                <li className="flex items-center text-[#241443] text-[18px] sm:text-[22px] font-medium">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -969,7 +971,7 @@ export default function Homepage() {
                   </span>
                   Level-Based Certification
                 </li>
-                <li className="flex items-center text-[#241443] text-[18px] sm:text-[22px] font-medium">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -988,7 +990,7 @@ export default function Homepage() {
                 </li>
               </ul>
               <ul className="space-y-4">
-                <li className="flex items-center text-[#241443] text-[18px] sm:text-[22px] font-medium">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1005,7 +1007,7 @@ export default function Homepage() {
                   </span>
                   Tech-Driven Advancement
                 </li>
-                <li className="flex items-center text-[#241443] text-[18px] sm:text-[22px] font-medium">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -1162,11 +1164,56 @@ export default function Homepage() {
 
       {/* section fourthinth */}
 
-      <Section />
+      {/* <Section /> */}
+
+      <div className="flex flex-col items-center justify-center px-6 py-12 md:px-12 lg:px-24">
+            {/* Header Section */}
+            <div className="text-center mb-8">
+               <div  className="flex items-center justify-center">
+               <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
+               <h2 className="text-[#FF5C00] text-[15px] lg:text-[30px] font-black font-Lato font-sans">Our Incubator Program</h2>
+               </div>
+                <h1 className=" text-[#241443] text-[20px] md:text-[40px] font-semibold mt-4 font-poppins">
+                    "Fuel Innovation, Turn Ideas Into Reality"
+                </h1>
+                <p className="text-[#241443] mt-2 text-[14px] lg:text-[20px] font-normal font-poppins">
+                    "Nurturing innovative ideas through guided incubation for success."
+                </p>
+            </div>
+            
+            {/* Main Content Section */}
+            <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
+                {/* Text Section */}
+                <div className="text-left max-w-lg lg:mr-12 mb-8 lg:mb-0">
+                    <h2 className="text-[25px] lg:text-[50px] font-semibold text-[#FF5C00] font-poppins mb-4">
+                        We Help Early Stage<br></br> Startups to Define Their Goals<br></br> & Get Daily Funding...
+                    </h2>
+                    {/* <button className="mt-4 bg-[#241443] text-white py-2 px-4 rounded-full hover:bg-purple-700 text-[14px] lg:text-[22px] font-semibold">
+                        About Incubator Program &rarr;
+                    </button> */}
+                   <div className="mt-8 text-center md:text-left">
+            <a
+              href="#"
+              className="inline-flex items-center px-6 py-3 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold rounded-full hover:bg-blue-700 transition-colors"
+            >
+              About Incubator Program
+              <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3" />
+            </a>
+          </div>
+
+
+                </div>
+                
+                {/* Image Section */}
+                <div>
+                    <img src={incubationsector} alt="Incubator Program" className="max-w-full h-auto" />
+                </div>
+            </div>
+        </div>
 
       {/* section fiftheenth */}
 
-      <section className="bg-white mt-[100px]">
+      <section className="bg-white mt-[50px]">
         <div className="py-8 px-4 mx-auto max-w-screen-xl">
           <div className="text-center mb-8">
             <div  className="flex items-center justify-center" >
@@ -1245,7 +1292,7 @@ export default function Homepage() {
                 className="inline-flex items-center px-6 py-3 bg-[#ffffff] text-blue-950 text-[18px] font-semibold rounded-full hover:bg-blue-700 transition-colors"
               >
                 Start Learning Today
-                <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3" />
+                <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3 " />
               </a>
             </div>
           </div>

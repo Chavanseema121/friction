@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Import Link from react-router-dom
+import { NavLink  } from "react-router-dom";
 import friction from "../assets/home/friction.png"; // Your logo path
 import heart from "../assets/home/heart.png"; // Your heart icon path
 import cart from "../assets/home/cart.png"; // Your cart icon path
@@ -9,6 +9,17 @@ import newsearchone from "../assets/home/newsearchone.png"; // Your search icon 
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State to toggle the mobile menu
+  const [isServicesOpen, setIsServicesOpen] = useState(false); // State for services dropdown
+
+  const toggleServicesDropdown = () => {
+    setIsServicesOpen(!isServicesOpen); // Toggle services dropdown
+  };
+
+  // Define a style for the active link
+  const activeLinkStyle = {
+    color: "#FF5C00",
+  };
+
 
   return (
     <div className="w-full h-auto mx-auto">
@@ -55,7 +66,6 @@ function Navbar() {
               {/* All Categories Dropdown */}
               <select className="pl-4 pr-4 py-2 bg-gray-100 text-[#241443] border-r border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 text-[16px] font-semibold text-Poppins rounded-l-full">
                 <option>All Categories</option>
-                {/* Add more options as needed */}
               </select>
 
               {/* Search Input */}
@@ -74,8 +84,6 @@ function Navbar() {
           </div>
 
           {/* User Actions: Signup and Icons for Mobile */}
-
-          {/* Desktop User Actions */}
           <div className="hidden md:flex items-center space-x-2 mr-[50px]">
             <button className="px-8 py-2 text-white bg-[#241443] rounded-full text-[18px] font-semibold text-Poppins hover:bg-[#3d2a71] transition-colors">
               Log In
@@ -85,9 +93,8 @@ function Navbar() {
             </button>
           </div>
         </div>
-
-        {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
-        <div className="md:hidden flex justify-end space-x-4 ">
+         {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
+         <div className="md:hidden flex justify-end space-x-4 ">
           <div className="relative">
             <img src={heart} alt="Wishlist" className="w-6 h-6" />
             <span className="absolute -top-2 -left-2 bg-[#FFD70E] text-black text-xs rounded-full px-1">
@@ -101,65 +108,113 @@ function Navbar() {
             </span>
           </div>
         </div>
+        
 
+        
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden flex flex-col items-center space-y-4 py-4">
-            <Link to="/" className="text-lg font-semibold text-[#241443] hover:underline">
-              Home
-            </Link>
-            <Link to="/courses" className="text-lg font-semibold text-[#241443] hover:underline">
-              Courses
-            </Link>
-            <Link to="/about" className="text-lg font-semibold text-[#241443] hover:underline">
-              About Us
-            </Link>
-            <Link to="/services" className="text-lg font-semibold text-[#241443] hover:underline">
-              Services
-            </Link>
-            <Link to="/contact" className="text-lg font-semibold text-[#241443] hover:underline">
-              Contact Us
-            </Link>
-          </div>
-        )}
+            <div className="md:hidden flex flex-col items-center space-y-4 py-4">
+              <NavLink to="/" className="text-lg font-semibold text-[#241443] hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                Home
+              </NavLink>
+              <NavLink to="/courses" className="text-lg font-semibold text-[#241443] hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                Courses
+              </NavLink>
+              <NavLink to="/about" className="text-lg font-semibold text-[#241443] hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                About Us
+              </NavLink>
+              <div className="relative">
+                <button
+                  onClick={toggleServicesDropdown}
+                  className="flex items-center text-lg font-semibold text-[#241443]"
+                >
+                  Services
+                  <img src={arr} alt="Dropdown arrow" className="w-[15px] h-[12px] ml-[8px] mb-2" />
+                </button>
+                {isServicesOpen && (
+                  <div className="absolute left-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg">
+                    <NavLink
+                      to="/communityandevent"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      style={({ isActive }) => (isActive ? activeLinkStyle : {})}
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Community and Event
+                    </NavLink>
+                    <NavLink
+                      to="/incubation"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      style={({ isActive }) => (isActive ? activeLinkStyle : {})}
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Incubation
+                    </NavLink>
+                  </div>
+                )}
+              </div>
+              <NavLink to="/contact" className="text-lg font-semibold text-[#241443] hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                Contact Us
+              </NavLink>
+            </div>
+          )}
 
         {/* Desktop Bottom Section: Navigation Links and Icons */}
-        <div className="hidden md:flex justify-between items-center py-2 text-purple-800">
-          {/* Navigation Links */}
-          <div className="flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px]">
-            <Link to="/" className="hover:underline">
-              Home
-            </Link>
-            <div className="flex">
-              <Link to="/courses" className="hover:underline">
+      {/* Desktop Bottom Section: Navigation Links and Icons */}
+      <div className="hidden md:flex justify-between items-center py-2 text-purple-800">
+            {/* Navigation Links */}
+            <div className="flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px]">
+              <NavLink to="/" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                Home
+              </NavLink>
+              <div className="flex">
+              <NavLink to="/courses" className="hover:underline">
                 Courses
-              </Link>
+              </NavLink>
               <img
                 src={arr}
                 alt=""
                 className="w-[15px] h-[10px] ml-[8px] mt-[14px]"
               />
             </div>
-            <Link to="/about" className="hover:underline">
-              About Us
-            </Link>
-            <div className="flex">
-              <Link to="/services" className="hover:underline">
-                Services
-              </Link>
-              <img
-                src={arr}
-                alt=""
-                className="w-[15px] h-[10px] ml-[8px] mt-[14px]"
-              />
+              <div className="relative">
+                <button
+                  onClick={toggleServicesDropdown}
+                  className="flex items-center hover:underline"
+                >
+                  Services
+                  <img src={arr} alt="Dropdown arrow" className="w-[16px] h-[12px] ml-[8px] mt-[8px]" />
+                </button>
+                {isServicesOpen && (
+                  <div className="absolute left-0 mt-2 bg-white border border-gray-200 rounded-md shadow-lg">
+                    <NavLink
+                      to="/communityandevent"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      style={({ isActive }) => (isActive ? activeLinkStyle : {})}
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Community and Event
+                    </NavLink>
+                    <NavLink
+                      to="/incubation"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      style={({ isActive }) => (isActive ? activeLinkStyle : {})}
+                      onClick={() => setIsServicesOpen(false)}
+                    >
+                      Incubation
+                    </NavLink>
+                  </div>
+                )}
+              </div>
+              <NavLink to="/about" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                About Us
+              </NavLink>
+              <NavLink to="/contact" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                Contact Us
+              </NavLink>
             </div>
-            <Link to="/contact" className="hover:underline">
-              Contact Us
-            </Link>
-          </div>
 
-          {/* Desktop Icons */}
-          <div className="flex items-center space-x-8 mr-[50px]">
+            {/* Desktop Icons */}
+            <div className="flex items-center space-x-8 mr-[50px]">
             <div className="relative">
               <img src={heart} alt="Wishlist" className="w-[31px] h-[26px]" />
               <span className="absolute -top-2 -left-2 bg-[#FFD70E] text-black text-xs rounded-full px-1">
@@ -175,6 +230,7 @@ function Navbar() {
             </div>
           </div>
         </div>
+        
       </nav>
     </div>
   );

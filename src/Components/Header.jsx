@@ -137,53 +137,59 @@ export default function Header() {
       </div>
 
       {/* Mobile Layout */}
-      <div className="block md:hidden px-6 py-10">
-        {/* Content Section */}
-        <div className="flex flex-col items-start justify-center h-full">
-          {/* Title */}
-          <h2 className="text-[#241443] text-[28px] font-semibold text-Poppins leading-tight">
-            {slides[currentSlide].title}
-          </h2>
+    {/* Mobile Layout */}
+<div className="block md:hidden px-6 py-10 bg-white">
+  {/* Content Section */}
+  <div className="flex flex-col items-start justify-center h-full">
+    {/* Title */}
+    <h2 className="text-[#241443] text-[28px] font-semibold font-Poppins leading-tight">
+      {slides[currentSlide].title}
+    </h2>
 
-          {/* Subtitle */}
-          <h3 className="text-[#241443] text-[16px] mt-4 font-medium text-Poppins">
-            {slides[currentSlide].subtitle}
-          </h3>
+    {/* Subtitle */}
+    <h3 className="text-[#241443] text-[16px] mt-4 font-medium font-Poppins">
+      {slides[currentSlide].subtitle}
+    </h3>
 
-          {/* Call to Action Button */}
-          <div className="mt-6 text-center">
-            <a
-              href="#"
-              className="inline-flex items-center px-4 py-2 bg-[#F27329] text-white text-[16px] font-semibold rounded-full hover:bg-orange-400 transition-colors"
-            >
-              Become an Instructor
-              <img src={arrowone} alt="Arrow" className="w-3 h-2 ml-3" />
-            </a>
-          </div>
+    {/* Call to Action Button */}
+    <div className="mt-6 text-center">
+      <a
+        href="#"
+        className="inline-flex items-center px-4 py-2 bg-[#F27329] text-white text-[16px] font-semibold rounded-full hover:bg-orange-400 transition-colors"
+      >
+        Become an Instructor
+        <img src={arrowone} alt="Arrow" className="w-3 h-2 ml-3" />
+      </a>
+    </div>
 
-          {/* Stats Section */}
-          <div className="flex flex-row mt-8 space-x-4">
-            <div className="text-[#241443] text-center">
-              <h4 className="text-[32px] font-medium text-Poppins">1k+</h4>
-              <p className="text-[14px] font-semibold text-Poppins">
-                Active Learners
-              </p>
-            </div>
-            <div className="text-[#241443] text-center">
-              <h4 className="text-[32px] font-medium text-Poppins">3k+</h4>
-              <p className="text-[14px] font-semibold text-Poppins">
-                Certified Students
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Image Section */}
-        <div
-          className="w-full h-[300px] bg-cover bg-center mt-4"
-          style={{ backgroundImage: `url(${slides[currentSlide].backgroundImage})` }}
-        />
+    {/* Stats Section */}
+    <div className="flex flex-row mt-8 space-x-4">
+      <div className="text-[#241443] text-center">
+        <h4 className="text-[32px] font-medium font-Poppins">1k+</h4>
+        <p className="text-[14px] font-semibold font-Poppins">
+          Active Learners
+        </p>
       </div>
+      <div className="text-[#241443] text-center">
+        <h4 className="text-[32px] font-medium font-Poppins">3k+</h4>
+        <p className="text-[14px] font-semibold font-Poppins">
+          Certified Students
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Image Section */}
+  <div
+    className="max-w-full h-[200px] bg-contain bg-center bg-no-repeat"
+    style={{
+      backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
+    }}
+  />
+</div>
+
+
+
     </div>
   );
 }

@@ -8,6 +8,14 @@ export default {
 
     
     extend: {
+
+      fontFamily: {
+        kalnia: ['Kalnia', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        koh: ['Koh Santepheap', 'sans-serif'],
+        albert: ['Albert Sans', 'sans-serif'], // Add this line
+      },
+     
       keyframes: {
         moveline: {
           '0%': { height: '0' },
