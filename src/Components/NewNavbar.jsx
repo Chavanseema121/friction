@@ -64,14 +64,14 @@ function Navbar() {
           <div className="hidden md:flex items-center">
             <div className="relative w-full mx-auto flex rounded-full border border-gray-300 focus-within:ring-1 focus-within:ring-black">
               {/* All Categories Dropdown */}
-              <select className="pl-4 pr-4 py-2 bg-gray-100 text-[#241443] border-r border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 text-[16px] font-semibold text-Poppins rounded-l-full">
+              <select className="pl-4 pr-4 py-2 bg-gray-100 text-[#241443] border-r border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 lg:text-[16px] font-semibold text-Poppins rounded-l-full">
                 <option>All Categories</option>
               </select>
 
               {/* Search Input */}
               <input
                 type="text"
-                className="flex-grow pl-20 pr-20 py-2 border-none focus:outline-none focus:ring-0 text-[17px] font-semibold text-Poppins text-[#241443] placeholder-gray-400 rounded-full"
+                className="flex-grow pl-2 pr-20 py-2 border-none focus:outline-none focus:ring-0 text-[17px] font-semibold text-Poppins text-[#241443] placeholder-gray-400 rounded-full"
                 placeholder="Find your courses, clubs, events etc...."
               />
 
@@ -162,7 +162,7 @@ function Navbar() {
       {/* Desktop Bottom Section: Navigation Links and Icons */}
       <div className="hidden md:flex justify-between items-center py-2 text-purple-800">
             {/* Navigation Links */}
-            <div className="flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px]">
+            <div className="flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px] lg:ml-[350px]">
               <NavLink to="/" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
                 Home
               </NavLink>
@@ -176,6 +176,9 @@ function Navbar() {
                 className="w-[15px] h-[10px] ml-[8px] mt-[14px]"
               />
             </div>
+            <NavLink to="/about" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
+                About Us
+              </NavLink>
               <div className="relative">
                 <button
                   onClick={toggleServicesDropdown}
@@ -205,9 +208,7 @@ function Navbar() {
                   </div>
                 )}
               </div>
-              <NavLink to="/about" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
-                About Us
-              </NavLink>
+         
               <NavLink to="/contact" className="hover:underline" style={({ isActive }) => (isActive ? activeLinkStyle : {})}>
                 Contact Us
               </NavLink>

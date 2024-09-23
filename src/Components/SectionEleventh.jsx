@@ -7,17 +7,17 @@ import star from "../assets/home/star.png"
 
 function CommunitySection() {
   return (
-    <div className="bg-white p-4 sm:p-6 lg:p-8">
+    <div className="bg-white p-4 lg:p-8">
   <div className="flex items-center justify-center">
   <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mb-5" />
-  <h1 className="text-[24px] sm:text-[28px] lg:text-[30px] font-black text-center mb-4 sm:mb-6 font-Lato font-sans text-[#FF5C00]">
+  <h1 className="text-[18px] lg:text-[30px] font-black text-center mb-2 sm:mb-6 font-Lato font-sans text-[#FF5C00]">
     Our Community
   </h1>
   </div>
-  <p className="text-[22px] sm:text-[28px] lg:text-[34px] text-center font-semibold text-Poppins mb-3 sm:mb-4 lg:mb-6 text-[#241443]">
+  <p className="text-[20px] sm:text-[28px] lg:text-[40px] text-center font-semibold text-Poppins mb-2 sm:mb-4 lg:mb-6 text-[#241443]">
     Join India's Smartest Student Community
   </p>
-  <p className="text-center mb-6 sm:mb-8 text-[16px] sm:text-[18px] lg:text-[20px] font-normal text-Poppins text-[#6C6A6F]">
+  <p className="text-center mb-6 sm:mb-8 text-[14px] sm:text-[18px] lg:text-[20px] font-Pegular text-Poppins text-[#6C6A6F]">
     Join niche clubs, connect with industry experts, explore opportunities, network with ambitious peers, secure internships, and become part of India’s largest learning community—all for free! Start your journey with FrictionLearn today!
   </p>
 

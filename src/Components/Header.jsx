@@ -94,9 +94,9 @@ export default function Header() {
           <div className="mt-6 md:mt-8 text-center md:text-left">
             <a
               href="#"
-              className="inline-flex items-center px-4 py-2 md:px-6 md:py-3 bg-[#F27329] text-white text-[16px] md:text-[18px] font-semibold rounded-full hover:bg-orange-400 transition-colors"
+              className="inline-flex items-center px-3 py-2 md:px-4 md:py-2 bg-[#FF5C00] text-white text-[16px] md:text-[18px] font-semibold rounded-full"
             >
-              Become an Instructor
+             Explore All Courses
               <img src={arrowone} alt="Arrow" className="w-3 h-2 md:w-4 md:h-3 ml-3" />
             </a>
           </div>
@@ -138,16 +138,16 @@ export default function Header() {
 
       {/* Mobile Layout */}
     {/* Mobile Layout */}
-<div className="block md:hidden px-6 py-10 bg-white">
+    <div className="block md:hidden px-2 py-8 bg-white">
   {/* Content Section */}
   <div className="flex flex-col items-start justify-center h-full">
     {/* Title */}
-    <h2 className="text-[#241443] text-[28px] font-semibold font-Poppins leading-tight">
+    <h2 className="text-[#241443] text-[25px] font-semibold font-Poppins leading-tight">
       {slides[currentSlide].title}
     </h2>
 
     {/* Subtitle */}
-    <h3 className="text-[#241443] text-[16px] mt-4 font-medium font-Poppins">
+    <h3 className="text-[#241443] text-[12px] mt-4 font-medium font-Poppins">
       {slides[currentSlide].subtitle}
     </h3>
 
@@ -155,7 +155,7 @@ export default function Header() {
     <div className="mt-6 text-center">
       <a
         href="#"
-        className="inline-flex items-center px-4 py-2 bg-[#F27329] text-white text-[16px] font-semibold rounded-full hover:bg-orange-400 transition-colors"
+        className="inline-flex items-center px-4 py-2 bg-[#FF5C00] text-white text-[12px] font-semibold rounded-full hover:bg-orange-400 transition-colors font-poppins"
       >
         Become an Instructor
         <img src={arrowone} alt="Arrow" className="w-3 h-2 ml-3" />
@@ -165,14 +165,14 @@ export default function Header() {
     {/* Stats Section */}
     <div className="flex flex-row mt-8 space-x-4">
       <div className="text-[#241443] text-center">
-        <h4 className="text-[32px] font-medium font-Poppins">1k+</h4>
-        <p className="text-[14px] font-semibold font-Poppins">
+        <h4 className="text-[40px] font-medium font-Poppins">1k+</h4>
+        <p className="text-[13px] font-semibold font-Poppins">
           Active Learners
         </p>
       </div>
       <div className="text-[#241443] text-center">
-        <h4 className="text-[32px] font-medium font-Poppins">3k+</h4>
-        <p className="text-[14px] font-semibold font-Poppins">
+        <h4 className="text-[40px] font-medium font-Poppins">3k+</h4>
+        <p className="text-[13px] font-semibold font-Poppins">
           Certified Students
         </p>
       </div>
@@ -181,7 +181,7 @@ export default function Header() {
 
   {/* Image Section */}
   <div
-    className="max-w-full h-[200px] bg-contain bg-center bg-no-repeat"
+    className="w-full h-[300px] bg-cover bg-center bg-no-repeat"
     style={{
       backgroundImage: `url(${slides[currentSlide].backgroundImage})`,
     }}
@@ -189,6 +189,8 @@ export default function Header() {
 </div>
 
 
+ {/* Horizontal line added for mobile screens */}
+ <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
     </div>
   );

@@ -292,16 +292,16 @@ export default function Homepage() {
 <section className="bg-white dark:bg-gray-900">
   <div className="py-4 px-4 mx-auto max-w-screen-lg lg:py-10">
     <div className="mb-8">
-      <div className="flex items-center justify-center mb-8">
-        <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-        <h2 className="text-[#FF5C00] text-[20px] sm:text-[20px] md:text-[30px] lg:text-[30px] font-black font-sans text-center">
+      <div className="flex items-center justify-center mb-4">
+        <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]" />
+        <h2 className="text-[#FF5C00] text-[20px] sm:text-[20px] md:text-[30px] lg:text-[30px] font-black  font-Lato font-sans text-center">
           What We Offer
         </h2>
       </div>
       <p
-        className="text-[24px] sm:text-[20px] md:text-[30px] lg:text-[35px] text-[#241443] font-semibold font-poppins text-center mt-[20px] sm:mt-[30px] lg:mt-[40px] px-2 sm:px-10"
+        className="text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] text-[#241443] font-semibold font-poppins text-center "
       >
-        Unlock Your Potential: Growth, Creativity, <br /> and Collaboration at
+        Unlock Your Potential: Growth, Creativity<br></br> and Collaboration at
         FrictionLearn
       </p>
       <img
@@ -310,14 +310,18 @@ export default function Homepage() {
         className="w-full mt-[40px] lg:mt-[50px]"
       />
     </div>
+
+    {/* Horizontal line added for mobile screens */}
+    <hr className="block sm:hidden border-t border-gray-300 mt-4" />
   </div>
 </section>
+
 
       {/* section two */}
 
       <div className="w-full h-auto lg:h-[293px]">
   <div className="flex flex-col justify-center text-center">
-    <h2 className="text-[#FF5C00] text-[24px] sm:text-[20px] md:text-[35px] lg:text-[40px] font-medium sm:font-semibold">
+    <h2 className="text-[#FF5C00] text-[20px] sm:text-[20px] md:text-[35px] lg:text-[40px] font-Mixed font-poppins">
       Trusted By Over<span className="text-[#241443]"> 13400+ </span>
       Students & Organizations
       <br /> Recommended Around the World
@@ -350,27 +354,27 @@ export default function Homepage() {
 
 <div className="flex flex-col justify-center items-center text-center mt-[40px] md:mt-[50px] lg:mt-[60px]">
    <div className="flex items-center justify-center mb-6">
-   <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-  <h2 className="text-[#FF5C00] text-[20px] sm:text-[30px] lg:text-[30px] font-black text-center font-lato">
+   <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]" />
+  <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-lato font-sans">
     About Us
   </h2>
   </div>
 
-  <h2 className="text-[#241443] text-[20px] sm:text-[20px] sm:font-semibold md:text-[40px] font-bold text-center font-poppins">
+  <h2 className="text-[#241443] text-[20px] sm:text-[20px] lg:font-semibold lg:text-[40px] font-semibold text-center font-poppins">
     Empowering Minds, Shaping  Futures:
-    <br></br> Meet the FrictionLearn <br></br>Plan
+    <br></br> Meet the FrictionLearn Plan
   </h2>
 </div>
 
 <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[40px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7">
   <div className="childleft w-full md:w-[90%] lg:w-[670px]">
-    <h2 className="text-[#241443] text-[28px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-black text-start font-lato leading-[45px] md:leading-[75px] lg:leading-[90px]">
+    <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-black text-start font-lato leading-[45px] md:leading-[75px] lg:leading-[90px]">
       About <br></br>FrictionLearn
     </h2>
-    <h6 className="text-[#000000] text-[14px] sm:text-[14px] md:text-[21px] font-bold font-poppins leading-[24px] md:leading-[32px]">
+    <h6 className="text-[#000000] text-[14px] sm:text-[14px] lg:text-[21px] font-medium font-poppins leading-[24px] md:leading-[32px]">
       Driven by the mission to make quality education accessible to all
     </h6>
-    <p className="text-[#241443] text-[14px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-medium font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
+    <p className="text-[#241443] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-Regular font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
       FrictionLearn is a gamified e-learning platform designed to bridge the gap
       between learners and industry experts. Through dynamic, personalized
       tasks, we provide an engaging and interactive learning journey aimed at
@@ -384,13 +388,13 @@ export default function Homepage() {
     <img
       src={aboutskillimg}
       alt="About Skill"
-      className="w-[250px] sm:w-[350px] md:w-[450px] lg:w-[606px] h-auto"
+      className="w-[350px] sm:w-[350px] md:w-[450px] lg:w-[606px] h-auto"
     />
   </div>
 </div>
 
-<div className="flex justify-center lg:justify-start mt-[20px] md:mt-[40px] lg:mt-[40px] ml-[30px] md:ml-[30px] lg:ml-[30px]">
-  <button className="w-[160px] sm:w-[180px] md:w-[214px] h-[45px] sm:h-[50px] md:h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-medium font-poppins flex items-center justify-center">
+<div className="flex justify-center lg:justify-start mt-[20px] md:mt-[40px] lg:mt-[-40px] ml-[30px] lg:ml-[200px] ">
+  <button className="w-[166px]  lg:w-[214px] h-[49px]  md:h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-semibold font-poppins flex items-center justify-center">
     <span>Learn More</span>
     <img
       src={arrowone}
@@ -398,24 +402,27 @@ export default function Homepage() {
       className="w-[18px] sm:w-[20px] md:w-[26px] h-[12px] sm:h-[14px] md:h-[18px] ml-2"
     />
   </button>
+
 </div>
+
+<hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
 
       {/* section three */}
-      <section className="w-full h-auto mt-[80px] sm:mt-[40px] lg:mt-[40px]">
+      <section className="w-full h-auto mt-[40px] sm:mt-[40px] lg:mt-[40px]">
   <div className="heading flex justify-center items-center text-center">
     <div className="flex items-center justify-center mb-8">
-      <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-      <h2 className="text-[#FF5C00] text-[20px] lg:text-[30px] font-black font-poppins">
+      <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]" />
+      <h2 className="text-[#FF5C00] text-[20px] lg:text-[30px] font-black font-Lato font-sans">
         What’s Our Main Goal
       </h2>
     </div>
   </div>
 
-  <div className="parent flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-7 mt-[40px] md:mt-[65px] mx-[20px] md:mx-[50px]">
+  <div className="parent flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-7 mt-[10px] lg:mt-[65px] mx-[20px] lg:mx-[50px]">
     {/* Left Side */}
-    <div className="childleft w-full lg:w-[700px] mt-[40px] lg:mt-0 order-2 lg:order-1">
-      <div className="grid grid-cols-2 gap-4 md:gap-8">
+    <div className="childleft w-full lg:w-[700px] mt-[10px] lg:mt-0 order-2 lg:order-1">
+      <div className="grid grid-cols-2 gap-4 lg:gap-8">
         <div className="one bg-[#FFCC1F] w-full h-[150px] md:h-[200px] rounded-3xl flex items-center justify-center">
           <h2 className="text-[#022956] text-[20px] md:text-[30px] font-black text-center font-poppins">
             8+ Years of Experience
@@ -458,11 +465,11 @@ export default function Homepage() {
 
     {/* Right Side */}
     <div className="childright w-full lg:w-[771px] order-2 lg:order-2">
-      <h2 className="text-[#241443] text-[24px] md:text-[30px] lg:text-[40px] font-bold text-start font-poppins">
+      <h2 className="text-[#241443] text-[20px] md:text-[30px] lg:text-[40px] font-bold text-start font-poppins lg:mt-0 mt-[20px]">
         Take the Next Step Towards Your Personal And Professional Goals
         With FrictionLearn
       </h2>
-      <p className="text-[#241443] text-[14px] md:text-[18px] lg:text-[20px] font-medium font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
+      <p className="text-[#241443] opacity-[60%] text-[10px] md:text-[18px] lg:text-[20px] font-medium font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
         Take the next step towards achieving your Personal & Professional
         aspirations with FrictionLearn. In a world that demands constant
         growth & adaptability, FrictionLearn is your trusted partner on
@@ -474,13 +481,13 @@ export default function Homepage() {
           <img
             src={mindimgone}
             alt=""
-            className="w-[80px] md:w-[123px] h-[80px] md:h-[126px]"
+            className="w-[73px] md:w-[125px] h-[73px] md:h-[126px]  mt-[10px]"
           />
           <div className="subchild text-start ml-4 md:ml-[20px]">
-            <h2 className="text-[#FF5C00] text-[18px] md:text-[25px] lg:text-[30px] font-bold font-poppins">
+            <h2 className="text-[#FF5C00] text-[15px] md:text-[25px] lg:text-[30px] font-semibold font-poppins mb-2">
               Learn From Experts
             </h2>
-            <p className="text-[#241443] text-[14px] md:text-[15px] font-medium font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[10px]">
+            <p className="text-[#241443] opacity-[60%] text-[10px] lg:text-[15px] font-medium font-poppins mt-[5px]">
               Learn directly from industry experts, gaining valuable
               insights, hands-on experience, and practical knowledge.
             </p>
@@ -492,13 +499,13 @@ export default function Homepage() {
           <img
             src={mindimgtwo}
             alt=""
-            className="w-[80px] md:w-[123px] h-[80px] md:h-[126px]"
+            className="w-[73px] md:w-[125px] h-[73px] md:h-[126px] mt-[10px]"
           />
           <div className="subchild text-start ml-4 md:ml-[20px]">
-            <h2 className="text-[#FF5C00] text-[18px] md:text-[25px] lg:text-[30px] font-bold font-poppins">
+            <h2 className="text-[#FF5C00] text-[15px] md:text-[25px] lg:text-[30px] font-semibold font-poppins">
               Video Tutorial
             </h2>
-            <p className="text-[#241443] text-[14px] md:text-[15px] font-medium font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[10px]">
+            <p className="text-[#241443] opacity-[60%] text-[10px] lg:text-[15px] font-medium font-poppins mt-[5px]">
               Comprehensive video tutorials designed to simplify complex
               topics, making learning engaging and accessible anywhere.
             </p>
@@ -507,6 +514,7 @@ export default function Homepage() {
       </div>
     </div>
   </div>
+  <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 </section>
 
 
@@ -548,7 +556,7 @@ export default function Homepage() {
         </div>
       </div> */}
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 sm:px-6 md:px-10 mt-10 md:mt-20">
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 sm:px-6 md:px-10 mt-10 lg:mt-20">
   {/* Left Side - Content */}
   <div className="m-auto max-w-screen-lg py-8 md:py-16">
     <h2 className="text-[24px] sm:text-[28px] md:text-[40px] font-black text-[#FF5C00] mb-4">
@@ -585,6 +593,7 @@ export default function Homepage() {
       ))}
     </div>
   </div>
+  <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 </div>
 
 
@@ -654,7 +663,7 @@ export default function Homepage() {
       >
         <div
           className={`w-full h-auto shadow-lg flex flex-col items-center cursor-pointer ${
-            index === hoveredImageIndex ? "border-2 border-orange-500" : ""
+            index === hoveredImageIndex ? "border-2 border-gray-500" : ""
           } ${index > 0 ? "mt-[20px]" : ""}`}
           onMouseEnter={() => setHoveredImageIndex(index)}
         >
@@ -685,6 +694,7 @@ export default function Homepage() {
       </div>
     ))}
   </div>
+  <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 </div>
 
 
@@ -740,6 +750,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
+        <hr className="block sm:hidden border-t border-gray-300 mt-4" />
       </section>
 
       {/* section eight */}
@@ -792,7 +803,9 @@ export default function Homepage() {
             <button className="mt-12 bg-[#241443] text-white py-3 px-6 rounded-full hover:bg-purple-700">
                 Explore Courses &rarr;
             </button>
+            
         </div>
+        <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
       {/* secton nine */}
 
@@ -883,19 +896,20 @@ export default function Homepage() {
             </a>
           </div>
         </div>
+        <hr className="block sm:hidden border-t border-gray-300 mt-4" />
       </section>
 
       {/* section ten */}
 
-      <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
         <div className="flex items-center justify-center">
-        <img src={star} alt="star" className="w-[36px] h-[36px] lg:mr-[-10px]  mr-[-30px] mb-5 " />
-          <h3 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black mb-4">
+        <img src={star} alt="star" className="w-[36px] h-[36px] lg:mr-[-10px]  mr-[-10px] mb-5 " />
+          <h3 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black font-Lato font-sans mb-4">
             Our Career Passport/License
           </h3>
         </div>
-          <h2 className="text-[#241443] text-[28px] sm:text-[36px] lg:text-[40px] font-semibold mb-8">
+          <h2 className="text-[#241443] text-[20px] sm:text-[36px] lg:text-[40px] font-semibold font-poppins mb-8">
             Digitize your resume, unlock opportunities, and{" "}
             <br className="hidden lg:block" />
             streamline placements with our tech-driven{" "}
@@ -907,10 +921,10 @@ export default function Homepage() {
         <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
           {/* Left Side Content */}
           <div className="lg:pr-8 lg:ml-[40px]">
-            <h1 className="text-[#FF5C00] text-[20px] sm:text-[22px] font-black mb-4 font-Lato font-sans">
+            <h1 className="text-[#FF5C00] text-[23px] lg:text-[22px] font-black mb-4 font-Lato font-sans">
               Benefits of Passport/License
             </h1>
-            <p className="text-[#241443] text-[11px] lg:text-[18px] mb-8 text-Poppins font-normal">
+            <p className="text-[#000000] text-[11px] lg:text-[16px] mb-8 font-Poppins font-Regular">
               FrictionLearn's Career Passport empowers students by validating
               their skills through a 4-level assessment. Upon completion,
               students receive a digital license with a QR code linking to their
@@ -918,13 +932,13 @@ export default function Homepage() {
               and enhancing visibility within the platform.
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-2 gap-y-4 mb-8">
-              <ul className="space-y-4">
-                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
+            <div className="grid grid-cols-2 lg:grid-cols-2 lg:gap-y-4 gap-y-2 mb-8">
+              <ul className="lg:space-y-4 space-y-2">
+                <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium font-poppins">
+                  <span className="lg:w-4 lg:h-4 w-3 h-3 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-1 lg:mt-[-30px] mt-[-20px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
+                      className="w-2 h-2 lg:w-3 lg:h-3"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -935,13 +949,13 @@ export default function Homepage() {
                       />
                     </svg>
                   </span>
-                  Verified Career Credentials
+                  "Verified Career Credentials"
                 </li>
                 <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
+                  <span className="lg:w-4 lg:h-4 w-3 h-3 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-1 mt-[-20px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
+                      className="w-2 h-2 lg:w-3 lg:h-3"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -952,13 +966,13 @@ export default function Homepage() {
                       />
                     </svg>
                   </span>
-                  QR-Linked Resume
+                  "QR-Linked Resume"
                 </li>
                 <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
+                  <span className="lg:w-4 lg:h-4 w-3 h-3  flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-1  lg:mt-[-30px] mt-[-20px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
+                      className="w-2 h-2 lg:w-3 lg:h-3"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -969,13 +983,13 @@ export default function Homepage() {
                       />
                     </svg>
                   </span>
-                  Level-Based Certification
+                  "Level-Based Certification"
                 </li>
                 <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
+                  <span className="lg:w-4 lg:h-4 w-3 h-3  flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-1 lg:mt-[-30px] mt-[-20px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
+                      className="w-2 h-2 lg:w-3 lg:h-3"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -986,15 +1000,15 @@ export default function Homepage() {
                       />
                     </svg>
                   </span>
-                  Streamlined Job Placement
+                  "Streamlined Job Placement"
                 </li>
               </ul>
               <ul className="space-y-4">
                 <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
+                  <span className="lg:w-4 lg:h-4 w-3 h-3  flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-1 lg:mt-[-30px] mt-[-20px]">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
+                      className="w-2 h-2 lg:w-3 lg:h-3"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -1005,13 +1019,13 @@ export default function Homepage() {
                       />
                     </svg>
                   </span>
-                  Tech-Driven Advancement
+                  "Tech-Driven Advancement"
                 </li>
                 <li className="flex items-center text-[#241443] text-[11px] lg:text-[22px] font-medium">
-                  <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-3">
+                  <span className="lg:w-4 lg:h-4 w-3 h-3  flex items-center justify-center rounded-full bg-[#FF5C00] text-white mr-1">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      className="w-4 h-4"
+                      className="w-2 h-2 lg:w-3 lg:h-3"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                     >
@@ -1022,7 +1036,7 @@ export default function Homepage() {
                       />
                     </svg>
                   </span>
-                  Job-Ready Access
+                  "Job-Ready Access"
                 </li>
               </ul>
             </div>
@@ -1038,20 +1052,22 @@ export default function Homepage() {
           </div>
 
           {/* CTA Button */}
-          <div className="text-center lg:text-left mt-8 lg:mt-0 lg:pl-8">
-            <p className="text-[#ff5c00] text-[13px] font-medium mb-2">
+          <div className="text-center lg:text-left mt-8 lg:mt-0 lg:pl-2">
+            <p className="text-[#ff5c00] text-[13px] font-medium mb-2 lg:ml-[30px]">
               Apply for Passport/License
             </p>
             <a
               href="#"
-              className="inline-flex items-center bg-[#241443] text-white text-[16px] sm:text-[18px] px-6 py-3 rounded-full shadow-lg hover:bg-[#241443] transition font-semibold"
+              className="inline-flex items-center lg:w-[262px] lg:h-[62px] bg-[#241443] text-white text-[11px] lg:text-[20px] px-4 py-2 rounded-full shadow-lg hover:bg-[#241443] transition font-semibold font-poppins"
             >
               Get Your License
               <img src={arrowone} alt="" className="ml-2"></img>
             </a>
           </div>
         </div>
+        
       </div>
+      <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
       {/* section eleventh */}
 
@@ -1062,105 +1078,108 @@ export default function Homepage() {
       <SectionTewelth />
 
       {/* section thirteenth */}
-      <section className="main w-full sm:h-auto">
-        <div className="flex flex-col justify-center items-center text-center mt-[182px] sm:mt-[40px] md:mt-[60px]">
-          <div className="flex items-center justify-center">
-          <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-          <h2 className="text-[#FF5C00] text-[30px] font-semibold text-center font-poppins">
-            Our Instructor/Mentors
-          </h2>
-          </div>
-          <h2 className="text-[#241443] text-[40px] font-bold text-center font-poppins">
-            From The FrictionLearn Community Mentors
-          </h2>
-          <p className="text-[#24144399] text-[20px] font-medium font-poppins leading-[32px] w-[869px] sm:w-full sm:px-4 md:w-[80%] md:px-8 text-center mt-[20px]">
-            Expert mentors guiding you with personalized insights, real-world
-            experience, and industry connections.
-          </p>
-        </div>
+      <section className="main w-full lg:h-auto">
+  <div className="flex flex-col justify-center items-center text-center mt-[40px] lg:mt-[40px] md:mt-[40px]">
+    <div className="flex items-center justify-center">
+      <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mt-[-20px]" />
+      <h2 className="text-[#FF5C00] lg:text-[30px] text-[18px] font-black text-center font-poppins mb-4">
+        Our Instructor/Mentors
+      </h2>
+    </div>
+    <h2 className="text-[#241443] lg:text-[40px] text-[20px] font-semibold text-center font-poppins">
+      From The FrictionLearn Community Mentors
+    </h2>
+    <p className="text-[#24144399] lg:text-[20px] text-[11px] font-Regular font-poppins  sm:w-full sm:px-4 md:w-[80%] md:px-8 text-center mt-[20px]">
+      Expert mentors guiding you with personalized insights, real-world
+      experience, and industry connections.
+    </p>
+  </div>
 
-        <div className="parent flex flex-col sm:flex-row sm:flex-wrap sm:justify-center md:justify-evenly mt-[40px]">
-          {/* Mentor Card 1 */}
-          <div className="one flex flex-col w-[389px] h-[527px] mt-[40px] bg-[#F4F4F4] border-gray-950 shadow-md  rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%]">
-            <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-              <img
-                src={elevenone}
-                alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-              />
-            </div>
-            <div className="subchild w-[428px] text-center mt-[50px] mx-auto sm:w-full sm:px-4">
-              <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppins">
-                Johnson
-              </h2>
-              <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppins">
-                Business Advisor
-              </h2>
-              <p className="text-[#6B7083] text-[12px] font-medium font-poppins leading-[32px] text-center mt-[10px]">
-                Guiding entrepreneurs with strategic insights
-                <br />
-                and practical business solutions.
-              </p>
-            </div>
-          </div>
+  <div className="parent flex flex-col lg:flex-row lg:flex-wrap lg:justify-center md:justify-evenly lg:mt-[40px] mt-[20px]">
+    {/* Mentor Card 1 */}
+    <div className="one lg:flex flex-col lg:w-[389px] lg:h-[527px] w-[345px] h-[500px] mt-[30px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg  lg:max-w-[90%] sm:mx-auto md:w-[30%] first:block visible mx-auto">
+      <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
+        <img
+          src={elevenone}
+          alt="Mentor"
+          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+        />
+      </div>
+      <div className="subchild  text-center lg:mt-[20px] mt-[10px]  sm:w-full lg:px-4">
+        <h2 className="text-[#241443] lg:text-[35px] text-[20px] font-bold text-center font-Lato font-sans">
+          Johnson
+        </h2>
+        <h2 className="text-[#FF5C00] lg:text-[16px] text-[11px] font-Regular text-center font-poppins">
+          Business Advisor
+        </h2>
+        <p className="text-[#6B7083] lg:text-[14px] text-[10px] font-Regular font-Lato font-sans leading-[32px] text-center mt-[10px]">
+          Guiding entrepreneurs with strategic insights
+          <br />
+          and practical business solutions.
+        </p>
+      </div>
+    </div>
 
-          {/* Mentor Card 2 */}
-          <div className="one flex flex-col w-[389px] h-[527px] mt-[40px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%]">
-            <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-              <img
-                src={eleventwo}
-                alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-              />
-            </div>
-            <div className="subchild w-[428px] text-center mt-[50px] mx-auto sm:w-full sm:px-4">
-              <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppins">
-                Rekha
-              </h2>
-              <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppins">
-                Web Designer
-              </h2>
-              <p className="text-[#6B7083] text-[12px] font-medium font-poppins leading-[32px] text-center mt-[10px]">
-                Crafting visually appealing and user-friendly
-                <br />
-                websites for impactful online presence.
-              </p>
-            </div>
-          </div>
+    {/* Mentor Card 2 */}
+    <div className="one lg:flex flex-col lg:w-[389px] lg:h-[527px] w-[345px] h-[467px] mt-[40px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%] hidden  mx-auto">
+      <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
+        <img
+          src={eleventwo}
+          alt="Mentor"
+          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+        />
+      </div>
+      <div className="subchild w-[428px] text-center lg:mt-[20px] mt-[10px] mx-auto sm:w-full sm:px-4">
+        <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppins">
+          Rekha
+        </h2>
+        <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppins">
+          Web Designer
+        </h2>
+        <p className="text-[#6B7083] text-[12px] font-medium font-poppins leading-[32px] text-center mt-[10px]">
+          Crafting visually appealing and user-friendly
+          <br />
+          websites for impactful online presence.
+        </p>
+      </div>
+    </div>
 
-          {/* Mentor Card 3 */}
-          <div className="one flex flex-col w-[389px] h-[527px] mt-[40px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%]">
-            <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
-              <img
-                src={eleventhree}
-                alt="Mentor"
-                className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
-              />
-            </div>
-            <div className="subchild w-[428px] text-center mt-[50px] mx-auto sm:w-full sm:px-4">
-              <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppins">
-                Sara Singh
-              </h2>
-              <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppins">
-                Business Advisor
-              </h2>
-              <p className="text-[#6B7083] text-[12px] font-medium font-poppins leading-[32px] text-center mt-[10px]">
-                Transforming data into actionable insights
-                <br />
-                to drive business decisions.
-              </p>
-            </div>
-          </div>
-        </div>
+    {/* Mentor Card 3 */}
+    <div className="one lg:flex flex-col lg:w-[389px] lg:h-[527px] w-[345px] h-[467px] mt-[40px] bg-[#F4F4F4] border-gray-950 shadow-md rounded-lg sm:w-full sm:max-w-[90%] sm:mx-auto md:w-[30%] hidden  mx-auto ">
+      <div className="relative w-[283px] mx-auto mt-[61px] h-[282px] transform rotate-90 overflow-hidden rounded-[10%]">
+        <img
+          src={eleventhree}
+          alt="Mentor"
+          className="w-full h-full object-cover transform -rotate-90 rounded-[10%]"
+        />
+      </div>
+      <div className="subchild w-[428px] text-center lg:mt-[20px] mt-[10px] mx-auto sm:w-full sm:px-4">
+        <h2 className="text-[#241443] text-[35px] font-bold text-center font-poppins">
+          Sara Singh
+        </h2>
+        <h2 className="text-[#FF5C00] text-[18px] font-bold text-center font-poppins">
+          Business Advisor
+        </h2>
+        <p className="text-[#6B7083] text-[12px] font-medium font-poppins leading-[32px] text-center mt-[10px]">
+          Transforming data into actionable insights
+          <br />
+          to drive business decisions.
+        </p>
+      </div>
+    </div>
+  </div>
+  
 
-        {/* Button */}
-        <div className="flex flex-row justify-center mt-[73px] sm:mt-[40px]">
-          <button className="w-[240px] h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[18px] font-medium font-poppins flex flex-row justify-center items-center">
-            <span>Explore All</span>
-            <img src={arrowone} alt="" className="w-[26px] h-[18px] ml-2" />
-          </button>
-        </div>
-      </section>
+  {/* Button */}
+  <div className="flex flex-row justify-center mt-[73px] sm:mt-[40px]">
+    <button className="lg:w-[240px] lg:h-[62px] w-[160px] h-[42px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] lg:text-[20px] font-semibold font-poppins flex flex-row justify-center items-center">
+      <span>Explore All</span>
+      <img src={arrowone} alt="" className="w-[26px] h-[18px] ml-2" />
+    </button>
+  </div>
+</section>
+<hr className="block sm:hidden border-t border-gray-300 mt-4" />
+
 
       {/* section fourthinth */}
 
@@ -1171,12 +1190,12 @@ export default function Homepage() {
             <div className="text-center mb-8">
                <div  className="flex items-center justify-center">
                <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-               <h2 className="text-[#FF5C00] text-[15px] lg:text-[30px] font-black font-Lato font-sans">Our Incubator Program</h2>
+               <h2 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black font-Lato font-sans">Our Incubator Program</h2>
                </div>
-                <h1 className=" text-[#241443] text-[20px] md:text-[40px] font-semibold mt-4 font-poppins">
+                <h1 className=" text-[#241443] text-[20px] lg:text-[40px] font-semibold mt-4 font-poppins">
                     "Fuel Innovation, Turn Ideas Into Reality"
                 </h1>
-                <p className="text-[#241443] mt-2 text-[14px] lg:text-[20px] font-normal font-poppins">
+                <p className="text-[#241443] mt-2 text-[14px] lg:text-[20px] font-Regular font-poppins">
                     "Nurturing innovative ideas through guided incubation for success."
                 </p>
             </div>
@@ -1191,15 +1210,7 @@ export default function Homepage() {
                     {/* <button className="mt-4 bg-[#241443] text-white py-2 px-4 rounded-full hover:bg-purple-700 text-[14px] lg:text-[22px] font-semibold">
                         About Incubator Program &rarr;
                     </button> */}
-                   <div className="mt-8 text-center md:text-left">
-            <a
-              href="#"
-              className="inline-flex items-center px-6 py-3 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold rounded-full hover:bg-blue-700 transition-colors"
-            >
-              About Incubator Program
-              <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3" />
-            </a>
-          </div>
+                  
 
 
                 </div>
@@ -1209,61 +1220,21 @@ export default function Homepage() {
                     <img src={incubationsector} alt="Incubator Program" className="max-w-full h-auto" />
                 </div>
             </div>
-        </div>
-
-      {/* section fiftheenth */}
-
-      <section className="bg-white mt-[50px]">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl">
-          <div className="text-center mb-8">
-            <div  className="flex items-center justify-center" >
-            <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-            <h1 className="text-[#FF5C00] text-[30px] font-black">
-              Become an Instructor/Mentor
-            </h1>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-16 items-center justify-center">
-            {/* Left Content */}
-            <div className="flex-1 text-center md:text-left">
-              <h2 className="text-[#241443] text-[30px] sm:text-[35px] md:text-[40px] font-semibold mb-2">
-                Let’s Join Us & Spread Your Knowledge
-              </h2>
-              <p className="text-[20px] sm:text-[22px] font-medium text-[#FF5C00] mb-4">
-                Welcome to FrictionLearn’s Mentor Program!
-              </p>
-              <p className="text-[16px] sm:text-[18px] md:text-[20px] font-normal text-Poppins text-[#6B7083]">
-                Empower the next generation by sharing your expertise. Guide
-                learners through personalized insights and real-world
-                experiences. Expand your network by connecting with ambitious
-                students and professionals. Join us in shaping careers and
-                making a meaningful impact on future talent.
-              </p>
-            </div>
-
-            {/* Right Image */}
-            <div className="flex-1 flex justify-center">
-              <img
-                src={instructorimg}
-                alt="Instructor"
-                className="w-full max-w-[416px] h-auto"
-              />
-            </div>
-          </div>
-          <div className="mt-8 text-center md:text-left">
+            <div className="mt-4 text-center lg:text-left lg:ml-[-900px]">
             <a
               href="#"
-              className="inline-flex items-center px-6 py-3 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold rounded-full hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center px-4 py-2 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold rounded-full hover:bg-blue-700 transition-colors"
             >
-              Become an Instructor
+              About Incubator Program
               <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3" />
             </a>
           </div>
+           
         </div>
-      </section>
+        <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
-      {/* section sixteenth */}
+
+          {/* section sixteenth */}
 
       <div className="bg-[#241443] p-4 flex flex-col md:flex-row items-center">
         {/* Left side with images */}
@@ -1299,6 +1270,62 @@ export default function Homepage() {
         </div>
       </div>
 
+      {/* section fiftheenth */}
+
+      <section className="bg-white mt-[20px] lg:mt-[40px]">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl">
+          <div className="text-center mb-8">
+            <div  className="flex items-center justify-center" >
+            <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
+            <h1 className="text-[#FF5C00] lg:text-[30px] text-[18px] font-black font-Lato font-sans">
+              Become an Instructor/Mentor
+            </h1>
+            </div>
+          </div>
+
+          <div className="flex flex-col md:flex-row gap-16 items-center justify-center">
+            {/* Left Content */}
+            <div className="flex-1 text-center md:text-left">
+              <h2 className="text-[#241443] text-[20px] lg:text-[40px] md:text-[40px] font-semibold font-poppins mb-2 text-left">
+                Let’s Join Us & Spread Your Knowledge
+              </h2>
+              <p className="text-[12px] lg:text-[22px] font-medium text-[#FF5C00] mb-4 text-left font-poppins">
+                Welcome to FrictionLearn’s Mentor Program!
+              </p>
+              <p className="text-[9px] lg:text-[20px] md:text-[20px] font-Regular  text-Poppins text-[#6B7083] text-left">
+                Empower the next generation by sharing your expertise. Guide
+                learners through personalized insights and real-world
+                experiences. Expand your network by connecting with ambitious
+                students and professionals. Join us in shaping careers and
+                making a meaningful impact on future talent.
+              </p>
+            </div>
+
+            {/* Right Image */}
+            <div className="flex-1 flex justify-center">
+              <img
+                src={instructorimg}
+                alt="Instructor"
+                className="w-full max-w-[416px] h-auto"
+              />
+            </div>
+          </div>
+          <div className="mt-8 text-center md:text-left">
+            <a
+              href="#"
+              className="inline-flex items-center px-4 py-2 bg-[#241443] text-white text-[16px] lg:text-[20px] font-semibold rounded-full hover:bg-blue-700 transition-colors"
+            >
+              Become an Instructor
+              <img src={arrowone} alt="Arrow" className="w-3 h-2 ml-3" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <hr className="block sm:hidden border-t border-gray-300 mt-4" />
+
+    
+
       {/* section eighteenth */}
 
       <div className="relative w-full h-auto pb-16">
@@ -1311,7 +1338,7 @@ export default function Homepage() {
             Experience Our Impact Through Their Words
           </h2>
         </div>
-        <div className="flex overflow-hidden justify-center items-center w-full h-auto space-x-4 md:space-x-7 mt-6 md:mt-8">
+        <div className="flex overflow-hidden justify-center items-center w-full h-auto  lg:space-x-4 space-x-2 md:space-x-7 mt-6 md:mt-8">
           {testimonials.map((testimonial, index) => {
             const isActive = index === current;
 
@@ -1329,7 +1356,7 @@ export default function Homepage() {
                 }}
                 onMouseEnter={() => handleMouseEnterIn(index)}
               >
-                <div className="rounded-lg flex flex-col items-center w-[195px] h-[205px] mx-2">
+                <div className="rounded-lg flex flex-col items-center lg:w-[195px] lg:h-[205px]  w-[65px] h-[72px] lg:mx-2 mx-0">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -1342,20 +1369,23 @@ export default function Homepage() {
             );
           })}
         </div>
-        <div className="text-center mt-4 md:mt-6">
-          <h3 className="text-[#1D2228] text-[16px] md:text-[20px] font-medium">
+        <div className="text-center mt-2 lg:mt-6">
+          <h3 className="text-[#1D2228] text-[10px] lg:text-[20px] font-medium font-Lato font-sans">
             {testimonials[current].name}
           </h3>
-          <p className="text-[#1D2228] text-[14px] md:text-[16px] font-light">
+          <p className="text-[#1D2228] text-[7px] lg:text-[16px] font-light font-Lato font-sans">
             {testimonials[current].role}
           </p>
         </div>
-        <div className="mt-[20px] md:mt-[50px] mx-4 md:mx-[20px] text-center font-medium">
-          <p className="text-[#1D2228] text-[14px] md:text-[36px] mx-2 md:mx-[100px] font-light">
+        <div className="mt-[20px] lg:mt-[40px] mx-4 lg:mx-[20px] text-center font-medium">
+          <p className="text-[#1D2228] text-[11px] lg:text-[36px] mx-2 md:mx-[100px] font-light font-Lato font-sans">
             {testimonials[current].text}
           </p>
         </div>
       </div>
+
+      <hr className="block sm:hidden border-t border-gray-300 mt-4" />
+
 
       {/* section nineteenth */}
 
