@@ -8,6 +8,7 @@ import Aboutus from "./Components/Aboutus"; // Your About component
 import CommunityEvent from "./Components/CommunityEvent";
 // import Contact from "./pages/Contact";
 import Incubationpage from "./Components/Incubationpage" 
+import LaunchingSoon from "./Components/Launchingsoon"
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
           {/* <Route path="/services" element={<Services />}/> */}
           <Route path="/communityandevent" element={<CommunityEvent />} />
           <Route path="/incubation" element={<Incubationpage />} />
+          <Route path="/Launchingsoon" element={<LaunchingSoon />} />
+
         </Routes>
       </div>
     </>

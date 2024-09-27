@@ -8,7 +8,7 @@ function WhyChooseUsSection() {
     <div className="bg-[#241443] mx-auto text-white p-4 sm:p-8">
 
     <div className="flex items-center justify-center">
-    <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mb-5" />
+    <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-5" />
     <h1 className="text-[18px] lg:text-[30px] font-black text-center mb-4 text-[#FF5C00] font-Lato font-sans">Why Choose Us!</h1>
     </div>
     <p className="text-[20px] lg:text-[30px] text-left sm:text-left mb-2 font-semibold text-Poppins text-[#FFFFFF]">

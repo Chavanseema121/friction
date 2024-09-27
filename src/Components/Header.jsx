@@ -32,7 +32,7 @@ const slides = [
         </p>
         Find Your Perfect Courses And<br />
         Improve Your{" "}
-        <span className="bg-[#F27329] p-1 rounded-full text-[#241443]">
+        <span className="bg-[#FF5C00] p-1 rounded-full text-[#241443]">
           Skills
         </span>{" "}
         through<br />
@@ -51,7 +51,7 @@ const slides = [
         </p>
         Show your Creativity to<br />
         the world with<br />
-        <span className="text-[#F27329]">Friction</span>Learn!
+        <span className="text-[#FF5C00]">Friction</span>Learn!
       </>
     ),
     subtitle:
@@ -75,13 +75,13 @@ export default function Header() {
     <div className="w-full h-auto">
       {/* Desktop Layout */}
       <div
-        className="w-full h-[500px] md:h-[769px] bg-cover bg-center transition-all duration-1000 relative hidden md:block"
+        className="w-full h-[396px] md:h-[769px] bg-cover bg-center transition-all duration-1000 relative hidden lg:block"
         style={{ backgroundImage: `url(${slides[currentSlide].backgroundImage})` }}
       >
         {/* Carousel Content for Desktop */}
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-6 md:px-10">
           {/* Title */}
-          <h2 className="text-[#241443] text-[32px] md:text-[52px] font-semibold text-Poppins leading-tight">
+          <h2 className="text-[#241443] text-[32px] md:text-[52px] font-semibold text-Poppins">
             {slides[currentSlide].title}
           </h2>
 
@@ -129,7 +129,7 @@ export default function Header() {
               key={index}
               onClick={() => setCurrentSlide(index)}
               className={`w-3 h-3 md:w-4 md:h-4 rounded-full cursor-pointer ${
-                index === currentSlide ? "bg-gray-300" : "bg-gray-400"
+                index === currentSlide ? "bg-[#F2F2F2]" : "bg-[#F2F2F2]"
               }`}
             ></div>
           ))}

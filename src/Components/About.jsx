@@ -1,5 +1,5 @@
 import React from "react";
-import NewNavbars from "./NewNavbars";
+import NewNavbar from "./NewNavbar";
 import aboutskillimg from "../assets/aboutskillimg.png";
 import arrow from "../assets/arrow.png";
 import arr from "../assets/arr.png";
@@ -18,7 +18,7 @@ export default function Aboutus() {
   return (
     <div className="w-full">
       {/* navbar section */}
-      <NewNavbars />
+      <NewNavbar />
 
       {/* first section */}
 

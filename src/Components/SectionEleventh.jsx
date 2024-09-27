@@ -9,7 +9,7 @@ function CommunitySection() {
   return (
     <div className="bg-white p-4 lg:p-8">
   <div className="flex items-center justify-center">
-  <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px] mb-5" />
+  <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-5" />
   <h1 className="text-[18px] lg:text-[30px] font-black text-center mb-2 sm:mb-6 font-Lato font-sans text-[#FF5C00]">
     Our Community
   </h1>
@@ -21,7 +21,7 @@ function CommunitySection() {
     Join niche clubs, connect with industry experts, explore opportunities, network with ambitious peers, secure internships, and become part of India’s largest learning community—all for free! Start your journey with FrictionLearn today!
   </p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
     <div className="bg-[#E0E1E6] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
       <img src={sectioneleventhone} alt="Exclusive Events" className="w-full max-w-[400px] sm:max-w-[521px] h-auto mx-auto mt-2" />
       <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-center text-[#241443] font-Lato font-sans mt-2">
@@ -64,7 +64,7 @@ function CommunitySection() {
   </div>
 
   <div className="text-center mt-8 sm:mt-10 lg:mt-12">
-    <button className="bg-[#241443] text-white px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 rounded-full hover:bg-blue-600 transform transition-transform duration-300 hover:scale-105">
+    <button className="bg-[#241443] text-[18px] font-semibold text-white px-4 py-2 sm:px-6 sm:py-3 lg:px-4 lg:py-2 rounded-full hover:bg-blue-600 transform transition-transform duration-300 hover:scale-105">
       Join Community
     </button>
   </div>

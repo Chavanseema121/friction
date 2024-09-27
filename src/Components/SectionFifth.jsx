@@ -62,7 +62,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Development */}
-      <div className="flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#5FD2CC]">
+      <div className=" hidden lg:flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#5FD2CC]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#5FD2CC] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthtwo} alt="Development Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
@@ -92,7 +92,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Finance & Market */}
-      <div className="flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#F78ED8]">
+      <div className=" hidden lg:flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#F78ED8]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#F78ED8] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthfour} alt="Finance & Market Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
@@ -107,7 +107,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Technology */}
-      <div className="flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#59CDFE]">
+      <div className=" hidden lg:flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#59CDFE]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#59CDFE] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthfive} alt="Technology Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />

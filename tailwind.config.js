@@ -17,6 +17,11 @@ export default {
       },
      
       keyframes: {
+
+        rotateCorners: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
         moveline: {
           '0%': { height: '0' },
           '100%': { height: '100%' },
@@ -62,6 +67,7 @@ export default {
         endAnimation: 'endAnimation 6s forwards',
         fadeInLeft: 'fadeInLeft 1s ease forwards',
         fadeInRight: 'fadeInRight 1s ease forwards',
+        rotateCorners: 'rotateCorners 4s linear infinite',
       },
       animationDelay: {
         '0s': '0s',
