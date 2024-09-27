@@ -81,10 +81,10 @@ const SliderComponent = () => {
      
 
       {/* Carousel Section */}
-      <section className="bg-[#F2F2F2] h-full">
+      <section className="bg-[#F2F2F2] w-full h-auto">
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className="flex items-center justify-center h-full">
+            <div key={index} className="flex items-center justify-center h-auto w-full">
               <div className="flex flex-col md:flex-row bg-white  rounded-lg overflow-hidden max-w-5xl mx-auto">
                 {/* Left Side (Content) */}
                 <div className="md:w-1/2 w-full p-6 md:p-8">
