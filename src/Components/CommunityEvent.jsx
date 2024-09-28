@@ -16,6 +16,8 @@ import purpleimgone from "../assets/community/purpleimgone.png";
 import purpleimgtwo from "../assets/community/purpleimgtwo.png";
 import righticon from "../assets/community/righticon.png";
 import arrow from '../assets/community/arrow.png';
+import arr from "../assets/aboutus/arr.png";
+import Footer from "../Components/Footer";
 
 
 import sectionimg from "../assets/community/sectionimg.png";
@@ -27,13 +29,28 @@ export default function CommunityEvent() {
 
       <div className="one w-[390px] sm:w-[390px] md:w-full md:h-[1362px] h-[501px] sm:h-[501px] bg-cover md:p-0 sm:p-10 p-4" 
         style={{ backgroundImage: `url(${backgroundImage})` }}>
+      <div className="  flex flex-row gap-2 lg:ml-5 ml-2 mb-3">
+        <div className="  flex flex-row mt-0 lg:mt-4">
+          <h2 className=" text-[#241443]  text-[15px] font-poppins font-semibold">
+            Home
+          </h2>
+          <img
+            src={arr}
+            alt=""
+            className="w-[9px] h-[10px] ml-[8px] mt-[8px]"
+          />{" "}
+        </div>
+        <h2 className=" text-[#FF5C00]  text-[15px] font-poppins font-semibold lg:mt-4 mt-0">
+        Community & Events
+        </h2>
+      </div>
         <div>
-          <h1 className='text-[25px] sm:text-[25px] md:text-[85px] font-bold text-[#FF5C00] text-center'>
+          <h1 className='text-[25px] sm:text-[25px] md:text-[85px] font-bold font-koh text-[#FF5C00] text-center '>
             <span className='text-[25px] sm:text-[50px] md:text-[85px] font-bold text-[#0E1D5F]'>Join India’s First </span><br />
             Builders Community &<br />
             Dive Into Epic Events!
           </h1>
-          <p className='text-[8px] sm:text-[8px] md:text-[23px] font-medium font-popines text-[#241443] text-center mt-[10px] sm:mt-[14px] md:mt-[18px]'>
+          <p className='text-[8px] sm:text-[8px] lg:text-[23px] font-medium font-poppins text-[#241443] text-center mt-[10px] sm:mt-[14px] md:mt-[18px]'>
             We help individuals to grow by unleashing the potential of social media
           </p>
 
@@ -42,15 +59,15 @@ export default function CommunityEvent() {
 
         <div className="parent flex flex-row sm:flex-row md:flex-row justify-between md:-mt-10">
           <div className="child-left mx-auto sm:ml-0 ml-0 md:ml-[100px] mb-6 sm:mb-0">
-            <h5 className='text-[18px] sm:text-[20px] md:text-[22px] font-semibold text-[#000000]'>Trusted by</h5>
-            <img src={logos} alt="" className='w-[71px] sm:w-[150px] md:w-[185px] h-auto mt-[10px]' />
+            <h5 className='text-[10px] lg:text-[22px] md:text-[22px] font-semibold font-poppins text-[#000000]'>Trusted by</h5>
+            <img src={logos} alt="" className='w-[71px] lg:w-[185px] lg:h-[70px] h-[23px] mt-[10px]' />
           </div>
 
           <div className="child-right flex flex-row sm:flex-row md:flex-row gap-4 mx-auto mr-0 sm:mr-0 md:mr-[40px]">
-            <img src={trofi} alt="" className='w-[20px] sm:w-[50px] md:w-[57px] h-auto mt-[10px]' />
+            <img src={trofi} alt="" className='w-[25px] h-[28px] md:w-[57px] md:h-[67px] mt-[14px] ' />
             <div className="sub-child mt-[10px]">
-              <h4 className='text-[10px] sm:text-[20px] md:text-[22px] font-semibold text-[#000000]'>
-                Best Community in <br /> <span>Edtech</span>
+              <h4 className='text-[10px] lg:text-[20px] md:text-[22px]  text-[#000000] font-Regular font-poppins'>
+                Best Community in <br /> <span className="text-[#000000] font-semibold font-poppins text-[10px] lg:text-[20px]">Edtech</span>
               </h4>
             </div>
           </div>
@@ -90,7 +107,7 @@ export default function CommunityEvent() {
   <div className="parent flex flex-row sm:flex-row gap-6 sm:gap-2 md:gap-10 justify-center">
     {/* First Item */}
     <div className="childone flex items-center sm:flex-row gap-4 mx-auto">
-      <img src={purpleimgone} alt="" className='w-[30px] sm:w-[50px] md:w-[98px] h-auto mt-[10px] sm:mt-[40px] md:mt-[88px]' />
+      <img src={purpleimgone} alt="" className='w-[30px] sm:w-[50px] lg:w-[98px] h-auto mt-[-20px] sm:mt-[40px] md:mt-[88px]' />
       <div>
         <h1 className='text-[20px] sm:text-[30px] md:text-[40px] font-semibold text-white mt-[10px] sm:mt-[40px] md:mt-[88px]'>32000+</h1>
         <p className='text-[10px] sm:text-[12px] md:text-[15px] text-white'>Community members</p>
@@ -121,7 +138,7 @@ export default function CommunityEvent() {
     
   {/* section two */}
 
-  <section className='bg-[hsl(260,54%,17%)] w-full h-auto sm:h-[905px] flex justify-center items-center  mt-[10px]'>
+  <section className='bg-[hsl(260,54%,17%)] w-full h-auto sm:h-[905px] flex justify-center items-center  mt-[100px]'>
   <div className='w-full sm:w-[1228px] h-auto sm:h-[775px] bg-[#FFFFFF] rounded-3xl p-4 sm:p-2  mt-[40px]'>
     <div>
       <h3 className='flex justify-center text-[#FF5C00] text-[18px] sm:text-[30px] font-black font-lato mt-[20px] sm:mt-[40px]'>
@@ -345,6 +362,7 @@ export default function CommunityEvent() {
           Choose Passion
         </button>
       </div>
+      <Footer/>
     </>
   );
 }

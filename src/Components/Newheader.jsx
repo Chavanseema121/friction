@@ -66,7 +66,7 @@ const slides = [
 const SliderComponent = () => {
   // Slider settings
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -84,10 +84,10 @@ const SliderComponent = () => {
       <section className="bg-[#F2F2F2] w-full h-auto">
         <Slider {...settings}>
           {slides.map((slide, index) => (
-            <div key={index} className="flex items-center justify-center h-auto w-full">
-              <div className="flex flex-col md:flex-row bg-white  rounded-lg overflow-hidden max-w-5xl mx-auto">
+            <div key={index} className="flex items-center justify-center">
+              <div className="flex flex-col md:flex-row  rounded-lg overflow-hidden">
                 {/* Left Side (Content) */}
-                <div className="md:w-1/2 w-full p-6 md:p-8">
+                <div className="lg:w-1/2 p-4 md:p-8">
                  
                   <p className="text-[#241443] text-[32px] md:text-[52px] font-semibold font-poppins">{slide.title}</p>
                   <p className="text-[#241443] opacity-60 text-[16px] md:text-[20px] mt-4 font-medium font-poppins">{slide.subtitle}</p>
@@ -122,7 +122,7 @@ const SliderComponent = () => {
                 </div>
 
                 {/* Right Side (Image) */}
-                <div className="md:w-1/2 w-full">
+                <div className="lg:w-1/2 ">
                   <img
                     src={slide.imageUrl}
                     alt={`Slide ${index + 1}`}

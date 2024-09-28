@@ -458,45 +458,44 @@ export default function Aboutus() {
 {/* section last one */}
 
 
-<div className="bg-[#251c46]  md:p-4 text-white">
-      <div className="container flex flex-col md:flex-row md:justify-between">
-        {/* Left Section - Logo */}
-        <div className=" lg:order-none order-1 lg:ml-0 ml-[-300px]">
-          <img src={fllogo} alt="Logo" className="lg:w-[126px] lg:h-[94px] w-[58px] h-[42px]" />
-        </div>
-
-        {/* Center Section - Text */}
-        <div className="flex-1 text-center lg:text-center lg:mt-[40px] ">
-          <div className=" lg:order-none order-2 text-center lg:text-center flex-1 ">
-          <h2 className="lg:text-[40px] text-[20px] font-semibold mb-4 lg:ml-[200px]  ">
-            Questions about our <span className="text-[#FF5C00]">‘Friction</span><span className="text-[#FFFFFF]">Learn’</span>
-          </h2>
-          <p className="lg:text-[18px] text-[10px] font-Regular text-Poppins mb-2 lg:ml-[200px] ">
-            "Curious about FrictionLearn? Ask us anything! We're here to discuss our gamified e-learning platform and how we're revolutionizing education."
-          </p>
-          </div>
-
-         
-        </div>
-
-        {/* Right Section - Illustration */}
-        <div className=" md:mt-[150px] lg:order-none order-3 ">
-          <img src={query} alt="Illustration" className="w-[370px] h-[263px]" />
-        </div>
-        
-      </div>
-       {/* Bottom Section - Query Box */}
-       <div className="flex mt-20 lg:mt-[-80px] ml-[50px] lg:ml-[200px] lg:order-none order-4">
-            <input
-              type="text"
-              placeholder="Raise your Query....."
-              className="w-[638px] md:w-[400px] px-4 py-2 rounded-md text-black"
-            />
-            <button className="px-6 py-2 bg-[#FF5C00] text-white font-semibold rounded-md hover:bg-orange-600 transition-colors">
-              SEND
-            </button>
-          </div>
+<div className=" w-full h-auto bg-[#251c46] md:p-4 text-white">
+  <div className="container flex flex-col lg:flex-row justify-between lg:items-center">
+    
+    {/* Left Section - Logo */}
+    <div className="flex-shrink-0 lg:ml-0 lg:mb-[200px] mb-0">
+      <img src={fllogo} alt="Logo" className="lg:w-[126px] lg:h-[94px] w-[58px] h-[42px]" />
     </div>
+
+    {/* Center Section - Text */}
+    <div className="flex-1 text-center lg:text-center lg:mt-4 lg:mb-[150px] mt-4">
+      <h2 className="lg:text-[40px] text-[20px] font-semibold mb-4">
+        Questions about our <span className="text-[#FF5C00]">‘Friction</span>
+        <span className="text-[#FFFFFF]">Learn’</span>
+      </h2>
+      <p className="lg:text-[18px] text-[10px] font-Regular text-Poppins mb-2">
+        "Curious about FrictionLearn? Ask us anything! We're here to discuss our gamified e-learning platform and how we're revolutionizing education."
+      </p>
+    </div>
+
+    {/* Right Section - Illustration */}
+    <div className="lg:ml-8 lg:mt-[100px] mt-4">
+      <img src={query} alt="Illustration" className="lg:w-[370px] lg:h-[263px] w-[300px] h-[200px]" />
+    </div>
+  </div>
+
+  {/* Bottom Section - Query Box */}
+  <div className="flex justify-center lg:justify-start lg:mt-[-80px] mt-10 lg:ml-[200px] ">
+    <input
+      type="text"
+      placeholder="Raise your Query....."
+      className="w-[60%] lg:w-[638px] md:w-[400px] px-4 py-2 rounded-md text-black mb-4"
+    />
+    <button className="px-4 py-2 ml-0 bg-[#FF5C00] text-white font-semibold rounded-md hover:bg-orange-600 transition-colors mb-4">
+      SEND
+    </button>
+  </div>
+</div>
+
     
 
 
@@ -537,9 +536,9 @@ export default function Aboutus() {
   </div>
 </div>
 
-<div className="flex justify-center lg:justify-start mt-[20px] md:mt-[50px] lg:mt-[60px] ml-[20px] md:ml-[40px] lg:ml-[50px]">
-  <button className="w-[160px] sm:w-[180px] md:w-[214px] h-[45px] sm:h-[50px] md:h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-medium font-poppins flex items-center justify-center">
-    <span>Learn More</span>
+<div className="flex justify-center lg:justify-start mt-[20px] md:mt-[50px] lg:mt-[0px] ml-[20px] md:ml-[40px] lg:ml-[50px] mb-10">
+  <button className="w-[160px] sm:w-[180px] md:w-[280px] h-[45px] sm:h-[50px] md:h-[62px] bg-[#241443] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-medium font-poppins flex items-center justify-center ml-[50px]">
+    <span>Become an Instructor</span>
     <img
       src={arrowone}
       alt=""
