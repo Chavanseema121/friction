@@ -770,10 +770,17 @@ export default function Section() {
     //     </div>
 
     <div className="w-full flex flex-col h-auto mt-[50px] mb-[50px]">
-      <div className=" flex flex-col justify-center text-center mb-[50px]">
+      <div className=" flex flex-col justify-center text-center mb-[40px]">
+      <div className="flex items-center justify-center">
+      <img
+                src={star}
+                alt="star"
+                className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-[-80px]"
+              />
         <h2 className="text-[#FF5C00] mt-[82px] text-[30px] font-bold ">
           How the Process?
         </h2>
+      </div>
         <p className="px-1 sm:px-4 text-[22px] sm:text-[30px] lg:text-[40px]  text-[#241443] font-bold mt-[40px]">
           Find Your Idea to get Life in Real World with Our
           <span className="px-1 sm:px-4 text-[25px] sm:text-[30px] lg:text-[40px]  font-bold  text-[#FF5C00]  ">

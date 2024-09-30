@@ -18,6 +18,7 @@ import righticon from "../assets/community/righticon.png";
 import arrow from '../assets/community/arrow.png';
 import arr from "../assets/aboutus/arr.png";
 import Footer from "../Components/Footer";
+import communityimg from "../assets/communityimg.png"
 
 
 import sectionimg from "../assets/community/sectionimg.png";
@@ -102,11 +103,11 @@ export default function CommunityEvent() {
           </div>
         </div> */}
 
-<div className="sectiontwo w-full sm:w-full md:w-[1264px] h-[360px] sm:h-[344px] bg-cover mx-auto mt-5 sm:mt-[40px]" 
+<div className="hidden lg:flex sectiontwo w-full sm:w-full md:w-[1264px] lg:h-[300px] sm:h-[344px] bg-cover mx-auto mt-5 lg:mt-[85px]" 
   style={{ backgroundImage: `url(${backgroundImg})` }}>
-  <div className="parent flex flex-row sm:flex-row gap-6 sm:gap-2 md:gap-10 justify-center">
+  <div className="parent flex flex-row sm:flex-row gap-4 sm:gap-2 md:gap-12 justify-center lg:mb-[30px]">
     {/* First Item */}
-    <div className="childone flex items-center sm:flex-row gap-4 mx-auto">
+    <div className="childone flex items-center sm:flex-row gap-6 mx-auto ml-[150px]">
       <img src={purpleimgone} alt="" className='w-[30px] sm:w-[50px] lg:w-[98px] h-auto mt-[-20px] sm:mt-[40px] md:mt-[88px]' />
       <div>
         <h1 className='text-[20px] sm:text-[30px] md:text-[40px] font-semibold text-white mt-[10px] sm:mt-[40px] md:mt-[88px]'>32000+</h1>
@@ -115,7 +116,7 @@ export default function CommunityEvent() {
     </div>
 
     {/* Second Item */}
-    <div className="childone flex items-center sm:flex-row gap-4 mx-auto">
+    <div className="childone flex items-center sm:flex-row gap-6 mx-auto">
       <img src={purpleimgtwo} alt="" className='w-[30px] sm:w-[50px] md:w-[98px] h-auto mt-[10px] sm:mt-[40px] md:mt-[88px]' />
       <div>
         <h1 className='text-[20px] sm:text-[30px] md:text-[40px] font-semibold text-white mt-[10px] sm:mt-[40px] md:mt-[88px]'>112+</h1>
@@ -124,7 +125,7 @@ export default function CommunityEvent() {
     </div>
 
     {/* Third Item */}
-    <div className="childone flex items-center sm:flex-row gap-4 mx-auto">
+    <div className="childone flex items-center sm:flex-row gap-6 mx-auto">
       <img src={purpleimgone} alt="" className='w-[30px] sm:w-[50px] md:w-[98px] h-auto mt-[10px] sm:mt-[40px] md:mt-[88px]' />
       <div>
         <h1 className='text-[20px] sm:text-[30px] md:text-[40px] font-semibold text-white mt-[10px] sm:mt-[40px] md:mt-[88px]'>32000+</h1>
@@ -133,15 +134,27 @@ export default function CommunityEvent() {
     </div>
   </div>
 </div>
+ 
 
-      </div>
+ {/* only for mobile section */}
+<div className="lg:hidden">
+  <img src={communityimg} alt="" className="w-[353px] h-[78px]" />
+
+</div>
+
+</div>
+
+
+
+
+
     
   {/* section two */}
 
-  <section className='bg-[hsl(260,54%,17%)] w-full h-auto sm:h-[905px] flex justify-center items-center  mt-[100px]'>
-  <div className='w-full sm:w-[1228px] h-auto sm:h-[775px] bg-[#FFFFFF] rounded-3xl p-4 sm:p-2  mt-[40px]'>
+  <section className='bg-[hsl(260,54%,17%)] w-full h-auto sm:h-[905px] flex justify-center items-center  mt-[80px]'>
+  <div className='w-[700px] sm:w-[1228px] h-auto sm:h-[775px] bg-[#FFFFFF] rounded-3xl p-4 sm:p-2  mt-[40px] mx-[20px] mb-4'>
     <div>
-      <h3 className='flex justify-center text-[#FF5C00] text-[18px] sm:text-[30px] font-black font-lato mt-[20px] sm:mt-[40px]'>
+      <h3 className='flex justify-center text-[#FF5C00] text-[18px] sm:text-[30px] font-black font-lato mt-[20px] sm:mt-[20px]'>
         How <span className='text-[#241443]'>‘FL’</span> Community is useful!
       </h3>
     </div>
@@ -204,7 +217,7 @@ export default function CommunityEvent() {
         <img src={sectionimg} alt="" className='w-[300px] sm:w-[555px] h-auto mt-[30px] sm:mt-[88px]' />
       </div>
     </div>
-    <div className="mt-[20px] sm:mt-[30px] mx-auto   md:mt-[-30px] ml-[100px] sm:ml-[30px]">
+    <div className="mt-[20px] sm:mt-[30px] mx-auto   md:mt-[-30px] ml-[50px] sm:ml-[30px]">
           <button className="w-[180px] sm:w-[264px] h-[50px] sm:h-[62px] bg-[#241443] rounded-full text-white text-[16px] sm:text-[18px] font-medium flex justify-center items-center gap-2">
             <span>Join Community</span>
             <img src={arrow} alt="" className="w-[16px] sm:w-[26px] h-[10px] sm:h-[18px]" />
@@ -275,7 +288,7 @@ export default function CommunityEvent() {
         </div>
 
         {/* Button Section */}
-        <button className="mt-12 bg-[#FF5C00] text-white py-3 px-8 rounded-full hover:bg-orange-600 text-[18px] font-semibold">
+        <button className="mt-12 bg-[#FF5C00] text-white lg:py-3 lg:px-8 py- px-4 rounded-full hover:bg-orange-600 text-[18px] font-semibold">
           Explore Events &rarr;
         </button>
       </div>
@@ -346,7 +359,7 @@ export default function CommunityEvent() {
               alt="Right Section Image"
               className="w-[292px] h-[137px]  object-cover  mt-16"
             />
-            <div className="flex mr-auto mt-[100px]">
+            <div className="flex  mr-auto mt-[100px]">
               <img src={abcone} alt="" className="w-[95px] h-[100px] "></img>
               <img
                 src={bc}
@@ -358,10 +371,46 @@ export default function CommunityEvent() {
             </div>
           </div>
         </div>
-        <button className="bg-orange-500 text-white py-2 px-4 rounded-full hover:bg-orange-600">
+        <button className="bg-[#FF5C00] justify-end items-end text-white py-1 px-4 rounded-full text-[25px] font-semibold font-poppins">
           Choose Passion
         </button>
       </div>
+
+
+   {/* section last one */}
+
+   <div className="w-full h-[150px] bg-white lg:space-y-[-70px] space-y-[-40px]">
+
+<svg width="640" height="92" viewBox="0 0 640 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 8.69584C12.5657 14.049 53.3996 22.9485 124.21 15.7218C146.397 13.0452 191.479 5.25456 199.269 3.6773C217.443 -0.00296461 261.015 -2.74643 289.906 15.7218C298.639 21.5768 316.955 34.1901 320.354 37.8035C333.808 51.019 373.32 77.751 423.737 78.9555C439.787 78.2864 478.544 75.7436 505.169 70.9258C537.741 66.2419 610.109 63.6991 639 91" stroke="url(#paint0_linear_2717_136)"/>
+<defs>
+<linearGradient id="paint0_linear_2717_136" x1="1" y1="12.2089" x2="621.626" y2="164.629" gradientUnits="userSpaceOnUse">
+<stop offset="0.344" stop-color="#389352"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+
+<svg width="528" height="81" viewBox="0 0 528 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 20.5558C35.8329 19.7213 116.019 11.4417 152.488 3.53191C170.956 -0.473708 215.748 -2.6768 247.168 20.5558L278.027 44.0888C294.625 58.2754 338.902 85.1464 383.227 79.138C417.826 74.1309 495.019 65.4187 527 70.626" stroke="url(#paint0_linear_2717_137)"/>
+<defs>
+<linearGradient id="paint0_linear_2717_137" x1="1" y1="40.5" x2="527" y2="40.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFFCFC"/>
+<stop offset="1" stop-color="#5C5A5A" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
+
+
+</div>
+
+ {/* section last */}
+
+ <div className="bg-[#C4C0C0] w-full h-[645px] flex justify-center items-center ">
+ <p className="text-center lg:text-[40px] text-[17px] font-Regular font-albert text-[#000000]">Our Events are Coming Soon......</p>
+ </div>
+
+
       <Footer/>
     </>
   );

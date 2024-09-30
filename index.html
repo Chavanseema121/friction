@@ -22,4 +22,16 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
+
+  <script>
+    // GitHub Pages redirect to index.html for 404s
+    const redirect = () => {
+      const pathname = window.location.pathname;
+      if (!pathname.startsWith("/truridetaxi/")) {
+        window.location.replace("/truridetaxi/");
+      }
+    };
+    redirect();
+  </script>
+  
 </html>

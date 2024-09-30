@@ -5,19 +5,37 @@ import Section from "../Components/Section";
 import Footer from "../Components/Footer";
 import communityImg from "../assets/incubation/communityImg.png";
 import backgroundImage from "../assets/incubation/backgroundImage.png";
+import arr from "../assets/aboutus/arr.png";
+import star from "../assets/home/star.png";
 
 export default function Incubationpage() {
   return (
     <div>
-      {/* section one */}
 
+      
+      {/* section one */}
       <div
-  className="one w-full h-auto sm:h-[501px] bg-cover p-4 sm:p-10 md:p-0"
-  style={{ backgroundImage: `url(${backgroundImage})` }}
->
+  className="one w-full h-auto lg:h-[601px] bg-cover p-4 sm:p-10 lg:p-0 "
+  style={{ backgroundImage: `url(${backgroundImage})` }}>
+   <div className="  flex flex-row gap-2 lg:ml-5 ml-2 mb-3">
+        <div className="  flex flex-row mt-0 lg:mt-4">
+          <h2 className=" text-[#241443]  text-[15px] font-poppins font-semibold">
+            Home
+          </h2>
+          <img
+            src={arr}
+            alt=""
+            className="w-[9px] h-[10px] ml-[8px] mt-[8px]"
+          />{" "}
+        </div>
+        <h2 className=" text-[#FF5C00]  text-[15px] font-poppins font-semibold lg:mt-4 mt-0">
+        Incubation
+        </h2>
+      </div>
+  
   {/* Main Title */}
   <div>
-    <h1 className="text-[45px] lg:text-[85px] font-bold text-center md:mt-[98px] text-[#FF5C00] font-koh">
+    <h1 className="text-[45px] lg:text-[85px] font-bold text-center md:mt-[68px] text-[#FF5C00] font-koh">
       <span className="block text-[#0E1D5F]">
         Join India’s Best
       </span>
@@ -46,7 +64,7 @@ export default function Incubationpage() {
 
   {/* Button Section */}
   <div className="flex justify-center md:justify-start mt-[40px] md:mt-[60px] lg:mt-[-73px] lg:ml-[80px]">
-    <button className="w-[180px] md:w-[264px] h-[50px] md:h-[62px] bg-[#FF5C00] rounded-full text-white text-[16px] md:text-[18px] font-medium flex items-center justify-center">
+    <button className="w-[150px] lg:w-[230px] h-[50px] lg:h-[55px] bg-[#FF5C00] rounded-full text-white text-[16px] md:text-[18px] font-medium flex items-center justify-center">
       Apply for Incubation
     </button>
   </div>
@@ -55,9 +73,9 @@ export default function Incubationpage() {
 
       {/* section two */}
 
-      <div className="flex flex-col md:flex-row items-center bg-[#241443] py-16 px-6 md:px-20 lg:px-32 lg:mt-[600px]">
+      <div className="flex flex-col md:flex-row items-center bg-[#241443] py-16 px-6 lg:py-8 lg:px-32 lg:mt-[600px] ">
         {/* Left Side - Image */}
-        <div className="md:w-1/3 flex justify-center mb-8 md:mb-0">
+        <div className="md:w-1/3 flex justify-center mb-8 md:mb-0 ">
           {/* Container with custom border styling */}
           <div className="relative overflow-hidden shadow-lg w-full max-w-[300px] md:max-w-[400px] bg-white rounded-lg mt-16">
             <img
@@ -69,11 +87,18 @@ export default function Incubationpage() {
         </div>
 
         {/* Right Side - Testimonial */}
-        <div className="md:w-2/3 text-white md:ml-10">
-          <h2 className="text-[#FF5C00] text-[15px] lg:text-[30px] font-black mb-8 font-Lato font-sans">
+        <div className="md:w-2/3 text-white md:ml-10 ">
+        <div className="flex mb-4">
+        <img
+                src={star}
+                alt="star"
+                className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]"
+              />
+          <h2 className="text-[#FF5C00] text-[15px] lg:text-[30px] mb-8 font-black font-Lato font-sans">
             What our Investor Says
           </h2>
-          <p className="text-[15px] md:text-[30px] mb-4 font-poppins font-medium">
+        </div>
+          <p className="text-[15px] lg:text-[30px] mb-4 font-poppins font-medium">
             "I've been fortunate to engage with the FL incubation community at
             past events over the last few years, and always walk away impressed
             with the passion and caliber of talent that FL incubation brings

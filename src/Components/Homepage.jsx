@@ -341,14 +341,27 @@ export default function Homepage() {
       </div>
 
       <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[40px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7">
-        <div className="childleft w-full md:w-[90%] lg:w-[670px]">
-          <div className="">
+        <div className="childleft w-full md:w-[90%] lg:w-[700px]">
+          {/* <div className="">
            
           <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-Lato font-extrabold text-start font-sans  leading-[45px] md:leading-[75px] lg:leading-[90px]">
             About FrictionLearn
           </h2>
           <img src={crossline} alt="" className="w-[360px] h-[33px] lg:ml-[350px] lg:mt-[-60px]" />
-          </div>
+          </div> */}
+
+<div className="">
+  <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-Lato font-extrabold text-start font-sans leading-[45px] md:leading-[75px] lg:leading-[90px] relative">
+    About <span style={{
+      backgroundImage: `url(${crossline})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '180px',
+      backgroundSize: 'contain',
+      paddingLeft: '0px' /* Adjust this value based on your image width */
+    }}>FrictionLearn</span>
+  </h2>
+</div>
+
           <h6 className="mt-4 lg:mt-4 text-[#FF5C00] text-[14px] sm:text-[14px] lg:text-[21px] font-Regular font-poppins leading-[24px] md:leading-[32px]">
             Driven by the mission to make quality education accessible to all
           </h6>
@@ -1261,7 +1274,7 @@ export default function Homepage() {
       >
       <div className="flex flex-col md:flex-row  max-w-6xl w-full p-6 md:p-0 rounded-lg lg:ml-[40px]">
         {/* Left Side (Image) */}
-        <div className="md:w-1/4 w-full flex items-center justify-center">
+        <div className=" lg:order-none order-2 md:w-1/4 w-full flex items-center justify-center">
           <img
             src={girltriangle}
             alt="Left Side"
@@ -1272,13 +1285,13 @@ export default function Homepage() {
         {/* Right Side (Content + Button) */}
         <div className="md:w-3/4 w-full flex flex-col justify-between mt-6 md:mt-16 md:pl-6">
           {/* Content */}
-          <div>
+          <div className="lg:order-none order-1">
             <h2 className="text-[20px] lg:text-[37px] font-semibold font-poppins text-white mb-4  lg:text-left  text-center">Affordable Online Gamified Courses & Learning Opportunities For You</h2>
             
           </div>
 
           {/* Button */}
-          <div className=" md:mt-auto flex justify-end lg:mr-[100px] lg:py-4">
+          <div className="lg:order-none order-3 md:mt-auto flex justify-end lg:mr-[100px] lg:py-4">
             <button className="bg-white text-[#241443]  py-2 px-4 rounded-full lg:text-[18px] text-[14px] font-semibold font-poppins">
             Start Learning Today
             </button>
@@ -1355,7 +1368,7 @@ export default function Homepage() {
             <img
               src={star}
               alt="star"
-              className="w-[36px] h-[36px] mr-[-10px]"
+              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]"
             />
             <h1 className="text-[#FF5C00] text-[15px] lg:text-[30px] text-center font-black">
               Our Testimonials
@@ -1491,13 +1504,14 @@ export default function Homepage() {
 
       {/* section twenty */}
 
-      <div className="bg-white p-2 lg:p-5">
+      <div className="bg-white p-2 lg:p-5 ">
         <div
-          className="relative bg-center bg-no-repeat bg-cover rounded-[20px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden mx-auto lg:w-[1259px] lg:h-[628px] w-[350px] h-[300px]"
+          className="relative bg-center bg-no-repeat bg-cover rounded-[25px] sm:rounded-[30px] md:rounded-[40px] overflow-hidden mx-auto lg:w-[1259px] lg:h-[628px] w-[350px] h-[300px]"
           style={{
             backgroundImage: `url(${Contactus})`,
             backgroundSize: "cover", // Ensure the image covers the entire div
             backgroundPosition: "center", // Center the image in the div
+            borderRadius:"40px"
           }}
         >
           {/* Semi-transparent blue overlay */}
@@ -1521,7 +1535,7 @@ export default function Homepage() {
               {/* Contact Us Button */}
               <a
                 href="#"
-                className="rounded-md inline-flex justify-center items-center py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 text-[10px] sm:text-sm lg:text-base font-medium text-[#241443] bg-white hover:bg-gray-200 focus:ring-2 focus:ring-gray-300"
+                className="rounded-full inline-flex justify-center items-center py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 text-[10px] sm:text-sm lg:text-base font-medium text-[#241443] bg-white hover:bg-gray-200 focus:ring-2 focus:ring-gray-300"
               >
                 Contact Us
               </a>
@@ -1529,7 +1543,7 @@ export default function Homepage() {
               {/* Explore Courses Button */}
               <a
                 href="#"
-                className="rounded-md inline-flex justify-center items-center py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 text-[10px] sm:text-sm lg:text-base font-medium text-white border border-white hover:bg-white hover:text-[#241443] transition-colors"
+                className="rounded-full inline-flex justify-center items-center py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 text-[10px] sm:text-sm lg:text-base font-medium text-white border border-white hover:bg-white hover:text-[#241443] transition-colors"
               >
                 Explore Courses
               </a>
