@@ -548,36 +548,36 @@ export default function Homepage() {
         </div>
       </div> */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-4 sm:px-6 md:px-10 mt-10 lg:mt-20">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:gap-4 gap-1 lg:px-2 px-2 sm:px-6  mt-10 lg:mt-20 mx-auto">
         {/* Left Side - Content */}
         <div className="m-auto max-w-screen-lg py-8 md:py-16">
-          <h2 className="text-[24px] sm:text-[28px] md:text-[40px] font-black text-[#FF5C00] mb-4">
-            What Sets FrictionLearn <br /> Apart From Other <br /> Platforms
+          <h2 className="text-[20px] sm:text-[28px] md:text-[40px] font-black font-Lato text-[#FF5C00] lg:mb-4 mb-2">
+            What Sets FrictionLearn<br></br> Apart From Other<br></br> Platforms
           </h2>
-          <p className="text-[16px] sm:text-[18px] md:text-[20px] font-normal font-Lato font-sans text-[#241443] leading-[24px] sm:leading-[28px] md:leading-[32px]">
-            Empowering students with real-world skills through <br /> industry
-            collaboration, practical projects, and dynamic <br /> communities.
+          <p className="text-[8px]  lg:text-[20px] font-Regular font-Lato font-sans text-[#241443] leading-[20px] sm:leading-[28px] md:leading-[32px]">
+            Empowering students with real-world<br></br> skills through  industry
+            collaboration,<br></br> practical projects, and dynamic communities.
           </p>
         </div>
 
         {/* Right Side - Scrollable Section */}
-        <div className="overflow-y-scroll pr-2 sm:pr-4 lg:pr-6 scrollbar-hide py-4 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
-          <div className="space-y-4">
+        <div className="overflow-y-scroll pr-1 sm:pr-4 lg:pr-6 scrollbar-hide lg:py-4 py-0 p-1 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+          <div className="lg:space-y-4 space-y-4">
             {items.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center bg-white rounded-lg shadow-md p-3 sm:p-4 lg:p-5"
+                className="flex items-center bg-white rounded-lg shadow-lg p-0 sm:p-4 lg:p-5  w-[400px] h-[68px] lg:w-[654px] lg:h-[189px]"
               >
                 <img
                   src={item.img}
                   alt={item.title}
-                  className="w-[40px] sm:w-[60px] md:w-[80px] lg:w-[100px] h-[40px] sm:h-[60px] md:h-[80px] lg:h-[100px] object-cover rounded-lg"
+                  className="w-[32px]  md:w-[80px] lg:w-[100px] h-[32px] sm:h-[60px] md:h-[80px] lg:h-[100px] object-cover rounded-lg"
                 />
                 <div className="ml-3 sm:ml-5">
-                  <h3 className="text-[14px] sm:text-[18px] md:text-[22px] lg:text-[25px] text-[#241443] font-semibold">
+                  <h3 className="text-[6px] md:text-[22px] lg:text-[25px] text-[#241443] font-semibold font-Lato font-sans">
                     {item.title}
                   </h3>
-                  <p className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] text-[#1D2228]">
+                  <p className="text-[4px]  md:text-[16px] lg:text-[18px] text-[#1D2228] font-Regular font-Lato font-sans">
                     {item.description}
                   </p>
                 </div>
@@ -587,6 +587,8 @@ export default function Homepage() {
         </div>
         <hr className="block sm:hidden border-t border-gray-300 mt-4" />
       </div>
+
+      
 
       {/* section fifth */}
 
@@ -1269,36 +1271,39 @@ export default function Homepage() {
       {/* section sixteenth */}
 
       
-   <section className="h-auto w-full bg-cover bg-center flex items-center justify-center"
-        style={{ backgroundImage: `url(${girlbackground})` }}
-      >
-      <div className="flex flex-col md:flex-row  max-w-6xl w-full p-6 md:p-0 rounded-lg lg:ml-[40px]">
-        {/* Left Side (Image) */}
-        <div className=" lg:order-none order-2 md:w-1/4 w-full flex items-center justify-center">
-          <img
-            src={girltriangle}
-            alt="Left Side"
-            className="object-cover max-w-full h-auto rounded-lg lg:mb-[-40px]"
-          />
-        </div>
+      <section className="h-auto w-full bg-cover bg-center flex items-center justify-center" 
+  style={{ backgroundImage: `url(${girlbackground})` }}>
+  <div className="flex flex-col lg:flex-row w-full p-6 md:p-0 rounded-lg lg:ml-[20px]">
+    {/* Left Side (Image) */}
+    <div className="lg:order-none order-2 md:w-1/4 w-full flex items-center justify-center">
+      <img
+        src={girltriangle}
+        alt="Illustration of a girl with a triangle overlay"
+        className="object-cover w-full h-auto rounded-lg lg:mb-[-35px]"
+      />
+    </div>
 
-        {/* Right Side (Content + Button) */}
-        <div className="md:w-3/4 w-full flex flex-col justify-between mt-6 md:mt-16 md:pl-6">
-          {/* Content */}
-          <div className="lg:order-none order-1">
-            <h2 className="text-[20px] lg:text-[37px] font-semibold font-poppins text-white mb-4  lg:text-left  text-center">Affordable Online Gamified Courses & Learning Opportunities For You</h2>
-            
-          </div>
-
-          {/* Button */}
-          <div className="lg:order-none order-3 md:mt-auto flex justify-end lg:mr-[100px] lg:py-4">
-            <button className="bg-white text-[#241443]  py-2 px-4 rounded-full lg:text-[18px] text-[14px] font-semibold font-poppins">
-            Start Learning Today
-            </button>
-          </div>
-        </div>
+    {/* Right Side (Content + Button) */}
+    <div className="md:w-3/4 w-full flex flex-col justify-between mt-6 md:mt-16 md:pl-6">
+      {/* Content */}
+      <div className="lg:order-none order-1">
+        <h2 className="text-[20px] lg:text-[37px] font-semibold font-poppins text-white mb-4 lg:text-left text-center">
+          Affordable Online Gamified Courses & Learning Opportunities For You
+        </h2>
       </div>
-    </section>
+
+      {/* Button */}
+      <div className="lg:order-none order-3 md:mt-auto flex justify-end lg:mr-[100px] lg:py-4">
+        <button
+          className="bg-white text-[#241443] py-2 px-4 rounded-full lg:text-[18px] text-[14px] font-semibold font-poppins"
+          aria-label="Start Learning Today"
+        >
+          Start Learning Today
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 

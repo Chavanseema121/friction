@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import NewNavbar from "./Components/NewNavbar"; // Adjust the path based on your project structure
 import Homepage from "./Components/Homepage"; // Your Home component
 // import Courses from "./pages/Courses"; 
