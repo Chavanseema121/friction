@@ -27,6 +27,7 @@ function App() {
           <Route path="/communityandevent" element={<CommunityEvent />} />
           <Route path="/incubation" element={<Incubationpage />} />
           <Route path="/Launchingsoon" element={<LaunchingSoon />} />
+          
 
         </Routes>
       </div>
