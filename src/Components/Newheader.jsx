@@ -13,7 +13,7 @@ const slides = [
   {
     title: (
         <>
-          <p className="text-[14px] md:text-[16px] text-[#241443] opacity-40 font-semibold ">
+          <p className="text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px]  text-[#241443] opacity-40 font-semibold ">
             100% Quality courses
           </p>
           Advance Your Career in
@@ -30,7 +30,7 @@ const slides = [
   {
     title: (
         <>
-          <p className="text-[14px] md:text-[16px] text-[#241443] opacity-40 font-semibold ">
+          <p className="text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px] text-[#241443] opacity-40 font-semibold ">
             100% Quality courses
           </p>
           Find Your Perfect Courses And
@@ -49,7 +49,7 @@ const slides = [
   {
     title: (
         <>
-          <p className="text-[14px] md:text-[16px] text-[#241443] opacity-40 font-semibold ">
+          <p className="text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px] text-[#241443] opacity-40 font-semibold ">
             100% Quality courses
           </p>
           Show your Creativity to<br />
@@ -87,7 +87,7 @@ const SliderComponent = () => {
             <div key={index} className="flex items-center justify-center">
               <div className="flex flex-col md:flex-row  rounded-lg overflow-hidden">
                 {/* Left Side (Content) */}
-                <div className="lg:w-1/2 p-4 md:p-8">
+                <div className="md:w-1/2 lg:w-1/2 p-4 lg:p-4  md:p-4">
                  
                   <p className="text-[#241443] text-[32px] md:text-[52px] font-semibold font-poppins">{slide.title}</p>
                   <p className="text-[#241443] opacity-60 text-[16px] md:text-[20px] mt-4 font-medium font-poppins">{slide.subtitle}</p>
@@ -122,7 +122,7 @@ const SliderComponent = () => {
                 </div>
 
                 {/* Right Side (Image) */}
-                <div className="lg:w-1/2 ">
+                <div className="md:w-1/2 lg:w-1/2 ">
                   <img
                     src={slide.imageUrl}
                     alt={`Slide ${index + 1}`}
