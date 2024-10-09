@@ -47,8 +47,9 @@ function Navbar() {
       <nav className="bg-white border-b border-gray-200">
         {/* Top Section for Desktop and Mobile */}
         <div className="container mx-auto flex items-center justify-between py-3">
-          <div className="md:hidden flex items-center justify-between mx-auto ">
+        <div className="md:hidden flex items-center justify-between mx-auto">
             {/* Logo for Mobile */}
+            <div className="mr-[50px]">
             <svg
               width="138"
               height="67"
@@ -75,7 +76,7 @@ function Navbar() {
                 stroke-width="23.5"
               />
             </svg>
-
+            </div>
             {/* Search Button */}
             <div className="flex items-center">
               <button className="flex items-center px-6 py-2 text-blue-600">
@@ -174,6 +175,7 @@ function Navbar() {
             </button>
           </div>
         </div>
+        
         {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
         <div className="md:hidden flex justify-end space-x-4 mb-[10px] ">
           <div className="relative">
