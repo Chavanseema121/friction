@@ -12,6 +12,7 @@ import star from "../assets/home/star.png"
 export default function CoursesSection() {
   return (
     <div className="bg-white py-8 px-4 sm:px-6 lg:px-16">
+      
     {/* Section Title */}
     <div className="text-center mb-12 sm:mb-16">
       
@@ -133,8 +134,11 @@ export default function CoursesSection() {
         <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3 mt-1" />
       </a>
     </div>
-    <hr className="block sm:hidden border-t border-gray-300 mt-4" />
+   
   </div>
+
+  
+  
 
   
   

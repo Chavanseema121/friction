@@ -9,7 +9,7 @@ function CommunitySection() {
   return (
     <div className="bg-white p-4 lg:p-8">
   <div className="flex items-center justify-center">
-  <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-5" />
+  <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-2" />
   <h1 className="text-[18px] lg:text-[30px] font-black text-center mb-2 sm:mb-6 font-Lato font-sans text-[#FF5C00]">
     Our Community
   </h1>
@@ -64,7 +64,7 @@ function CommunitySection() {
   </div>
 
   <div className="text-center mt-8 sm:mt-10 lg:mt-12">
-    <button className="bg-[#241443] text-[18px] font-semibold text-white px-4 py-2 sm:px-6 sm:py-3 lg:px-4 lg:py-2 rounded-full hover:bg-blue-600 transform transition-transform duration-300 hover:scale-105">
+    <button className="bg-[#241443] text-[18px] font-semibold text-white px-2 py-1 sm:px-6 sm:py-3 lg:px-4 lg:py-2 rounded-full transform transition-transform duration-300 hover:scale-105">
       Join Community
     </button>
   </div>

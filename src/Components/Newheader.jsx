@@ -97,7 +97,7 @@ const SliderComponent = () => {
               className="inline-flex items-center px-2 py-1 md:px-4 md:py-2 bg-[#FF5C00] text-white text-[12px] md:text-[18px] font-poppins font-semibold rounded-full"
             >
              Explore All Courses
-              <img src={arrowone} alt="Arrow" className="w-3 h-2 md:w-4 md:h-3 ml-3" />
+              <img src={arrowone} alt="Arrow" className="w-3 h-3 md:w-4 md:h-3 ml-3" />
             </a>
           </div>
 

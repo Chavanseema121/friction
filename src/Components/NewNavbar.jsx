@@ -43,13 +43,13 @@ function Navbar() {
   };
 
   return (
-    <div className="w-full h-auto mx-auto ">
-      <nav className="bg-white border-b border-gray-200">
+    <div className="w-full h-auto  mx-auto ">
+      <nav className="bg-white border-b border-gray-200 ">
         {/* Top Section for Desktop and Mobile */}
         <div className="container mx-auto flex items-center justify-between py-3">
         <div className="md:hidden flex items-center justify-between mx-auto">
             {/* Logo for Mobile */}
-            <div className="mr-[50px]">
+            <div className="mr-[60px]">
             <svg
               width="138"
               height="67"
@@ -83,7 +83,7 @@ function Navbar() {
                 <img
                   src={newsearchone}
                   alt="Search"
-                  className="w-[32px] h-[32px] mr-2"
+                  className="w-[25px] h-[25px]  mr-2"
                 />
               </button>
             </div>
@@ -108,7 +108,11 @@ function Navbar() {
                 />
               </svg>
             </button>
+
+            
           </div>
+
+          
 
           {/* Desktop: Logo (hidden on mobile) */}
           <div className="hidden md:flex items-center ml-[35px] mt-[30px]">
@@ -159,7 +163,7 @@ function Navbar() {
 
               {/* Search Button */}
               <button className="flex items-center px-5 py-2 text-white text-[20px] font-semibold text-Poppins bg-[#241443] rounded-full ">
-                <img src={newsearch} alt="Search" className="w-4 h-4 mr-2" />
+                <img src={newsearch} alt="Search" className="lg:w-4 lg:h-4 w-2 h-2 mr-2" />
                 Search
               </button>
             </div>
@@ -176,8 +180,8 @@ function Navbar() {
           </div>
         </div>
         
-        {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
-        <div className="md:hidden flex justify-end space-x-4 mb-[10px] ">
+       {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
+       <div className="md:hidden flex justify-end space-x-6 mt-[-20px] ">
           <div className="relative">
             <img src={heart} alt="Wishlist" className="w-6 h-6" />
             <span className="absolute -top-2 -left-2 bg-[#FFD70E] text-black text-xs rounded-full px-1">
@@ -190,7 +194,7 @@ function Navbar() {
               0
             </span>
           </div>
-        </div>
+        </div> 
 
         {/* Mobile Menu */}
         {isOpen && (
