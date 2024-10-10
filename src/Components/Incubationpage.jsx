@@ -150,6 +150,15 @@ export default function Incubationpage() {
 
       <Section />
 
+      <div className="button md:w-[190px] h-[48px]  sm:w-[260px]  w-[260px]  lg:hidden    flex text-center justify-center align-middle md:ml-[400px]   sm:mt-8  mt-18 md:mt-0  sm:ml-9 ml-20 animate-endanimation">
+          <button
+            id="apply-button"
+            className="w-[190px] h-[48px] text-[16px] text-[#FFFFFF] font-bold bg-[#022956]  transform transition-transform duration-300  rounded-md hover:text-[#022956] hover:bg-white hover:border border-[#022956]"
+          >
+            Apply Now
+          </button>
+        </div>
+
       {/* section footer */}
 
       <Footer />

@@ -934,7 +934,7 @@ my-0 mx-auto
           </div>
           <div className="text-box mr-[150px] md:align-middle">
             <div className="content">
-              <h3 className="middle-content md:text-[22px] text-[20px] sm:text-[20px]  font-lato          font-semibold text-center text-[#241443]      sm:ml-0 md:ml-0">
+              <h3 className="middle-content md:text-[22px] text-[20px] sm:text-[20px] font-lato font-semibold text-center text-[#241443]      sm:ml-0 md:ml-0">
                 Join
               </h3>
 
@@ -1130,7 +1130,7 @@ my-0 mx-auto
           </div>
         </div>
 
-        <div className="button md:w-[190px] h-[48px]  sm:w-[260px]  w-[260px]      flex text-center justify-center align-middle md:ml-[400px]   sm:mt-8  mt-18 md:mt-0  sm:ml-9 ml-20 animate-endanimation">
+        <div className=" hidden button md:w-[190px] h-[48px]  sm:w-[260px]  w-[260px]  lg:flex text-center justify-center align-middle md:ml-[400px] sm:mt-8  mt-18 md:mt-0  sm:ml-9 ml-20 animate-endanimation">
           <button
             id="apply-button"
             className="w-[190px] h-[48px] text-[16px] text-[#FFFFFF] font-bold bg-[#022956]  transform transition-transform duration-300  rounded-md hover:text-[#022956] hover:bg-white hover:border border-[#022956]"

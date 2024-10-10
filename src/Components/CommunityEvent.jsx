@@ -227,6 +227,9 @@ export default function CommunityEvent() {
   
 </section>
 
+
+
+
       <div className="flex flex-col items-center px-6 py-12 md:px-12 lg:px-24">
         {/* Header Section */}
         <div className="text-center mb-12">
