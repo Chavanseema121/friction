@@ -181,7 +181,7 @@ function Navbar() {
         </div>
         
        {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
-       <div className="md:hidden flex justify-end space-x-6 mt-[-20px] mr-[20px] ">
+       <div className="md:hidden flex justify-end space-x-6 mt-[-20px] mr-[30px] ">
           <div className="relative">
             <img src={heart} alt="Wishlist" className="w-6 h-6" />
             <span className="absolute -top-2 -left-2 bg-[#FFD70E] text-black text-xs rounded-full px-1">
