@@ -49,7 +49,7 @@ function Navbar() {
         <div className="container mx-auto flex items-center justify-between py-3">
         <div className="md:hidden flex items-center justify-between mx-auto">
             {/* Logo for Mobile */}
-            <div className="mr-[60px]">
+            <div className="mr-[80px] ml-[20px]">
             <svg
               width="138"
               height="67"
@@ -83,7 +83,7 @@ function Navbar() {
                 <img
                   src={newsearchone}
                   alt="Search"
-                  className="w-[25px] h-[25px]  mr-2"
+                  className="w-[30px] h-[30px]  mr-4"
                 />
               </button>
             </div>
@@ -94,7 +94,7 @@ function Navbar() {
               className="focus:outline-none mx-auto"
             >
               <svg
-                className="w-6 h-6 text-black"
+                className="w-6 h-6 text-black mr-[20px]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -181,7 +181,7 @@ function Navbar() {
         </div>
         
        {/* Cart and Heart Icons below Sign Up (Mobile Only) */}
-       <div className="md:hidden flex justify-end space-x-6 mt-[-20px] mr-[30px] ">
+       <div className="md:hidden flex justify-end space-x-6 mt-[-30px] mr-[10px] ">
           <div className="relative">
             <img src={heart} alt="Wishlist" className="w-6 h-6" />
             <span className="absolute -top-2 -left-2 bg-[#FFD70E] text-black text-xs rounded-full px-1">

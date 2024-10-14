@@ -26,8 +26,8 @@
   overflow-x: hidden;
   }
 
-  @media screen and (max-width: 480px) {
-    #root {overflow-x: hidden;}
+  @media screen and (max-width: 370px) {
+    #root { overflow-x: hidden;}
     
   }
 

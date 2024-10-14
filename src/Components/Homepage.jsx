@@ -289,7 +289,7 @@ export default function Homepage() {
 
       {/* section two */}
 
-      <div className="w-full h-auto lg:h-[293px]">
+      <div className="w-full h-auto lg:h-[293px] mt-[40px]">
         <div className="flex flex-col justify-center text-center">
           <h2 className="text-[#FF5C00] text-[20px] sm:text-[20px] md:text-[35px] lg:text-[40px] font-Mixed font-poppins">
             Trusted By Over<span className="text-[#241443]"> 13400+ </span>
@@ -322,8 +322,8 @@ export default function Homepage() {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center text-center mt-[40px] md:mt-[50px] lg:mt-[60px]">
-        <div className="flex items-center justify-center mb-6">
+      <div className="flex flex-col justify-center items-center text-center mt-[50px] md:mt-[50px] lg:mt-[60px]">
+        <div className="flex items-center justify-center mb-4">
           <img
             src={star}
             alt="star"
@@ -334,13 +334,13 @@ export default function Homepage() {
           </h2>
         </div>
 
-        <h2 className="text-[#241443] text-[20px] sm:text-[20px] lg:font-semibold lg:text-[40px] font-semibold text-center font-poppins">
+        <h2 className="text-[#241443] text-[20px] sm:text-[20px] lg:font-semibold lg:text-[40px] font-semibold text-center font-poppins mx-[5px]">
           Empowering Minds, Shaping Futures:
-          <br></br> Meet the FrictionLearn Plan
+          <br></br> Meet the FrictionLearn<br></br> Plan
         </h2>
       </div>
 
-      <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[40px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7">
+      <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[20px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7">
         <div className="childleft w-full md:w-[90%] lg:w-[700px]">
           {/* <div className="">
            
@@ -352,7 +352,7 @@ export default function Homepage() {
 
 <div className="">
   <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-Lato font-extrabold text-start font-sans leading-[45px] md:leading-[75px] lg:leading-[90px] relative">
-    About <span style={{
+    About<br></br> <span style={{
       backgroundImage: `url(${crossline})`,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '180px',
@@ -398,9 +398,9 @@ export default function Homepage() {
       <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
       {/* section three */}
-      <section className="w-full h-auto mt-[40px] sm:mt-[40px] lg:mt-[40px]">
+      <section className="w-full h-auto mt-[40px] sm:mt-[40px] lg:mt-[60px]">
         <div className="heading flex justify-center items-center text-center">
-          <div className="flex items-center justify-center mb-8">
+          <div className="flex items-center justify-center mb-8 ">
             <img
               src={star}
               alt="star"
