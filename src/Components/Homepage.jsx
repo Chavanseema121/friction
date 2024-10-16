@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
 // import NewNavbar from "./NewNavbar";
 import Newheader from "../Components/Newheader";
 import SectionFifth from "../Components/SectionFifth";
@@ -244,11 +245,31 @@ const testimonials = [
 export default function Homepage() {
   const [hoveredImageIndex, setHoveredImageIndex] = useState(0);
 
+  // const [current, setCurrent] = useState(2);
+
+  // const handleMouseEnterIn = (index) => {
+  //   setCurrent(index);
+  // };
+
+
+
+
   const [current, setCurrent] = useState(2);
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "0px",
+    slidesToShow: 5,
+    speed: 500,
+    beforeChange: (oldIndex, newIndex) => setCurrent(newIndex),
+  };
 
   const handleMouseEnterIn = (index) => {
     setCurrent(index);
   };
+
 
   return (
     <div className="w-full h-auto">
@@ -362,10 +383,10 @@ export default function Homepage() {
   </h2>
 </div>
 
-          <h6 className="mt-4 lg:mt-4 text-[#FF5C00] text-[14px] sm:text-[14px] lg:text-[21px] font-Regular font-poppins leading-[24px] md:leading-[32px]">
+          <h6 className="mt-4 lg:mt-4 text-[#000000] text-[14px] sm:text-[14px] lg:text-[21px] font-medium font-poppins leading-[24px] md:leading-[32px]">
             Driven by the mission to make quality education accessible to all
           </h6>
-          <p className="text-[#241443] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-Regular font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
+          <p className="text-[#FF5C00] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-Regular font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
             FrictionLearn is a gamified e-learning platform designed to bridge
             the gap between learners and industry experts. Through dynamic,
             personalized tasks, we provide an engaging and interactive learning
@@ -598,18 +619,18 @@ export default function Homepage() {
       {/* section six */}
 
       <div className="w-full h-auto  mx-auto lg:mt-[40px] mt-[20px]">
-        <div className="flex flex-col justify-center text-center px-4 md:px-8 lg:px-12">
-          <div className="flex items-center justify-center mb-2  lg:mb-2">
+        <div className="flex flex-col justify-center text-center px-2 md:px-8 lg:px-12">
+          <div className="flex mb-2  lg:mb-2">
             <img
               src={star}
               alt="star"
-              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] lg:mr-[-16px] lg:mt-[15px] mr-[-34px] mb-[25px]"
+              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] lg:mr-[-16px] lg:mt-[15px]"
             />
-            <h2 className="text-[#FF5C00] text-[18px] sm:text-[18px] md:text-[30px] lg:text-[30px] font-black font-Lato font-sans">
+            <h2 className="text-[#FF5C00] text-[18px] sm:text-[18px] md:text-[30px] lg:text-[30px] font-black font-Lato font-sans mr-[40px]">
               Tailored Training to Achieve Your Goals
             </h2>
           </div>
-          <p className="text-[18px] sm:text-[18px] md:text-[36px] lg:text-[40px] text-[#241443] font-semibold font-Poppins">
+          <p className="text-[20px] sm:text-[18px] md:text-[36px] lg:text-[40px] text-[#241443] font-semibold font-Poppins">
             Customized Learning Paths for Your Success
           </p>
         </div>
@@ -756,14 +777,14 @@ export default function Homepage() {
 
       {/* section eight */}
 
-      <div className="flex flex-col items-center justify-center px-4 py-6 md:px-12 lg:px-24">
+      <div className="flex flex-col items-center justify-center px-4 py-8 md:px-12 lg:px-24">
         <div className="flex items-center justify-center">
           <img
             src={star}
             alt="star"
             className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-9px] mb-[10px]"
           />
-          <h2 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black mb-2">
+          <h2 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black  font-Lato font-sans mb-2">
             Our Strategic Success Framework
           </h2>
         </div>
@@ -837,7 +858,7 @@ export default function Homepage() {
               alt="star"
               className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]"
             />
-            <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-poppins">
+            <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-Lato font-sans">
               Why do Projects
             </h2>
           </div>
@@ -913,7 +934,7 @@ export default function Homepage() {
           <div className="">
             <a
               href="#"
-              className="inline-flex bg-[#FF5C00] text-white lg:px-4 lg:py-2 px-3 py-1 text-[14px] lg:text-[20px] rounded-full shadow-md hover:bg-[#FF5C00] transition"
+              className="inline-flex bg-[#FF5C00] text-white lg:px-4 lg:py-2 px-3 py-1 text-[16px] lg:text-[20px] rounded-full shadow-md hover:bg-[#FF5C00] transition font-semibold font-poppins"
             >
               Explore Projects
               <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-2 h-2 ml-1 mt-[9px]" />
@@ -925,7 +946,7 @@ export default function Homepage() {
 
       {/* section ten */}
 
-      <div className="bg-white py-5 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white py-8 px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="flex items-center justify-center">
             <img
@@ -1368,7 +1389,7 @@ export default function Homepage() {
 
       {/* section eighteenth */}
 
-      <div className="relative w-full h-auto lg:pb-16 pb-0">
+      {/* <div className="relative w-full h-auto lg:pb-16 pb-0">
         <div className="flex flex-col justify-center text-center mt-[20px] md:mt-[40px]">
           <div className="flex items-center justify-center">
             <img
@@ -1428,7 +1449,72 @@ export default function Homepage() {
             {testimonials[current].text}
           </p>
         </div>
+      </div> */}
+  <div className="relative w-full h-auto lg:pb-16 pb-0">
+      <div className="flex flex-col justify-center text-center mt-[20px] lg:mt-[60px]">
+        <div className="flex items-center justify-center">
+          <img
+            src={star}
+            alt="star"
+            className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]"
+          />
+          <h1 className="text-[#FF5C00] text-[15px] lg:text-[30px] text-center font-black">
+            Our Testimonials
+          </h1>
+        </div>
+        <h2 className="text-[#022956] text-[20px] lg:text-[40px] font-semibold font-sans font-lato lg:mt-2">
+          Experience Our Impact Through Their Words
+        </h2>
       </div>
+
+      <Slider {...settings}>
+        {testimonials.slice(0, 5).map((testimonial, index) => { // Limit to 5 items
+          const isActive = index === current;
+
+          return (
+            <div
+              key={index}
+              className={`transition-all duration-500 ease-in-out flex justify-center items-center ${
+                isActive ? "scale-110" : "scale-75 blur-sm"
+              } ${isActive ? "opacity-100" : "opacity-50"}`}
+              onMouseEnter={() => handleMouseEnterIn(index)}
+              style={{
+                transform: isActive ? "scale(1.1)" : "scale(0.75)",
+                opacity: isActive ? 1 : 0.5,
+                width: isActive ? "186px" : "150px",
+                height: isActive ? "205px" : "150px",
+              }}
+            >
+              <div className="rounded-lg flex flex-col items-center lg:w-[195px] lg:h-[205px] w-[65px] h-[72px] lg:mx-auto mx-0 mt-8">
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.name}
+                  className={`${isActive ? "filter-none" : "filter grayscale"}`}
+                />
+              </div>
+            </div>
+          );
+        })}
+      </Slider>
+
+      <div className="text-center mt-2 lg:mt-6">
+        <h3 className="text-[#1D2228] text-[10px] lg:text-[20px] font-medium font-Lato font-sans">
+          {testimonials[current].name}
+        </h3>
+        <p className="text-[#1D2228] text-[7px] lg:text-[16px] font-light font-Lato font-sans">
+          {testimonials[current].role}
+        </p>
+      </div>
+      <div className="mt-[20px] lg:mt-[40px] mx-4 lg:mx-[20px] text-center font-medium">
+        <p className="text-[#1D2228] text-[11px] lg:text-[36px] mx-2 md:mx-[100px] font-light font-Lato font-sans">
+          {testimonials[current].text}
+        </p>
+      </div>
+    </div>
+  
+
+
+
 
       <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 

@@ -26,7 +26,7 @@ function App() {
           {/* <Route path="/services" element={<Services />}/> */}
           <Route path="/communityandevent" element={<CommunityEvent />} />
           <Route path="/incubation" element={<Incubationpage />} />
-          <Route path="/Launchingsoon" element={<LaunchingSoon />} />
+          <Route path="/launchingsoon/:page" element={<LaunchingSoon />} />
           
 
         </Routes>
