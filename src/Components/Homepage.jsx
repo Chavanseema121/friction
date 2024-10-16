@@ -362,48 +362,42 @@ export default function Homepage() {
       </div>
 
       <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[20px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7">
-        <div className="childleft w-full md:w-[90%] lg:w-[700px]">
-          {/* <div className="">
-           
-          <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-Lato font-extrabold text-start font-sans  leading-[45px] md:leading-[75px] lg:leading-[90px]">
-            About FrictionLearn
-          </h2>
-          <img src={crossline} alt="" className="w-[360px] h-[33px] lg:ml-[350px] lg:mt-[-60px]" />
-          </div> */}
+  <div className="childleft w-full md:w-[90%] lg:w-[700px]">
+    <div className="">
+      <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] text-start font-bold font-Lato font-sans leading-[45px] md:leading-[75px] lg:leading-[90px] relative">
+        About<br />
+        <span
+          style={{
+            backgroundImage: `url(${crossline})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'right center', // Ensures the image appears to the right of the text
+            backgroundSize: 'contain',
+            paddingRight: '50px', // Adjust space between text and background image
+          }}
+          className="inline-block w-auto lg:w-[600px]" // Ensures proper width and block behavior for the span
+        >
+          FrictionLearn
+        </span>
+      </h2>
+    </div>
 
-<div className="">
-  <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] font-Lato font-extrabold text-start font-sans leading-[45px] md:leading-[75px] lg:leading-[90px] relative">
-    About<br></br> <span style={{
-      backgroundImage: `url(${crossline})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '180px',
-      backgroundSize: 'contain',
-      paddingLeft: '0px' /* Adjust this value based on your image width */
-    }}>FrictionLearn</span>
-  </h2>
+    <h6 className="mt-4 lg:mt-4 text-[#000000] text-[14px] sm:text-[14px] lg:text-[21px] font-medium font-poppins leading-[24px] md:leading-[32px]">
+      Driven by the mission to make quality education accessible to all
+    </h6>
+    <p className="text-[#FF5C00] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-Regular font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
+      FrictionLearn is a gamified e-learning platform designed to bridge the gap between learners and industry experts. Through dynamic, personalized tasks, we provide an engaging and interactive learning journey aimed at enhancing skills and career growth. Our mission is to create a seamless learning experience that empowers users to achieve their goals with ease and innovation.
+    </p>
+  </div>
+
+  <div className="childright mt-[30px] md:mt-[50px] flex justify-center lg:justify-end">
+    <img
+      src={aboutskillimg}
+      alt="About Skill"
+      className="w-[350px] sm:w-[350px] md:w-[450px] lg:w-[606px] h-auto"
+    />
+  </div>
 </div>
 
-          <h6 className="mt-4 lg:mt-4 text-[#000000] text-[14px] sm:text-[14px] lg:text-[21px] font-medium font-poppins leading-[24px] md:leading-[32px]">
-            Driven by the mission to make quality education accessible to all
-          </h6>
-          <p className="text-[#FF5C00] text-[12px] sm:text-[14px] md:text-[18px] lg:text-[20px] font-Regular font-poppins leading-[22px] md:leading-[28px] lg:leading-[32px] mt-[20px]">
-            FrictionLearn is a gamified e-learning platform designed to bridge
-            the gap between learners and industry experts. Through dynamic,
-            personalized tasks, we provide an engaging and interactive learning
-            journey aimed at enhancing skills and career growth. Our mission is
-            to create a seamless learning experience that empowers users to
-            achieve their goals with ease and innovation.
-          </p>
-        </div>
-
-        <div className="childright mt-[30px] md:mt-[50px] flex justify-center lg:justify-end">
-          <img
-            src={aboutskillimg}
-            alt="About Skill"
-            className="w-[350px] sm:w-[350px] md:w-[450px] lg:w-[606px] h-auto"
-          />
-        </div>
-      </div>
 
       <div className="flex justify-center lg:justify-start mt-[20px] md:mt-[40px] lg:mt-[-40px] ml-[30px] lg:ml-[200px] ">
         <button className="w-[166px]  lg:w-[214px] h-[49px]  md:h-[62px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-semibold font-poppins flex items-center justify-center">
@@ -620,11 +614,11 @@ export default function Homepage() {
 
       <div className="w-full h-auto  mx-auto lg:mt-[40px] mt-[20px]">
         <div className="flex flex-col justify-center text-center px-2 md:px-8 lg:px-12">
-          <div className="flex mb-2  lg:mb-2">
+          <div className="flex mb-2  lg:mb-2 justify-center text-center">
             <img
               src={star}
               alt="star"
-              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] lg:mr-[-16px] lg:mt-[15px]"
+              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] lg:mr-[-16px] lg:mt-[4px]"
             />
             <h2 className="text-[#FF5C00] text-[18px] sm:text-[18px] md:text-[30px] lg:text-[30px] font-black font-Lato font-sans mr-[40px]">
               Tailored Training to Achieve Your Goals
@@ -777,7 +771,7 @@ export default function Homepage() {
 
       {/* section eight */}
 
-      <div className="flex flex-col items-center justify-center px-4 py-8 md:px-12 lg:px-24">
+      <div className="flex flex-col items-center justify-center px-4 py-8 md:px-12 lg:px-24 lg:py-10">
         <div className="flex items-center justify-center">
           <img
             src={star}
@@ -850,19 +844,19 @@ export default function Homepage() {
 
       {/* secton nine */}
 
-      <section className="whydoprojects w-full sm:h-auto lg:mt-[40px] mt-[30px]">
+      <section className="whydoprojects w-full sm:h-auto lg:mt-[40px] mt-[40px]">
         <div className="flex flex-col justify-center items-center text-center px-4">
           <div className="flex items-center justify-center">
             <img
               src={star}
               alt="star"
-              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]"
+              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] lg:mt-[-30px] mt-[-20px]"
             />
-            <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-Lato font-sans">
+            <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-Lato font-sans lg:mb-4 mb-4">
               Why do Projects
             </h2>
           </div>
-          <h2 className="text-[#241443] text-[20px] lg:text-[40px] font-semibold text-center font-poppins mt-2">
+          <h2 className="text-[#241443] text-[20px] lg:text-[40px] font-semibold text-center font-poppins lg:mb-4">
             Doing these Projects will Gain Hands-On real
             <br className="hidden sm:block" />
             World Project Experience with{" "}
@@ -875,7 +869,7 @@ export default function Homepage() {
 
         <div className="parent flex flex-row flex-wrap gap-6 justify-evenly sm:justify-center px-6 lg:px-0">
           {/* First Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] border-[#874BF6] shadow-lg rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] ... ring-1 ring-[#874BF6] ring-inset shadow-lg rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
             <img
               src={whydoprojectone}
               alt=""
@@ -893,7 +887,7 @@ export default function Homepage() {
           </div>
 
           {/* Second Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] border-[#1E8C60] shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px]  ... ring-1 ring-[#1E8C60] ring-inset  shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
             <img
               src={whydoprojecttwo}
               alt=""
@@ -911,7 +905,7 @@ export default function Homepage() {
           </div>
 
           {/* Third Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] lg:mt-[10px] p-[10px] border-[#FFD400] shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] lg:mt-[10px] p-[10px]  ... ring-1 ring-[#FFD400] ring-inset  shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
             <img
               src={whydoprojectthree}
               alt=""
@@ -1251,16 +1245,16 @@ export default function Homepage() {
           <h1 className=" text-[#241443] text-[20px] lg:text-[40px] font-semibold mt-4 font-poppins">
             "Fuel Innovation, Turn Ideas Into Reality"
           </h1>
-          <p className="text-[#241443] mt-2 text-[14px] lg:text-[20px] font-Regular font-poppins">
+          <p className="text-[#241443] mt-2 text-[10px] lg:text-[20px] font-Regular font-poppins">
             "Nurturing innovative ideas through guided incubation for success."
           </p>
         </div>
 
         {/* Main Content Section */}
-        <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between ml-[20px]">
           {/* Text Section */}
-          <div className="text-left max-w-lg lg:mr-12 mb-8 lg:mb-0">
-            <h2 className="text-[25px] lg:text-[50px] font-semibold text-[#FF5C00] font-poppins mb-4">
+          <div className=" lg:order-none order-2 text-left max-w-lg lg:mr-12 mb-3 lg:mb-0">
+            <h2 className="text-[25px] lg:text-[50px] font-semibold text-[#FF5C00] font-poppins">
               We Help Early Stage<br></br> Startups to Define Their Goals
               <br></br> & Get Daily Funding...
             </h2>
@@ -1270,7 +1264,7 @@ export default function Homepage() {
           </div>
 
           {/* Image Section */}
-          <div>
+          <div className="lg:order-none order-1">
             <img
               src={incubationsector}
               alt="Incubator Program"
@@ -1278,7 +1272,7 @@ export default function Homepage() {
             />
           </div>
         </div>
-        <div className="mt-2 lg:mt-4 text-center ml-[-40px] lg:text-left lg:ml-[-900px]">
+        <div className="mt-8 lg:mt-4 text-center ml-[-40px] lg:text-left lg:ml-[-900px]">
           <a
             href="#"
             className="inline-flex items-center px-4 py-2 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold rounded-full"

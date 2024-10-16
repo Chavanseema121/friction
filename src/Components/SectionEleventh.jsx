@@ -9,7 +9,7 @@ function CommunitySection() {
   return (
     <div className="bg-white p-4 lg:p-8">
   <div className="flex items-center justify-center">
-  <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-2" />
+  <img src={star} alt="star" className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] mb-2 lg:mt-[-14px]" />
   <h1 className="text-[18px] lg:text-[30px] font-black text-center mb-2 sm:mb-6 font-Lato font-sans text-[#FF5C00]">
     Our Community
   </h1>

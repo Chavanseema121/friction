@@ -7,6 +7,7 @@ import sectionfifthfour from "../assets/home/sectionfifthfour.png";
 import sectionfifthfive from "../assets/home/sectionfifthfive.png";
 import arrowone from "../assets/home/arrowone.png";
 import star from "../assets/home/star.png"
+import datascience from "../assets/datascience.png"
 
 
 export default function CoursesSection() {
@@ -29,11 +30,11 @@ export default function CoursesSection() {
         Take the next step towards achieving your personal & professional aspirations with FrictionLearn.
       </p>
     </div>
-  
+   
     {/* Course Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12"> 
       {/* Art & Design */}
-      <div className="flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#B3A7FA]">
+      <div className="flex items-center border border-r-4 border-b-4 border-[#B3A7FA] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#B3A7FA]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#B3A7FA] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifth} alt="Art & Design Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px] " />
@@ -45,10 +46,33 @@ export default function CoursesSection() {
           </h3>
           <p className="text-[#000000] text-[14px] sm:text-[15px] font-Poppins">8 Courses</p>
         </div>
+      </div> 
+
+{/* <div className="flex w-[380px] h-[166px] bg-cover bg-center" style={{ backgroundImage:  `url(${datascience})` }}>
+      Left Side: Image */} 
+      {/* <div className="flex-1">
+        <img
+          src={sectionfifth}
+          alt="Left side image"
+          className="w-full h-full object-cover"
+        />
       </div>
-  
+      {/* <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#B3A7FA] flex items-center justify-center ml-[30px] lg:ml-0">
+            <img src={sectionfifth} alt="Art & Design Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px] " />
+          </div>
+
+      <div className="flex-1 flex items-center justify-center bg-white bg-opacity-80 p-8">
+      <div className="ml-4 sm:ml-6">
+          <h3 className="text-[18px] lg:text-[23px] font-semibold text-[#241443] font-Poppins">
+            Art & Design
+          </h3>
+          <p className="text-[#000000] text-[14px] sm:text-[15px] font-Poppins">8 Courses</p>
+        </div>
+      </div>
+    </div> */}
+    
       {/* Business */}
-      <div className="flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#F7847C]">
+      <div className="flex items-center border border-r-4 border-b-4 border-[#F7847C] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#F7847C]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#F7847C] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthone} alt="Business Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
@@ -63,7 +87,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Development */}
-      <div className=" hidden lg:flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#5FD2CC]">
+      <div className=" hidden lg:flex items-center border border-r-4 border-b-4 border-[#5FD2CC] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#5FD2CC]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#5FD2CC] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthtwo} alt="Development Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
@@ -78,7 +102,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Data Science */}
-      <div className="flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#FFAF41]">
+      <div className="flex items-center border border-r-4 border-b-4 border-[#FFAF41] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#FFAF41]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#FFAF41] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifththree} alt="Data Science Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
@@ -93,7 +117,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Finance & Market */}
-      <div className=" hidden lg:flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#F78ED8]">
+      <div className=" hidden lg:flex items-center border border-r-4 border-b-4 border-[#F78ED8] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#F78ED8]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#F78ED8] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthfour} alt="Finance & Market Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
@@ -108,7 +132,7 @@ export default function CoursesSection() {
       </div>
   
       {/* Technology */}
-      <div className=" hidden lg:flex items-center border rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-2 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#59CDFE]">
+      <div className=" hidden lg:flex items-center border border-r-4 border-b-4 border-[#59CDFE] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#59CDFE]">
         <div className="flex-shrink-0">
           <div className="w-[50px] lg:w-[80px] h-[50px] lg:h-[80px] rounded-full bg-[#59CDFE] flex items-center justify-center ml-[30px] lg:ml-0">
             <img src={sectionfifthfive} alt="Technology Icon" className="w-[36px] lg:w-[56px] h-[30px] lg:h-[50px]" />
