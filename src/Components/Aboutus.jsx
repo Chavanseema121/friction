@@ -367,7 +367,7 @@ export default function Aboutus() {
 
       {/* section five */}
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center lg:mt-[40px] mt-[30px]">
         <img
           src={star}
           alt="star"

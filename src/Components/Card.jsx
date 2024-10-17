@@ -2,7 +2,7 @@ import React from 'react';
 
 function Card({ image, title, description }) {
   return (
-    <div className=" bg-white border border-gray-600 rounded-[40px] shadow dark:bg-gray-800 dark:border-gray-700 lg:w-[358px] lg:h-[366px] lg:mx-auto w-[304px] h-[297px] mx-[25px]">
+    <div className=" bg-white border-4 border-l-[#573EE8] border-b-[#573EE8] border-r-[#573EE8]  border-t-[#573EE8]  lg:w-[358px] lg:h-[366px] lg:mx-auto w-[304px] h-[297px] mx-[25px] rounded-[50px] transition-transform duration-300 transform hover:-translate-y-1 hover:shadow-lg">
       <div className="flex justify-center items-center p-4">
         <img
           className="w-[111px] h-[114px] lg:w-[143px] lg:h-[145px]"

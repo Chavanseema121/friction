@@ -148,7 +148,7 @@ export default function Footer() {
   {/* Input Section - Last on lg and xl, First on sm and md */}
   <div className="text-white flex flex-col items-start sm:items-center md:items-center lg:items-start mt-2 md:mt-0 order-1 sm:order-1 md:order-1 lg:order-4">
     <h3 className="mb-2 text-[17px] sm:text-[30px] lg:text-[22px] font-bold font-Lato font-sans ml-[50px] sm:ml-[30px] lg:ml-0">Join our Newsletter</h3>
-    <div className="flex w-[319px]  h-[51px] lg:w-full lg:ml-0 ml-[-35px] mx-2">
+    <div className="flex w-[319px]  h-[51px] lg:w-full lg:ml-0 ml-[-35px] mx-auto">
       <input
         type="text"
         placeholder="*Enter your email"

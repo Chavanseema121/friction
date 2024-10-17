@@ -12,7 +12,7 @@ export default function LaunchingSoon() {
   let specialMessage = "Be the first person to experience our Gamified e-Learning platform";
   
   if (page === "courses") {
-    pageTitle = "Courses Launching Soon!";
+    pageTitle = "Courses Launching Soon!...";
     specialMessage = "Be the first person to experience our exciting courses!";
   } else if (page === "contact") {
     pageTitle = "Contact Us Launching Soon!";
@@ -26,31 +26,31 @@ export default function LaunchingSoon() {
     <div>
       {/* Coming soon section */}
       <section
-        className="w-full bg-cover h-[760px]"
+        className="w-full bg-cover h-auto"
         style={{ backgroundImage: `url(${backgroundImg})` }}
       >
-        <div className="parent flex flex-col justify-start h-full ml-[40px]">
-          <h2 className="text-[#FF5C00] text-[46px] font-medium mt-[221px] font-poppins">
+        <div className="parent flex flex-col justify-start h-auto lg:ml-[40px] ml-[20px]">
+          <h2 className="text-[#FF5C00] lg:text-[46px] text-[25px] font-Medium lg:mt-[140px] mt-[80px] font-poppins">
             Website
           </h2>
-          <h2 className="text-[#241443] text-[46px] font-bold font-poppins">
+          <h2 className="text-[#241443] lg:text-[46px] text-[25px] font-bold font-Lato font-sans">
             {pageTitle}
           </h2>
-          <h4 className="text-[#241443] text-[25px] font-medium font-poppins">
+          <h4 className="text-[#241443] lg:text-[25px] text-[14px] font-Regular font-poppins">
             {pageSubtitle}
           </h4>
 
-          <div className="sub-child mt-[111px]">
-            <h4 className="text-[#FF5C00] text-[18px] font-medium font-poppins">
+          <div className="sub-child lg:mt-[111px] mt-[50px]">
+            <h4 className="text-[#FF5C00] lg:text-[18px] text-[11px] font-medium font-poppins">
               {specialMessage}
             </h4>
-            <div className="relative w-[383px]">
+            <div className="relative w-[383px] mb-[40px] lg:mb-[60px]">
               <input
                 type="text"
                 placeholder="Enter your Mail Id"
-                className="w-full h-[62px] pl-4 pr-[120px] rounded-full border border-gray-300 placeholder:text-[#241443] placeholder:text-[18px] placeholder:font-regular"
+                className="w-full lg:h-[62px] h-[50px] lg:pl-4 pl-6 lg:pr-[120px] pr-[60px] rounded-full border border-gray-300 placeholder:text-[#241443] lg:placeholder:text-[18px] placeholder:text-[11px] placeholder:font-regular"
               />
-              <button className="absolute font-poppins top-0 right-[1%] h-[62px] px-6 bg-[#241443] text-white text-[18px] rounded-r-full rounded-l-none w-[155px]">
+              <button className="absolute font-poppins top-0 lg:right-[1%] right-[8%] lg:h-[62px] h-[50px] lg:px-6 px-4 bg-[#241443] text-white lg:text-[18px] text-[8px] rounded-r-full rounded-l-none lg:w-[155px] w-[100px]">
                 Join Now
               </button>
             </div>
