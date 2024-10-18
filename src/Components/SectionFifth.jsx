@@ -152,10 +152,10 @@ export default function CoursesSection() {
       <p className="mb-4 text-[#022956] opacity-[60%] font-medium text-[18px] lg:text-[21px]">& Many more</p>
       <a
         href="#"
-        className="inline-flex bg-[#FF5C00] text-white lg:px-6 lg:py-3 px-4 py-2 text-[15px] lg:text-[20px] rounded-full shadow-md hover:bg-orange-600 transition"
+        className="inline-flex bg-[#FF5C00] text-white lg:px-6 lg:py-2.5 px-4 py-2 text-[15px] lg:text-[20px] rounded-full shadow-md hover:bg-orange-600 transition font-semibold font-poppins"
       >
         Explore All
-        <img src={arrowone} alt="Arrow" className="w-4 h-3 ml-3 mt-1" />
+        <img src={arrowone} alt="Arrow" className=" lg:w-4 lg:h-3 w-2 h-2 ml-3 mt-1" />
       </a>
     </div>
    

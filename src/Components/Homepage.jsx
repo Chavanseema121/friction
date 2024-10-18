@@ -836,9 +836,22 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-        <button className="mt-10 mr-[20px] bg-[#241443] text-white lg:py-2  lg:px-4 py-1 px-2 rounded-full  text-[16px] font-semibold font-poppins">
+        {/* <button className="mt-10 mr-[20px] bg-[#241443] text-white lg:py-2.5  lg:px-4 py-1 px-2 rounded-full  text-[16px] font-semibold font-poppins">
           Explore Courses &rarr;
-        </button>
+        </button> */}
+
+        
+<div className="text-center mt-10">
+          <div className="">
+            <a
+              href="#"
+              className="inline-flex bg-[#FF5C00] text-white lg:px-4 lg:py-2 px-3 py-1 text-[16px] lg:text-[20px] rounded-full shadow-md hover:bg-[#FF5C00] transition font-semibold font-poppins"
+            >
+              Explore Courses
+              <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-2 h-2 ml-1 mt-[9px]" />
+            </a>
+          </div>
+        </div>
       </div>
       <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
@@ -1101,10 +1114,10 @@ export default function Homepage() {
             </p>
             <a
               href="#"
-              className="inline-flex items-center lg:w-[262px] lg:h-[62px] bg-[#241443] text-white text-[11px] lg:text-[20px] lg:px-4 lg:py-2 px-2 py-1 rounded-full shadow-lg hover:bg-[#241443] transition font-semibold font-poppins"
+              className="inline-flex items-center lg:w-[262px] lg:h-[62px] bg-[#241443] text-white text-[11px] lg:text-[20px] lg:px-4 lg:py-2.5 px-2 py-1 rounded-full shadow-lg hover:bg-[#241443] transition font-semibold font-poppins"
             >
               Get Your License
-              <img src={arrowone} alt="" className="ml-2 w-2 h-2"></img>
+              <img src={arrowone} alt="" className="ml-2 w-2 h-2 lg:w-4 lg:h-3"></img>
             </a>
           </div>
         </div>
@@ -1216,10 +1229,10 @@ export default function Homepage() {
         </div>
 
         {/* Button */}
-        <div className="flex flex-row justify-center mt-[73px] sm:mt-[40px]">
-          <button className="lg:w-[240px] lg:h-[62px] w-[160px] h-[42px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] lg:text-[20px] font-semibold font-poppins flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center lg:mt-[73px] mt-[40px] sm:mt-[40px]">
+          <button className="lg:w-[240px] lg:h-[55px] w-[160px] h-[42px] bg-[#FF5C00] rounded-full text-[#ffffff] text-[14px] lg:text-[20px] font-semibold font-poppins flex flex-row justify-center items-center">
             <span>Explore All</span>
-            <img src={arrowone} alt="" className="w-[26px] h-[18px] ml-2" />
+            <img src={arrowone} alt="" className=" lg:w-4 lg:h-3 w-[26px] h-[18px] ml-2" />
           </button>
         </div>
       </section>
@@ -1275,7 +1288,7 @@ export default function Homepage() {
         <div className="mt-8 lg:mt-4 text-center ml-[-40px] lg:text-left lg:ml-[-900px]">
           <a
             href="#"
-            className="inline-flex items-center px-4 py-2 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold rounded-full"
+            className="inline-flex items-center px-4 py-2.5 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold font-poppins rounded-full"
           >
             About Incubator Program
             <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-3 h-2 ml-2 lg:ml-3" />
@@ -1370,10 +1383,10 @@ export default function Homepage() {
           <div className="mt-8 text-center md:text-left">
             <a
               href="#"
-              className="inline-flex items-center px-4 py-2 bg-[#241443] text-white text-[16px] lg:text-[20px] font-semibold rounded-full"
+              className="inline-flex items-center lg:px-4 lg:py-2.5 px-4 py-1 bg-[#241443] text-white text-[16px] lg:text-[20px] font-semibold font-poppins rounded-full"
             >
               Become an Instructor
-              <img src={arrowone} alt="Arrow" className="w-3 h-2 ml-3" />
+              <img src={arrowone} alt="Arrow" className=" lg:w-4 lg:h-3 w-2 h-2 ml-3" />
             </a>
           </div>
         </div>
@@ -1604,7 +1617,7 @@ export default function Homepage() {
           <div className="absolute inset-0 bg-[#241443] opacity-0"></div>
 
           {/* Content (Text and Buttons) */}
-          <div className="relative text-center py-6 sm:py-24 md:py-32 lg:py-29">
+          <div className="relative text-center py-6 sm:py-24 md:py-32 lg:py-[165px]">
             {/* Heading */}
             <h1 className="mb-2 text-[25px] sm:text-[50px] lg:text-[70px] font-bold text-white font-serif">
               Ready to Start Learning?
@@ -1621,7 +1634,7 @@ export default function Homepage() {
               {/* Contact Us Button */}
               <a
                 href="#"
-                className="rounded-full inline-flex justify-center items-center py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 text-[10px] sm:text-sm lg:text-base font-medium text-[#241443] bg-white hover:bg-gray-200 focus:ring-2 focus:ring-gray-300"
+                className="rounded-full inline-flex justify-center items-center py-1.5 px-4 sm:py-2 sm:px-6 lg:py-2.5 lg:px-6 text-[10px] sm:text-sm lg:text-[20px] font-semibold font-poppins text-[#241443] bg-white hover:bg-gray-200 focus:ring-2 focus:ring-gray-300"
               >
                 Contact Us
               </a>
@@ -1629,7 +1642,7 @@ export default function Homepage() {
               {/* Explore Courses Button */}
               <a
                 href="#"
-                className="rounded-full inline-flex justify-center items-center py-2 px-4 sm:py-2 sm:px-6 lg:py-3 lg:px-8 text-[10px] sm:text-sm lg:text-base font-medium text-white border border-white hover:bg-white hover:text-[#241443] transition-colors"
+                className="rounded-full inline-flex justify-center items-center py-1.5 px-4 sm:py-2 sm:px-6 lg:py-2.5 lg:px-6 text-[10px] sm:text-sm lg:text-[20px] font-semibold font-poppins text-white border border-white hover:bg-white hover:text-[#241443] transition-colors"
               >
                 Explore Courses
               </a>

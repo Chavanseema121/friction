@@ -4,6 +4,8 @@ import sectioneleventhtwo from "../assets/home/sectioneleventhtwo.png";
 import sectionelevenththree from "../assets/home/sectionelevenththree.png";
 import sectioneleventhfour from "../assets/home/sectioneleventhfour.png";
 import star from "../assets/home/star.png"
+import arrowone from "../assets/home/arrowone.png";
+
 
 function CommunitySection() {
   return (
@@ -63,11 +65,24 @@ function CommunitySection() {
     </div>
   </div>
 
-  <div className="text-center mt-8 sm:mt-10 lg:mt-12">
+  {/* <div className="text-center mt-8 sm:mt-10 lg:mt-12">
     <button className="bg-[#241443] text-[18px] font-semibold text-white px-2 py-1 sm:px-6 sm:py-3 lg:px-4 lg:py-2 rounded-full transform transition-transform duration-300 hover:scale-105">
       Join Community
     </button>
-  </div>
+  </div> */}
+
+  
+<div className="text-center mt-10">
+          <div className="">
+            <a
+              href="#"
+              className="inline-flex bg-[#241443] text-white lg:px-4 lg:py-2 px-3 py-1 text-[16px] lg:text-[20px] rounded-full shadow-md  font-semibold font-poppins"
+            >
+              Join Community
+              <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-2 h-2 ml-1 mt-[9px]" />
+            </a>
+          </div>
+        </div>
 </div>
 
   );

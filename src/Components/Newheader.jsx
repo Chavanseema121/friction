@@ -37,9 +37,7 @@ const slides = [
           Improve Your{" "}
           <span className="bg-[#FF5C00] p-1 rounded-full text-[#241443]">
             Skills
-          </span>{" "}
-          through
-          FrictionLearn!
+          </span>{" "} through FrictionLearn!
         </>
       ),
       subtitle:
@@ -52,9 +50,8 @@ const slides = [
           <p className="text-[14px] sm:text-[14px] md:text-[15px] lg:text-[16px] text-[#241443] opacity-40 font-semibold ">
             100% Quality courses
           </p>
-          Show your Creativity to<br />
-          the world with<br />
-          <span className="text-[#FF5C00]">Friction</span>Learn!
+          Show your Creativity to
+          the world with <span className="text-[#FF5C00]">Friction</span>Learn!
         </>
       ),
       subtitle:
