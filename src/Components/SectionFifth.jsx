@@ -12,7 +12,7 @@ import datascience from "../assets/datascience.png"
 
 export default function CoursesSection() {
   return (
-    <div className="bg-white py-8 px-4 sm:px-6 lg:px-16">
+    <div className="bg-white py-4 lg:py-8 px-4 sm:px-6 lg:px-16">
       
     {/* Section Title */}
     <div className="text-center mb-12 sm:mb-16">
@@ -26,7 +26,7 @@ export default function CoursesSection() {
       <h2 className="text-[20px] sm:text-[32px] lg:text-[40px] font-semibold font-poppins text-[#241443] mt-2">
         Explore 40,000+ Free Gamified Online <br className="hidden sm:block" /> Courses
       </h2>
-      <p className="mt-4 text-[11px] sm:text-[18px] lg:text-[21px] text-[#241443] opacity-[60%] font-medium font-poppins">
+      <p className="mt-2 lg:mt-4 text-[11px] sm:text-[18px] lg:text-[21px] text-[#241443] opacity-[60%] font-medium font-poppins">
         Take the next step towards achieving your personal & professional aspirations with FrictionLearn.
       </p>
     </div>

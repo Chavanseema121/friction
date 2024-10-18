@@ -26,40 +26,40 @@ function CommunitySection() {
   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
     <div className="bg-[#E0E1E6] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
       <img src={sectioneleventhone} alt="Exclusive Events" className="w-full max-w-[400px] sm:max-w-[521px] h-auto mx-auto mt-2" />
-      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-center text-[#241443] font-Lato font-sans mt-2">
+      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-left text-[#241443] font-Lato font-sans mt-2 ml-2">
         Exclusive Events
       </h2>
-      <p className="text-center text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal">
+      <p className="text-left text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal ml-8">
         Access LIVE events to explore your favorite fields and elevate your growth to the next level.
       </p>
     </div>
 
     <div className="bg-[#E0E1E6] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
       <img src={sectioneleventhtwo} alt="Find Mentors" className="w-full max-w-[400px] sm:max-w-[521px] h-auto mx-auto mt-2" />
-      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-center text-[#241443] font-Lato font-sans mt-2">
+      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-left text-[#241443] font-Lato font-sans mt-2 ml-2">
         Find Mentors
       </h2>
-      <p className="text-center text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal">
+      <p className="text-left text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal ml-8">
         Accelerate your learning journey with a mentor who guides you every step of the way in your career.
       </p>
     </div>
 
     <div className="bg-[#E0E1E6] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
       <img src={sectionelevenththree} alt="Community Meetups" className="w-full max-w-[400px] sm:max-w-[521px] h-auto mx-auto mt-2" />
-      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-center text-[#241443] font-Lato font-sans mt-2">
+      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-left text-[#241443] font-Lato font-sans mt-2 ml-2">
         Community Meetups
       </h2>
-      <p className="text-center text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal">
+      <p className="text-left text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal ml-8">
         Surround yourself with tech-driven minds, connect with like-minded innovators, and amplify your growth.
       </p>
     </div>
 
     <div className="bg-[#E0E1E6] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
       <img src={sectioneleventhfour} alt="Find Your Business Partner" className="w-full max-w-[400px] sm:max-w-[521px] h-auto mx-auto mt-2" />
-      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-center text-[#241443] font-Lato font-sans mt-2">
+      <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-left text-[#241443] font-Lato font-sans mt-2 ml-2">
         Find Your Business Partner
       </h2>
-      <p className="text-center text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal">
+      <p className="text-left text-[#FF5C00] text-[16px] sm:text-[18px] text-Poppins font-normal ml-8">
         Access to your Co-Tech Business Minded to gear up your Idea.
       </p>
     </div>
@@ -72,7 +72,7 @@ function CommunitySection() {
   </div> */}
 
   
-<div className="text-center mt-10">
+<div className="text-center lg:mt-16 mt-8 lg:pb-8 pb-0">
           <div className="">
             <a
               href="#"

@@ -84,14 +84,14 @@ const SliderComponent = () => {
             <div key={index} className="flex items-center justify-center">
               <div className="flex flex-col md:flex-row  rounded-lg overflow-hidden">
                 {/* Left Side (Content) */}
-                <div className="md:w-1/2 lg:w-1/2 p-4 lg:p-4  md:p-4">
+                <div className="md:w-1/2 lg:w-1/2 p-4 lg:p-4  md:p-4 lg:py-20 py-8 lg:ml-6">
                  
                   <p className="text-[#241443] text-[32px] md:text-[52px] font-semibold font-poppins">{slide.title}</p>
                   <p className="text-[#241443] opacity-60 text-[16px] md:text-[20px] mt-4 font-medium font-poppins">{slide.subtitle}</p>
                   <div className="mt-6 md:mt-8 text-left md:text-left">
             <a
               href="#"
-              className="inline-flex items-center px-2 py-1 lg:px-4 lg:py-2.5 bg-[#FF5C00] text-white text-[12px] md:text-[18px] font-poppins font-semibold rounded-full"
+              className="inline-flex items-center px-2 py-1.5 lg:px-4 lg:py-2.5 bg-[#FF5C00] text-white text-[12px] md:text-[18px] font-poppins font-semibold rounded-full"
             >
              Explore All Courses
               <img src={arrowone} alt="Arrow" className="w-3 h-3 md:w-4 md:h-3 ml-3" />

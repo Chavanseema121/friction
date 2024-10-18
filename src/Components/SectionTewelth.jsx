@@ -77,7 +77,7 @@ function WhyChooseUsSection() {
   
     {/* Button at the bottom */}
     <div className="lg:text-left text-center mt-2 lg:ml-[50px]">
-      <button className="bg-white text-[#022956] lg:px-6 lg:py-2 px-2 py-1 rounded-full text-[14px] font-semibold font-poppins">
+      <button className="bg-white text-[#022956] lg:px-6 lg:py-2.5 px-2 py-1 rounded-full text-[14px] lg:text-[20px] font-semibold font-poppins">
         Explore All Courses
       </button>
     </div>

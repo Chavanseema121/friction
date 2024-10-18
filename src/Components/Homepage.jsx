@@ -357,7 +357,7 @@ export default function Homepage() {
 
         <h2 className="text-[#241443] text-[20px] sm:text-[20px] lg:font-semibold lg:text-[40px] font-semibold text-center font-poppins mx-[5px]">
           Empowering Minds, Shaping Futures:
-          <br></br> Meet the FrictionLearn<br></br> Plan
+          <br></br> Meet the FrictionLearn<br className="lg:hidden"></br> Plan
         </h2>
       </div>
 
@@ -800,8 +800,8 @@ export default function Homepage() {
               <h3 className="font-semibold font-Lato text-[18px] lg:text-[26px] text-[#241443]">
                 1. Engaging Learning Experience:
               </h3>
-              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] text-Poppins font-Regular">
-                "FrictionLearn" transforms traditional education into an
+              <p className="text-[#FF5C00] text-[11px] lg:text-[18px]  font-Regular font-Poppins  ml-4">
+                "Friction<span className="text-[#241443]">Learn</span>" transforms traditional education into an
                 engaging, fun, and motivating gamified learning journey.
               </p>
             </div>
@@ -809,7 +809,7 @@ export default function Homepage() {
               <h3 className="font-semibold font-Lato text-[18px] lg:text-[26px] text-[#241443]">
                 2. Structured Course Levels:
               </h3>
-              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] text-Poppins">
+              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] font-Regular font-Poppins ml-4">
                 Our 24-level courses guide students from 1st to 3rd year in
                 exploring future paths, with welcome kits promoting professional
                 growth.
@@ -819,8 +819,8 @@ export default function Homepage() {
               <h3 className="font-semibold font-Lato text-[18px] lg:text-[26px] text-[#241443]">
                 3. AI-Focused Learning Support:
               </h3>
-              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] text-Poppins">
-                FrictionLearn uses dedicated own AI to clarify doubts and offer
+              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] font-Poppins font-Regular ml-4">
+                Friction<span className="text-[#241443]">Learn</span> uses dedicated own AI to clarify doubts and offer
                 personalized support, enhancing students' learning experience.
               </p>
             </div>
@@ -828,7 +828,7 @@ export default function Homepage() {
               <h3 className="font-semibold font-Lato text-[18px] lg:text-[26px] text-[#241443]">
                 4. Incubation for Idea Generators:
               </h3>
-              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] text-Poppins ">
+              <p className="text-[#FF5C00] text-[11px] lg:text-[18px] font-Poppins font-Regular ml-4">
                 Starting in the second year, our Incubation programs provide
                 mentorship and resources to help students develop innovative
                 ideas.
@@ -953,15 +953,15 @@ export default function Homepage() {
 
       {/* section ten */}
 
-      <div className="bg-white py-8 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white py-8 px-4 sm:px-6 lg:px-8 lg:py-16">
         <div className="text-center">
           <div className="flex items-center justify-center">
             <img
               src={star}
               alt="star"
-              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] lg:mr-[-10px]  mr-[-10px] mb-2 "
+              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] lg:mr-[-10px]  mr-[-10px] mb-4 "
             />
-            <h3 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black font-Lato font-sans mb-2">
+            <h3 className="text-[#FF5C00] text-[18px] lg:text-[30px] font-black font-Lato font-sans mb-4">
               Our Career Passport/License
             </h3>
           </div>
@@ -1133,8 +1133,8 @@ export default function Homepage() {
       <SectionTewelth />
 
       {/* section thirteenth */}
-      <section className="main w-full lg:h-auto">
-        <div className="flex flex-col justify-center items-center text-center mt-[40px] lg:mt-[40px] md:mt-[40px]">
+      <section className="main w-full lg:h-auto lg:py-8 py-0">
+        <div className="flex flex-col justify-center items-center text-center mt-[40px] lg:mt-[60px] md:mt-[40px]">
           <div className="flex items-center justify-center">
             <img
               src={star}
