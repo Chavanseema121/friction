@@ -1133,7 +1133,7 @@ export default function Homepage() {
       <SectionTewelth />
 
       {/* section thirteenth */}
-      <section className="main w-full lg:h-auto lg:py-8 py-0">
+      <section className="main w-full lg:h-auto lg:py-8 py-0 p-1">
         <div className="flex flex-col justify-center items-center text-center mt-[40px] lg:mt-[60px] md:mt-[40px]">
           <div className="flex items-center justify-center">
             <img
@@ -1242,7 +1242,7 @@ export default function Homepage() {
 
       {/* <Section /> */}
 
-      <div className="flex flex-col items-center justify-center px-6 py-8 md:px-12 lg:px-8">
+      <div className="flex flex-col items-center justify-center p-1 py-8 md:px-12 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center">
@@ -1285,10 +1285,10 @@ export default function Homepage() {
             />
           </div>
         </div>
-        <div className="mt-8 lg:mt-4 text-center ml-[-40px] lg:text-left lg:ml-[-1000px]">
+        <div className="mt-8 lg:mt-4 text-center ml-[-50px] lg:text-left lg:ml-[-1000px]">
           <a
             href="#"
-            className="inline-flex items-center px-4 py-2.5 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold font-poppins rounded-full"
+            className="inline-flex items-center lg:px-4 lg:py-2.5 px-4 py-1.5 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold font-poppins rounded-full"
           >
             About Incubator Program
             <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-3 h-2 ml-2 lg:ml-3" />
@@ -1338,7 +1338,7 @@ export default function Homepage() {
 
       {/* section fiftheenth */}
 
-      <section className="bg-white mt-[10px] lg:mt-[40px]">
+      <section className="bg-white mt-[10px] lg:mt-[40px] p-1">
         <div className="py-8 px-4 mx-auto max-w-screen-xl">
           <div className="text-center mb-8">
             <div className="flex items-center justify-center">
@@ -1457,7 +1457,7 @@ export default function Homepage() {
           </p>
         </div>
       </div> */}
-  <div className="relative w-full h-auto lg:pb-16 pb-0">
+  <div className="relative w-full h-auto lg:pb-16 pb-0 p-1">
       <div className="flex flex-col justify-center text-center mt-[20px] lg:mt-[60px]">
         <div className="flex items-center justify-center">
           <img
