@@ -47,7 +47,7 @@ function WhyChooseUsSection() {
   
         <div className="flex flex-col items-start lg:px-4">
           <div className="flex gap-1 lg:mb-4 mb-2 items-center">
-            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-cente  lg:mt-0 mt-[-15px]">
+            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center  lg:mt-0 mt-[-15px]">
               <img src={righticon} alt="21 Language Model Learning" className="lg:w-[12px] lg:h-[11px] w-[7px] h-[6px] ml-[2px]" />
             </div>
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">21 Language Model Learning</h3>
@@ -59,11 +59,12 @@ function WhyChooseUsSection() {
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">Post Projects/ Hire Experts</h3>
           </div>
           <div className="flex gap-1  lg:mb-4 mb-2 items-center">
-            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center  lg:mt-0 mt-[-40px]">
-              <img src={righticon} alt="Get Advance Skills & Get License/Passport with Levels" className="lg:w-[12px] lg:h-[11px] w-[7px] h-[6px] " />
+            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center lg:mt-[-25px] mt-[-60px]">
+              {/* <img src={righticon} alt="Get Advance Skills & Get License/Passport with Levels" className="lg:w-[10px] lg:h-[9px] w-[7px] h-[6px] ml-[2px]" /> */}
+              <img src={righticon} alt="Post Projects/ Hire Experts" className="lg:w-[12px] lg:h-[11px] w-[10px] h-[8px]" />
             </div>
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">
-              Get Advance Skills &  Get License/<br></br>Passport with Levels
+              Get Advance Skills & Get License/Passport with Levels
             </h3>
           </div>
         </div>

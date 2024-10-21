@@ -1242,7 +1242,7 @@ export default function Homepage() {
 
       {/* <Section /> */}
 
-      <div className="flex flex-col items-center justify-center px-6 py-8 md:px-12 lg:px-24">
+      <div className="flex flex-col items-center justify-center px-6 py-8 md:px-12 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center">
@@ -1266,10 +1266,10 @@ export default function Homepage() {
         {/* Main Content Section */}
         <div className="flex flex-col-reverse lg:flex-row items-center justify-between ml-[20px]">
           {/* Text Section */}
-          <div className=" lg:order-none order-2 text-left max-w-lg lg:mr-12 mb-3 lg:mb-0">
+          <div className=" lg:order-none order-2 text-left lg:mr-0 mb-3 lg:mb-0">
             <h2 className="text-[25px] lg:text-[50px] font-semibold text-[#FF5C00] font-poppins">
-              We Help Early Stage<br></br> Startups to Define Their Goals
-              <br></br> & Get Daily Funding...
+              We Help Early Stage<br></br> Startups to Define Their<br></br> Goals
+              & Get Daily<br></br> Funding...
             </h2>
             {/* <button className="mt-4 bg-[#241443] text-white py-2 px-4 rounded-full hover:bg-purple-700 text-[14px] lg:text-[22px] font-semibold">
                         About Incubator Program &rarr;
@@ -1285,7 +1285,7 @@ export default function Homepage() {
             />
           </div>
         </div>
-        <div className="mt-8 lg:mt-4 text-center ml-[-40px] lg:text-left lg:ml-[-900px]">
+        <div className="mt-8 lg:mt-4 text-center ml-[-40px] lg:text-left lg:ml-[-1000px]">
           <a
             href="#"
             className="inline-flex items-center px-4 py-2.5 bg-[#241443] text-white text-[16px] sm:text-[18px] font-semibold font-poppins rounded-full"
