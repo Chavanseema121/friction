@@ -1617,7 +1617,7 @@ export default function Homepage() {
           <div className="absolute inset-0 bg-[#241443] opacity-0"></div>
 
           {/* Content (Text and Buttons) */}
-          <div className="relative text-center py-6 sm:py-24 md:py-32 lg:py-[165px]">
+          <div className="relative text-center py-16 sm:py-24 md:py-32 lg:py-[165px]">
             {/* Heading */}
             <h1 className="mb-2 text-[25px] sm:text-[50px] lg:text-[70px] font-bold text-white font-serif">
               Ready to Start Learning?
