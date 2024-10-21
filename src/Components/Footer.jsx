@@ -146,17 +146,25 @@ export default function Footer() {
   </div>
 
   {/* Input Section - Last on lg and xl, First on sm and md */}
-  <div className="text-white flex flex-col items-start sm:items-center md:items-center lg:items-start mt-2 md:mt-0 order-1 sm:order-1 md:order-1 lg:order-4">
-    <h3 className="mb-2 text-[17px] sm:text-[30px] lg:text-[22px] font-bold font-Lato font-sans ml-[50px] sm:ml-[30px] lg:ml-0">Join our Newsletter</h3>
-    <div className="flex w-[319px]  h-[51px] lg:w-full lg:ml-0  mx-auto">
-      <input
-        type="text"
-        placeholder="*Enter your email"
-        className="placeholder:text-[#FFFFFF] placeholder:text-[11px] sm:placeholder:text-[14px]  lg:placeholder:text-[12px] font-normal lg:p-2 p-2 rounded-l-md bg-[#241443] border-white border-solid border"
-      />
-      <button className=" bg-white text-[#241443] p-0 rounded-r-md font-semibold text-[12px] sm:text-[30px] lg:text-[12px]">Subscribe</button>
-    </div>
+  <div className="text-white flex flex-col items-start sm:items-center lg:items-start mt-2 md:mt-0 order-1 lg:order-4">
+  {/* Heading */}
+  <h3 className="mb-2 text-[17px] sm:text-[25px] lg:text-[22px] font-bold font-Lato ml-[10px] sm:ml-[0] lg:ml-0 text-center lg:text-left">
+    Join our Newsletter
+  </h3>
+
+  {/* Input and Button Container */}
+  <div className="flex w-full max-w-[319px] sm:max-w-[400px] lg:max-w-full mx-auto lg:ml-0">
+    <input
+      type="text"
+      placeholder="*Enter your email"
+      className="w-[200px] sm:w-[250px] lg:w-full placeholder:text-[#FFFFFF] placeholder:text-[11px] sm:placeholder:text-[14px] lg:placeholder:text-[12px] font-normal p-2 rounded-l-md bg-[#241443] border-white border-solid border"
+    />
+    <button className="bg-white text-[#241443] p-2 rounded-r-md font-semibold text-[12px] sm:text-[16px] lg:text-[12px]">
+      Subscribe
+    </button>
   </div>
+</div>
+
 
 </div>
 

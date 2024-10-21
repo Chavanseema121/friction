@@ -264,7 +264,7 @@ body {
   .content p {
     font-size: 14px;
     line-height: 1.5;
-    color: #333;
+    color: #FF5C00;
     text-align: left;
   }
 
@@ -307,7 +307,7 @@ body {
     padding: 10px;
     margin: 0;
     position: relative; /* For absolute positioning of child elements */
-    margin-bottom: 40px; /* Equal gap between all containers */
+    margin-bottom: 20px; /* Equal gap between all containers */
   }
 
   /* Adjust container.one for mobile */
@@ -414,7 +414,7 @@ body {
     width: 259px;
     height: 33px;
     text-align: start;
-    margin-bottom: 20px; /* Equal gap between headings and paragraphs */
+    margin-bottom: -10px; /* Equal gap between headings and paragraphs */
   } 
 
   /* Adjust image size inside text box */
