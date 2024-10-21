@@ -38,7 +38,7 @@ function WhyChooseUsSection() {
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">Share Ideas & Get Incubation</h3>
           </div>
           <div className="flex gap-1  lg:mb-4 mb-2 items-center">
-            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center  lg:mt-0 mt-[-15px]">
+            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center lg:mt-0 mt-[-15px]">
               <img src={righticon} alt="Connect with Communities" className="lg:w-[12px] lg:h-[11px] w-[7px] h-[6px]" />
             </div>
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">Connect with Communities</h3>
@@ -59,12 +59,12 @@ function WhyChooseUsSection() {
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">Post Projects/ Hire Experts</h3>
           </div>
           <div className="flex gap-1  lg:mb-4 mb-2 items-center">
-            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center lg:mt-[-25px] mt-[-60px]">
+            <div className="lg:w-[24px] lg:h-[24px] w-[16px] h-[14px] bg-[#573EE8] rounded-full flex items-center justify-center lg:mt-[-25px] mt-[-40px]">
               {/* <img src={righticon} alt="Get Advance Skills & Get License/Passport with Levels" className="lg:w-[10px] lg:h-[9px] w-[7px] h-[6px] ml-[2px]" /> */}
               <img src={righticon} alt="Post Projects/ Hire Experts" className="lg:w-[12px] lg:h-[11px] w-[10px] h-[8px]" />
             </div>
             <h3 className="text-[10px] lg:text-[22px] font-Regular font-poppins">
-              Get Advance Skills & Get License/Passport with Levels
+              Get Advance Skills & GetLicense/Passport with Levels
             </h3>
           </div>
         </div>
@@ -78,7 +78,7 @@ function WhyChooseUsSection() {
   
     {/* Button at the bottom */}
     <div className="lg:text-left text-center mt-2 lg:ml-[50px]">
-      <button className="bg-white text-[#022956] lg:px-6 lg:py-2.5 px-2 py-1 rounded-full text-[14px] lg:text-[20px] font-semibold font-poppins">
+      <button className="bg-white text-[#022956] lg:px-6 lg:py-2.5 px-4 py-1.5 rounded-full text-[14px] lg:text-[20px] font-semibold font-poppins">
         Explore All Courses
       </button>
     </div>
