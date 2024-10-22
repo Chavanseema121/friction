@@ -28,10 +28,10 @@ export default function CommunityEvent() {
     <>
       {/* section one */}
 
-      <div className="one w-[390px] sm:w-[390px] md:w-full md:h-[1362px] h-[501px] sm:h-[501px] bg-center bg-no-repeat bg-cover md:p-0 lg:p-10 p-4" 
+      <div className="one w-[390px] sm:w-[390px] md:w-full md:h-[1362px] h-[501px] sm:h-[501px] bg-center bg-no-repeat bg-cover md:p-0 lg:p-8 p-4" 
         style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <div className="  flex flex-row gap-2 lg:ml-5 ml-2 mb-3">
-        <div className="  flex flex-row mt-0 lg:mt-4">
+      <div className="  flex flex-row gap-2 lg:ml-[-20px] ml-2 lg:mb-0 mt-[-30px]">
+        <div className="  flex flex-row mt-0 lg:mt-0">
           <h2 className=" text-[#241443]  text-[15px] font-poppins font-semibold">
             Home
           </h2>
@@ -41,7 +41,7 @@ export default function CommunityEvent() {
             className="w-[9px] h-[10px] ml-[8px] mt-[8px]"
           />{" "}
         </div>
-        <h2 className=" text-[#FF5C00]  text-[15px] font-poppins font-semibold lg:mt-4 mt-0">
+        <h2 className=" text-[#FF5C00]  text-[15px] font-poppins font-semibold lg:mt-0 mt-0">
         Community & Events
         </h2>
       </div>

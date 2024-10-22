@@ -17,7 +17,7 @@ export default function Incubationpage() {
       <div
   className="one w-full h-auto lg:h-[601px] bg-cover p-4 sm:p-10 lg:p-0 "
   style={{ backgroundImage: `url(${backgroundImage})` }}>
-   <div className="  flex flex-row gap-2 lg:ml-5 ml-2 mb-3">
+   <div className="  flex flex-row gap-2 lg:ml-3 ml-2 mb-1">
         <div className="  flex flex-row mt-0 lg:mt-4">
           <h2 className=" text-[#241443]  text-[15px] font-poppins font-semibold">
             Home
@@ -153,7 +153,7 @@ export default function Incubationpage() {
 
       <Section />
 
-      <div className="button md:w-[190px] h-[48px]  sm:w-[260px]  w-[260px]  lg:hidden    flex text-center justify-center align-middle md:ml-[400px]   sm:mt-8  mt-18 md:mt-0  sm:ml-9 ml-10 animate-endanimation mb-8">
+      <div className="button md:w-[190px] h-[48px] sm:w-[260px] w-[260px] lg:hidden flex text-center justify-center align-middle md:ml-[400px]   sm:mt-8  mt-18 md:mt-0  sm:ml-9 ml-10 animate-endanimation mb-8">
           <button
             id="apply-button"
             className="w-[190px] h-[48px] text-[16px] text-[#FFFFFF] font-bold bg-[#022956]  transform transition-transform duration-300  rounded-md hover:text-[#022956] hover:bg-white hover:border border-[#022956]"
