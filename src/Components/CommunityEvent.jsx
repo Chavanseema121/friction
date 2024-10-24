@@ -217,7 +217,7 @@ export default function CommunityEvent() {
         <img src={sectionimg} alt="" className='w-[300px] sm:w-[555px] h-auto mt-[30px] sm:mt-[88px]' />
       </div>
     </div>
-    <div className="mt-[20px] sm:mt-[30px] mx-auto   md:mt-[-30px] ml-[50px] sm:ml-[30px]">
+    <div className="mt-[20px] sm:mt-[30px] mx-auto   md:mt-[-30px] ml-[70px] sm:ml-[30px]">
           <button className="w-[180px] sm:w-[264px] h-[50px] sm:h-[62px] bg-[#241443] rounded-full text-white text-[16px] sm:text-[18px] font-medium flex justify-center items-center gap-2">
             <span>Join Community</span>
             <img src={arrow} alt="" className="w-[16px] sm:w-[26px] h-[10px] sm:h-[18px]" />
