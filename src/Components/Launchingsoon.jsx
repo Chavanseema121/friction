@@ -44,16 +44,28 @@ export default function LaunchingSoon() {
             <h4 className="text-[#FF5C00] lg:text-[18px] text-[11px] font-medium font-poppins">
               {specialMessage}
             </h4>
-            <div className="relative w-[383px] mb-[40px] lg:mb-[60px]">
+            {/* <div className="relative w-[383px] mb-[40px] lg:mb-[60px]">
               <input
                 type="text"
                 placeholder="Enter your Mail Id"
-                className="w-full lg:h-[62px] h-[50px] lg:pl-4 pl-6 lg:pr-[120px] pr-[0px] rounded-full border border-gray-300 placeholder:text-[#241443] lg:placeholder:text-[18px] placeholder:text-[11px] placeholder:font-regular"
+                className="w-full lg:h-[62px] h-[50px] lg:pl-4 pl-6 lg:pr-[120px] pr-[60px] rounded-full border border-gray-300 placeholder:text-[#241443] lg:placeholder:text-[18px] placeholder:text-[11px] placeholder:font-regular"
               />
               <button className="absolute font-poppins top-0 lg:right-[0%] right-[8%] lg:h-[62px] h-[50px] lg:px-6 px-4 bg-[#241443] text-white lg:text-[18px] text-[8px] rounded-r-full rounded-l-none lg:w-[155px] w-[100px]">
                 Join Now
               </button>
-            </div>
+            </div> */}
+
+<div className="relative w-[350px] lg:w-[384px] mb-[40px] lg:mb-[60px]">
+  <input
+    type="text"
+    placeholder="Enter your Mail Id"
+    className="lg:w-full h-[50px] lg:h-[62px] pl-4 lg:pl-6 pr-[100px] lg:pr-[120px] rounded-full border border-gray-300 placeholder:text-[#241443] text-[12px] lg:text-[18px] placeholder:font-regular"
+  />
+  <button className="absolute top-0 right-[5%] lg:right-[0%] h-[50px] lg:h-[62px] px-4 lg:px-6 bg-[#241443] text-white text-[12px] lg:text-[18px] rounded-r-full rounded-l-none w-[90px] lg:w-[155px]">
+    Join Now
+  </button>
+</div>
+
           </div>
         </div>
       </section>

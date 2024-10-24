@@ -46,7 +46,7 @@ function Navbar() {
       <nav className="bg-white border-b border-gray-200 ">
         {/* Top Section for Desktop and Mobile */}
         <div className="container mx-auto flex items-center justify-between py-3">
-          <div className="md:hidden flex items-center justify-between mx-auto">
+          <div className="lg:hidden md:hidden flex items-center justify-between mx-auto">
             {/* Logo for Mobile */}
             <div className="mr-[80px] ml-[20px]">
               <a href="/">
@@ -112,7 +112,7 @@ function Navbar() {
           </div>
 
           {/* Desktop: Logo (hidden on mobile) */}
-          <div className="hidden md:flex items-center ml-[35px] mt-[30px]">
+          <div className="hidden lg:flex md:flex items-center lg:ml-[35px] mt-[30px]">
             <a href="/">
               <svg
                 width="196"
@@ -146,17 +146,17 @@ function Navbar() {
           {/* Search Bar (Visible on larger screens only) */}
 
           {/* Search Bar (Visible on larger screens only) */}
-          <div className="hidden md:flex items-center">
-            <div className="relative w-full mx-auto flex rounded-full border border-gray-300 focus-within:ring-1 focus-within:ring-black mt-[49px]">
+          <div className="hidden lg:flex md:flex items-center">
+            <div className="relative w-full lg:mx-auto md:mx-auto flex rounded-full border border-gray-300 focus-within:ring-1 focus-within:ring-black mt-[49px]">
               {/* All Categories Dropdown */}
-              <select className="pl-4 pr-4 py-2 bg-gray-100 text-[#241443] border-r border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 lg:text-[16px] font-semibold text-Poppins rounded-l-full">
+              <select className="pl-4 pr-4 py-2 lg:py-2 lg:pr-4 lg:pl-4 md:py-3 md:pr-3 md:pl-3 bg-gray-100 text-[#241443] border-r border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 lg:text-[16px] md:text-[14px] font-semibold text-Poppins rounded-l-full">
                 <option>All Categories</option>
               </select>
 
               {/* Search Input */}
               <input
                 type="text"
-                className="flex-grow pl-2 pr-[250px] py-2 border-none focus:outline-none focus:ring-0 text-[17px] font-semibold text-Poppins text-[#241443] placeholder-gray-400 rounded-full"
+                className="lg:flex-grow  md:flex-grow pl-2 pr-[250px] py-2 border-none focus:outline-none focus:ring-0 text-[17px] font-semibold text-Poppins text-[#241443] placeholder-gray-400 rounded-full"
                 placeholder="Find your courses, clubs, events etc...."
               />
 
@@ -419,8 +419,8 @@ function Navbar() {
 
         {/* Desktop Bottom Section: Navigation Links and Icons */}
 
-        <div className="hidden md:flex justify-between items-center py-2 text-purple-800">
-          <div className="hidden md:flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px] lg:ml-[350px]">
+        <div className="hidden lg:flex justify-between items-center py-2 text-purple-800">
+          <div className="hidden lg:flex space-x-12 items-center mx-auto text-[#241443] font-Poppins font-semibold text-[23px] lg:ml-[350px]">
             {/* Home Link */}
             <NavLink
               to="/"

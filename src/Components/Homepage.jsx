@@ -361,8 +361,8 @@ export default function Homepage() {
         </h2>
       </div>
 
-      <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[40px] lg:mx-[85px] mt-[20px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7">
-  <div className="childleft w-full md:w-[90%] lg:w-[700px]">
+      <div className="parent flex flex-col lg:flex-row justify-around mx-[20px] md:mx-[0px] lg:mx-[85px] mt-[20px] md:mt-[60px] lg:mt-[80px] space-y-7 lg:space-y-0 lg:space-x-7 md:space-y-0 md:space-x-7">
+  <div className="childleft w-full md:w-[100%] lg:w-[700px]">
     <div className="">
       <h2 className="text-[#241443] text-[24px] sm:text-[24px] md:text-[60px] lg:text-[75px] text-start font-bold font-Lato font-sans leading-[45px] md:leading-[75px] lg:leading-[90px] relative">
         About<br />

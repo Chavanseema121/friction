@@ -506,20 +506,34 @@ export default function Aboutus() {
           <input
             type="text"
             placeholder="Raise your Query....."
-            className="w-[60%] lg:w-[638px] md:w-[400px] px-4 py-2 rounded-md text-black mb-4"
+            className="w-[60%] lg:w-[638px] md:w-[400px] px-4 py-2 rounded-l-md text-black mb-4"
           />
-          <button className="px-4 py-2 ml-0 bg-[#FF5C00] text-white font-semibold rounded-md hover:bg-orange-600 transition-colors mb-4">
+          <button className="px-6 py-2 ml-0 bg-[#FF5C00] text-white font-semibold rounded-r-md hover:bg-orange-600 transition-colors mb-4">
             SEND
           </button>
         </div>
+
+{/* <div className="flex justify-center lg:justify-start lg:mt-[-80px] mt-10 lg:ml-[200px]">
+  <div className="flex w-[60%] lg:w-[638px] md:w-[400px]">
+    <input
+      type="text"
+      placeholder="Raise your Query....."
+      className="w-full px-4 py-2 rounded-l-lg border border-gray-300 text-black"
+    />
+    <button className="px-6 py-2 bg-[#FF5C00] text-white font-semibold rounded-r-lg rounded-l-lg hover:bg-orange-600 transition-colors">
+      SEND
+    </button>
+  </div>
+</div> */}
+
       </div>
 
       {/* section last */}
 
       <div className="flex flex-col justify-center items-center text-center mt-[40px] md:mt-[30px] lg:mt-[40px]">
-        <div className="flex items-center justify-center mb-4">
+        <div className="flex items-center justify-center">
           <img src={star} alt="star" className="w-[36px] h-[36px] mr-[-10px]" />
-          <h2 className="text-[#FF5C00] text-[15px] sm:text-[30px] md:text-[30px] font-black text-center font-lato">
+          <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] md:text-[30px] font-black text-center font-lato">
             Become an Instructor/Mentor
           </h2>
         </div>
@@ -551,8 +565,8 @@ export default function Aboutus() {
         </div>
       </div>
 
-      <div className="flex justify-center lg:justify-start mt-[20px] md:mt-[50px] lg:mt-[0px] ml-[20px] md:ml-[40px] lg:ml-[50px] mb-10">
-        <button className="w-[160px] sm:w-[180px] md:w-[280px] h-[45px] sm:h-[50px] md:h-[62px] bg-[#241443] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-medium font-poppins flex items-center justify-center ml-[50px]">
+      <div className="flex justify-center lg:justify-start mt-[20px] md:mt-[50px] lg:mt-[0px] ml-[20px] md:ml-[40px] lg:ml-[100px] mb-10">
+        <button className="w-[230px] sm:w-[180px] md:w-[280px] h-[55px] sm:h-[50px] md:h-[62px] bg-[#241443] rounded-full text-[#ffffff] text-[14px] sm:text-[16px] md:text-[18px] font-medium font-poppins flex items-center justify-center ml-[-30px]">
           <span>Become an Instructor</span>
           <img
             src={arrowone}

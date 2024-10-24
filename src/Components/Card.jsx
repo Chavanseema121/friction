@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 function Card({ image, title, description }) {
   return (
-    <div className=" bg-white border-4 border-l-[#573EE8] border-b-[#573EE8] border-r-[#573EE8]  border-t-[#573EE8]  lg:w-[358px] lg:h-[366px] lg:mx-auto w-[304px] h-[297px] mx-[25px] rounded-[50px] transition-transform duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+    <div className="relative mx-auto max-w-md rounded-lg bg-gradient-to-tr from-pink-300 to-blue-300 p-0.5 shadow-lg">
       <div className="flex justify-center items-center p-4">
         <img
           className="w-[111px] h-[114px] lg:w-[143px] lg:h-[145px]"
@@ -19,6 +19,18 @@ function Card({ image, title, description }) {
         </p>
       </div>
     </div>
+
+    // <div className="animated_card hover:h-[508px] hover:w-[357px] cursor-pointer overflow-hidden rounded-[16px] group">
+    //     <div className="animated-card-before w-[50%] h-[180%] rounded-[12px] z-[1] rotate-45 bg-white group-hover:animate-rotate360" />
+
+    //     <div
+    //       className="h-[500px] w-[350px] rounded-[16px] z-[10] flex items-center justify-center bg-center bg-cover"
+    //       style={{ backgroundImage: `url(${OrangeCity4})` }}
+    //     >
+    //       <h2 className="text-[20px] font-bold text-cyan-200">My Projects</h2>
+    //     </div>
+    //   </div>
+    
   );
 }
 

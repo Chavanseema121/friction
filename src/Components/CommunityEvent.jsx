@@ -30,7 +30,7 @@ export default function CommunityEvent() {
 
       <div className="one w-[390px] sm:w-[390px] md:w-full md:h-[1362px] h-[501px] sm:h-[501px] bg-center bg-no-repeat bg-cover md:p-0 lg:p-8 p-4" 
         style={{ backgroundImage: `url(${backgroundImage})` }}>
-      <div className="  flex flex-row gap-2 lg:ml-[-20px] ml-2 lg:mb-0 mt-[-30px]">
+      <div className="  flex flex-row gap-2 lg:ml-[-20px] ml-0 lg:mb-0 lg:mt-[-30px] mt-0 mb-4">
         <div className="  flex flex-row mt-0 lg:mt-0">
           <h2 className=" text-[#241443]  text-[15px] font-poppins font-semibold">
             Home
@@ -230,7 +230,7 @@ export default function CommunityEvent() {
 
 
 
-      <div className="flex flex-col items-center px-6 py-12 md:px-12 lg:px-24">
+<div className="flex flex-col items-center px-6 py-12 md:px-12 lg:px-24">
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-[#FF5C00] text-[15px] lg:text-[30px] font-black font-Lato font-sans">

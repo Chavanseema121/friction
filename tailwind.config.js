@@ -18,6 +18,13 @@ export default {
      
       keyframes: {
 
+       
+
+        rotate360: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+
         rotateCorners: {
           '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(360deg)' },
@@ -62,13 +69,16 @@ export default {
         },
       },
       animation: {
+        rotate360: "rotate360 2s linear infinite",
         moveline: 'moveline 6s linear forwards',
         movedown: 'movedown 2s linear forwards',
         endAnimation: 'endAnimation 6s forwards',
         fadeInLeft: 'fadeInLeft 1s ease forwards',
         fadeInRight: 'fadeInRight 1s ease forwards',
         rotateCorners: 'rotateCorners 4s linear infinite',
+       
       },
+     
       animationDelay: {
         '0s': '0s',
         '1s': '1s',

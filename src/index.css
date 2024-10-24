@@ -261,3 +261,24 @@
   flex: 0 0 auto;
   margin: 0 15px; /* Space between images, adjust as needed */
 }
+
+.animated_card {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 500px;
+  width: 300px;
+}
+
+.animated-card-before {
+  position: absolute;
+  transition: 0.3s;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  50% {
+    filter: hue-rotate(350deg);
+  }
+}
+

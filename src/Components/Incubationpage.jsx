@@ -17,7 +17,7 @@ export default function Incubationpage() {
       <div
   className="one w-full h-auto lg:h-[601px] bg-cover p-4 sm:p-10 lg:p-0 "
   style={{ backgroundImage: `url(${backgroundImage})` }}>
-   <div className="  flex flex-row gap-2 lg:ml-3 ml-2 mb-1">
+   <div className="  flex flex-row gap-2 lg:ml-3 ml-0 mb-4">
         <div className="  flex flex-row mt-0 lg:mt-4">
           <h2 className=" text-[#241443]  text-[15px] font-poppins font-semibold">
             Home
