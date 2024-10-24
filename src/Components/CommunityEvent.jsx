@@ -28,7 +28,7 @@ export default function CommunityEvent() {
     <>
       {/* section one */}
 
-      <div className="one w-full sm:w-[390px] md:w-full md:h-[1362px] h-[501px] sm:h-[501px] bg-center bg-no-repeat bg-cover md:p-0 lg:p-8 p-4" 
+      <div className="one w-full sm:w-[390px] md:w-full md:h-[1362px] h-[501px] sm:h-[501px] bg-center bg-no-repeat bg-cover md:p-0 lg:p-8 p-2" 
         style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="  flex flex-row gap-2 lg:ml-[-20px] ml-0 lg:mb-0 lg:mt-[-30px] mt-0 mb-4">
         <div className="  flex flex-row mt-0 lg:mt-0">
