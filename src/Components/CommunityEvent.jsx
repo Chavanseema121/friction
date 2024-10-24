@@ -137,8 +137,8 @@ export default function CommunityEvent() {
  
 
  {/* only for mobile section */}
-<div className=" flex lg:hidden">
-  <img src={communityimg} alt="" className="w-[353px] h-[78px]" />
+<div className=" flex lg:hidden ">
+  <img src={communityimg} alt="" className="w-[353px] h-[78px] mx-auto" />
 
 </div>
 
