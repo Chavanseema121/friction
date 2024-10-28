@@ -11,6 +11,7 @@ import Incubationpage from "./Components/Incubationpage"
 import LaunchingSoon from "./Components/Launchingsoon"
 
 
+
 function App() {
   return (
     <>

@@ -427,7 +427,7 @@ export default function Homepage() {
           </div>
         </div>
 
-        <div className="parent flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-7 mt-[10px] lg:mt-[65px] mx-[20px] lg:mx-[50px]">
+        <div className="parent flex flex-col lg:flex-row justify-evenly w-full space-x-0 lg:space-x-7 mt-[10px] lg:mt-[65px] mx-[20px] lg:mx-[50px]">
           {/* Left Side */}
           <div className="childleft w-full lg:w-[700px] mt-[10px] lg:mt-0 order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-4 lg:gap-8">
@@ -576,7 +576,7 @@ export default function Homepage() {
         </div>
 
         {/* Right Side - Scrollable Section */}
-        <div className="overflow-y-scroll pr-1 sm:pr-4 lg:pr-6 scrollbar-hide lg:py-4 py-0 p-1 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+        <div className="overflow-y-scroll pr-1 sm:pr-4 lg:pr-6 scrollbar-hide lg:py-4  py-0 p-1 h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
           <div className="lg:space-y-4 space-y-4">
             {items.map((item, index) => (
               <div
@@ -630,12 +630,12 @@ export default function Homepage() {
         </div>
 
         {/* Desktop and Laptop View */}
-        <div className="hidden md:flex mt-[49px] justify-center items-center">
+        <div className="hidden md:flex mt-[49px] justify-evenly w-full items-center">
           <div className="left-section flex flex-col">
             {contents.map((content, index) => (
               <div
                 key={index}
-                className={`w-[498px] h-[119px] shadow-lg flex cursor-pointer ${
+                className={`w-[598px] h-[119px] shadow-lg flex cursor-pointer ${
                   index === hoveredImageIndex
                     ? "border-2 border-orange-500"
                     : ""
@@ -712,7 +712,7 @@ export default function Homepage() {
 
       {/* section seven */}
 
-      <section className="purple w-full h-auto sm:h-auto md:h-auto lg:h-[344px] bg-[#241443] lg:mt-[100px] mt-[40px] bg-cover bg-center bg-no-repeat py-6"
+      <section className="purple justify-evenly w-full h-auto sm:h-auto md:h-auto lg:h-[344px] bg-[#241443] lg:mt-[100px] mt-[40px] bg-cover bg-center bg-no-repeat py-6"
         style={{ backgroundImage: `url(${purplesection})` }}
       >
         <div className="parent flex flex-col lg:flex-row flex-wrap justify-around sm:justify-around gap-y-6 lg:gap-x-2">
@@ -857,99 +857,123 @@ export default function Homepage() {
 
       {/* secton nine */}
 
-      <section className="whydoprojects w-full sm:h-auto lg:mt-[40px] mt-[40px]">
-        <div className="flex flex-col justify-center items-center text-center px-4">
-          <div className="flex items-center justify-center">
-            <img
-              src={star}
-              alt="star"
-              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] lg:mt-[-30px] mt-[-20px]"
-            />
-            <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-Lato font-sans lg:mb-4 mb-4">
-              Why do Projects
-            </h2>
-          </div>
-          <h2 className="text-[#241443] text-[20px] lg:text-[40px] font-semibold text-center font-poppins lg:mb-4">
-            Doing these Projects will Gain Hands-On real
-            <br className="hidden sm:block" />
-            World Project Experience with{" "}
-            <span className="text-[#FF5C00] text-[20px] lg:text-[40px]">
-              Friction
-            </span>
-            Learn
+      <section className="whydoprojects  w-full sm:h-auto lg:mt-[40px] mt-[40px]">
+  <div className="flex flex-col justify-center items-center text-center px-4">
+    <div className="flex items-center justify-center">
+      <img
+        src={star}
+        alt="star"
+        className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px] lg:mt-[-30px] mt-[-20px]"
+      />
+      <h2 className="text-[#FF5C00] text-[18px] sm:text-[30px] lg:text-[30px] font-black text-center font-Lato font-sans lg:mb-4 mb-4">
+        Why do Projects
+      </h2>
+    </div>
+    <h2 className="text-[#241443] text-[20px] lg:text-[40px] font-semibold text-center font-poppins lg:mb-4">
+      Doing these Projects will Gain Hands-On real
+      <br className="hidden sm:block" />
+      World Project Experience with{" "}
+      <span className="text-[#FF5C00] text-[20px] lg:text-[40px]">
+        Friction
+      </span>
+      Learn
+    </h2>
+  </div>
+
+  <div className="flex flex-col lg:flex-row lg:gap-0 items-center justify-evenly w-full bg-[#ffffff] p-5">
+    {/* Card 1 */}
+    <div className="animated_card cursor-pointer group w-full max-w-xs">
+      <div className="animated-card-before h-[400px] w-full bg-orange-500 z-[1] rounded-[16px] group-hover:h-[408px] group-hover:w-[330px] shadow-xl" />
+      <div className="h-[400px] w-full rounded-[16px] z-[10] flex items-center justify-center bg-[#ffffff]">
+        <div className="subchild w-full text-center">
+          <img
+            src={whydoprojectone}
+            alt="Example"
+            className="mx-auto mb-4 w-[100px] h-[100px] object-contain"
+          />
+          <h2 className="text-[#241443] text-[23px] sm:text-[23px] font-semibold text-center font-poppins">
+            Become Job Ready
           </h2>
+          <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px]">
+            Kickstart Your Career by Building Stellar Proof of Work
+          </p>
         </div>
+      </div>
+    </div>
 
-        <div className="parent flex flex-row flex-wrap gap-6 justify-evenly sm:justify-center px-6 lg:px-0">
-          {/* First Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px] ... ring-1 ring-[#874BF6] ring-inset shadow-lg rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
-            <img
-              src={whydoprojectone}
-              alt=""
-              className="w-[76px] h-[77px] mt-[35px] sm:mt-[60px] mx-auto mb-[20px]"
-            />
-
-            <div className="subchild w-full text-center">
-              <h2 className="text-[#241443] text-[23px] sm:text-[23px] font-semibold text-center font-poppins">
-                Become Job Ready
-              </h2>
-              <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px]">
-                Kickstart Your Career by Building Stellar Proof of Work
-              </p>
-            </div>
-          </div>
-
-          {/* Second Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] sm:mt-[10px] p-[10px]  ... ring-1 ring-[#1E8C60] ring-inset  shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-            <img
-              src={whydoprojecttwo}
-              alt=""
-              className="w-[69px] h-[69px] mt-[35px] sm:mt-[60px] mx-auto mb-[20px]"
-            />
-
-            <div className="subchild w-full text-center">
-              <h2 className="text-[#241443] text-[23px] sm:text-[23px] font-semibold text-center font-poppins">
-                Learn By Doing
-              </h2>
-              <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px]">
-                Upskill by building hands-on projects with level-wise learning.
-              </p>
-            </div>
-          </div>
-
-          {/* Third Project Card */}
-          <div className="flex flex-col w-full sm:w-[389px] min-h-[0] mt-[40px] lg:mt-[10px] p-[10px]  ... ring-1 ring-[#FFD400] ring-inset  shadow-md rounded-lg transition-transform transform-gpu duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
-            <img
-              src={whydoprojectthree}
-              alt=""
-              className="w-[51px] h-[71px] mt-[35px] sm:mt-[60px] mx-auto mb-[20px]"
-            />
-
-            <div className="subchild w-full text-center">
-              <h2 className="text-[#241443] text-[23px] sm:text-[23px] font-semibold text-center font-poppins">
-                Become Job Ready
-              </h2>
-              <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px]">
-                Build a strong foundation to showcase your skills and proof of
-                work.
-              </p>
-            </div>
-          </div>
+    {/* Card 2 */}
+    <div className="animated_card cursor-pointer group w-full max-w-xs">
+      <div className="animated-card-before h-[400px] w-full bg-orange-500 z-[1] rounded-[16px] group-hover:h-[408px] group-hover:w-[330px] shadow-xl" />
+      <div className="h-[400px] w-full rounded-[16px] z-[10] flex items-center justify-center bg-[#ffffff]">
+        <div className="subchild w-full text-center">
+          <img
+            src={whydoprojecttwo}
+            alt="Example"
+            className="mx-auto mb-4 w-[100px] h-[100px] object-contain"
+          />
+          <h2 className="text-[#241443] text-[23px] sm:text-[23px] font-semibold text-center font-poppins">
+            Become Job Ready
+          </h2>
+          <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px]">
+            Kickstart Your Career by Building Stellar Proof of Work
+          </p>
         </div>
+      </div>
+    </div>
 
-        <div className="text-center mt-10">
-          <div className="">
-            <a
-              href="#"
-              className="inline-flex bg-[#FF5C00] text-white lg:px-4 lg:py-2 px-3 py-1 text-[16px] lg:text-[20px] rounded-full shadow-md hover:bg-[#FF5C00] transition font-semibold font-poppins"
-            >
-              Explore Projects
-              <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-2 h-2 ml-1 mt-[9px]" />
-            </a>
-          </div>
+{/* <div className="animated_card cursor-pointer group w-full sm:w-[350px] md:w-[300px] lg:w-[350px]">
+      <div className="animated-card-before h-[400px] w-full bg-orange-500 z-[1] rounded-[16px] group-hover:h-[438px] group-hover:w-full shadow-xl transition-all duration-300 ease-in-out" />
+      <div className="h-[400px] w-full rounded-[16px] z-[10] flex items-center justify-center bg-[#ffffff]">
+        <div className="subchild w-full px-6">
+          <img
+            src={whydoprojectone}
+            alt="Example"
+            className="mx-auto mb-4 w-[100px] h-[100px] object-contain"
+          />
+          <h2 className="text-[#241443] text-[23px] font-semibold text-center font-poppins">
+            Become Job Ready
+          </h2>
+          <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px] max-w-[80%] mx-auto">
+            Kickstart Your Career by Building Stellar Proof of Work
+          </p>
         </div>
-        <hr className="block sm:hidden border-t border-gray-300 mt-4" />
-      </section>
+      </div>
+    </div> */}
+
+    {/* Card 3 */}
+    <div className="animated_card cursor-pointer group w-full max-w-xs">
+      <div className="animated-card-before h-[400px] w-full bg-orange-500 z-[1] rounded-[16px] group-hover:h-[408px] group-hover:w-[330px] shadow-xl" />
+      <div className="h-[400px] w-full rounded-[16px] z-[10] flex items-center justify-center bg-[#ffffff]">
+        <div className="subchild w-full text-center">
+          <img
+            src={whydoprojectthree}
+            alt="Example"
+            className="mx-auto mb-4 w-[100px] h-[100px] object-contain"
+          />
+          <h2 className="text-[#241443] text-[23px] sm:text-[23px] font-semibold text-center font-poppins">
+            Become Job Ready
+          </h2>
+          <p className="text-[#FF5C00] text-[14px] font-Regular font-poppins leading-[28px] sm:leading-[32px] mt-[8px]">
+            Kickstart Your Career by Building Stellar Proof of Work
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div className="text-center mt-10">
+    <div>
+      <a
+        href="#"
+        className="inline-flex bg-[#FF5C00] text-white lg:px-4 lg:py-2 px-3 py-1 text-[16px] lg:text-[20px] rounded-full shadow-md hover:bg-[#FF5C00] transition font-semibold font-poppins"
+      >
+        Explore Projects
+        <img src={arrowone} alt="Arrow" className="lg:w-4 lg:h-3 w-2 h-2 ml-1 mt-[9px]" />
+      </a>
+    </div>
+  </div>
+  <hr className="block sm:hidden border-t border-gray-300 mt-4" />
+</section>
 
       {/* section ten */}
 
@@ -974,7 +998,7 @@ export default function Homepage() {
           </h2>
         </div>
 
-        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+        <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 items-center justify-start w-full">
           {/* Left Side Content */}
           <div className="lg:pr-8 lg:ml-[40px]">
             <h1 className="text-[#FF5C00] text-[23px] lg:text-[22px] font-black mb-2 font-Lato font-sans">
@@ -1099,7 +1123,7 @@ export default function Homepage() {
           </div>
 
           {/* Right Side Image */}
-          <div className="flex justify-center lg:justify-end">
+          <div className="flex justify-center lg:justify-center w-full">
             <img
               src={passportImage}
               alt="FrictionLearn Career License"
@@ -1339,58 +1363,66 @@ export default function Homepage() {
       {/* section fiftheenth */}
 
       <section className="bg-white mt-[10px] lg:mt-[40px] p-1">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl">
-          <div className="text-center mb-8">
-            <div className="flex items-center justify-center">
-              <img
-                src={star}
-                alt="star"
-                className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] mr-[-10px]"
-              />
-              <h1 className="text-[#FF5C00] lg:text-[30px] text-[18px] font-black font-Lato font-sans">
-                Become an Instructor/Mentor
-              </h1>
-            </div>
-          </div>
-
-          <div className="flex flex-col md:flex-row gap-16 items-center justify-center">
-            {/* Left Content */}
-            <div className="flex-1 text-center md:text-left">
-              <h2 className="text-[#241443] text-[20px] lg:text-[40px] md:text-[40px] font-semibold font-poppins mb-2 text-left">
-                Let’s Join Us & Spread Your Knowledge
-              </h2>
-              <p className="text-[12px] lg:text-[22px] font-medium text-[#FF5C00] mb-4 text-left font-poppins">
-                Welcome to FrictionLearn’s Mentor Program!
-              </p>
-              <p className="text-[9px] lg:text-[20px] md:text-[20px] font-Regular  text-Poppins text-[#6B7083] text-left">
-                Empower the next generation by sharing your expertise. Guide
-                learners through personalized insights and real-world
-                experiences. Expand your network by connecting with ambitious
-                students and professionals. Join us in shaping careers and
-                making a meaningful impact on future talent.
-              </p>
-            </div>
-
-            {/* Right Image */}
-            <div className="flex-1 flex justify-center">
-              <img
-                src={instructorimg}
-                alt="Instructor"
-                className="w-full max-w-[416px] h-auto"
-              />
-            </div>
-          </div>
-          <div className="mt-8 text-center md:text-left">
-            <a
-              href="#"
-              className="inline-flex items-center lg:px-4 lg:py-2.5 px-4 py-1 bg-[#241443] text-white text-[16px] lg:text-[20px] font-semibold font-poppins rounded-full"
-            >
-              Become an Instructor
-              <img src={arrowone} alt="Arrow" className=" lg:w-4 lg:h-3 w-2 h-2 ml-3" />
-            </a>
+      <div className="py-8 px-4 mx-auto max-w-screen-xl">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <div className="flex items-center justify-center">
+            <img
+              src={star}
+              alt="star"
+              className="lg:w-[36px] lg:h-[36px] w-[26px] h-[26px] -mr-[10px]"
+            />
+            <h1 className="text-[#FF5C00] lg:text-[30px] text-[18px] font-black font-Lato">
+              Become an Instructor/Mentor
+            </h1>
           </div>
         </div>
-      </section>
+
+        {/* Main Content */}
+        <div className="flex flex-col md:flex-row gap-8 lg:gap-16 items-center justify-between w-full">
+          {/* Left Content */}
+          <div className="flex-1 w-full">
+            <h2 className="text-[#241443] text-[20px] lg:text-[40px] md:text-[40px] font-semibold font-poppins mb-2">
+              Let's Join Us & Spread Your Knowledge
+            </h2>
+            <p className="text-[12px] lg:text-[22px] font-medium text-[#FF5C00] mb-4 font-poppins">
+              Welcome to FrictionLearn's Mentor Program!
+            </p>
+            <p className="text-[9px] lg:text-[20px] md:text-[20px] font-Regular text-Poppins text-[#6B7083]">
+              Empower the next generation by sharing your expertise. Guide
+              learners through personalized insights and real-world
+              experiences. Expand your network by connecting with ambitious
+              students and professionals. Join us in shaping careers and
+              making a meaningful impact on future talent.
+            </p>
+          </div>
+
+          {/* Right Image */}
+          <div className="flex-1 flex justify-center">
+            <img
+              src={instructorimg}
+              alt="Instructor"
+              className="w-full max-w-[300px] lg:max-w-[416px] h-auto object-contain"
+            />
+          </div>
+        </div>
+
+        {/* CTA Button */}
+        <div className="mt-8 flex justify-center md:justify-start">
+          <a
+            href="#"
+            className="inline-flex items-center lg:px-4 lg:py-2.5 px-4 py-1 bg-[#241443] text-white text-[16px] lg:text-[20px] font-semibold font-poppins rounded-full"
+          >
+            Become an Instructor
+            <img 
+              src={arrowone} 
+              alt="Arrow" 
+              className="lg:w-4 lg:h-3 w-2 h-2 ml-3" 
+            />
+          </a>
+        </div>
+      </div>
+    </section>
 
       <hr className="block sm:hidden border-t border-gray-300 mt-4" />
 
@@ -1529,7 +1561,7 @@ export default function Homepage() {
 
       
       <div
-        className="h-auto w-full  bg-center bg-no-repeat bg-cover lg:bg-contain lg:bg-center md:bg-contain md:bg-center md:w-full md:min-h-[350px]  lg:min-h-[400px] min-h-[300px]"
+        className="w-full bg-center bg-no-repeat bg-cover min-h-[300px] md:min-h-[350px] lg:min-h-[400px]"
         style={{ backgroundImage: `url(${android})` }} // Inline style for dynamic image
       >
         <div className="text-left py-8 lg:py-32 px-4 sm:px-8 lg:px-12">

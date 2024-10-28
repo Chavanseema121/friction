@@ -366,7 +366,7 @@ body {
   .container.two .text-box .content h3 {
     font-size: 16px; /* Adjust font size if necessary */
     margin-right: 190px; /* Remove left margin */
-    align-items: center;
+    /* align-items: start; */
 }
 
   /* Adjust the number image inside .container.two */
@@ -376,7 +376,7 @@ body {
   
   /* Adjust the content image inside .container.two */
   .container.two .content-imag {
-    margin-left: 100px; /* Adds a gap to the left of the content image */
+    margin-left: 75px; /* Adds a gap to the left of the content image */
   }
   
 

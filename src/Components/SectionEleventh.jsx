@@ -23,7 +23,7 @@ function CommunitySection() {
     Join niche clubs, connect with industry experts, explore opportunities, network with ambitious peers, secure internships, and become part of India’s largest learning community—all for free! Start your journey with FrictionLearn today!
   </p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 justify-evenly w-full">
     <div className="bg-[#E0E1E6] p-4 rounded-lg transform transition-transform duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
       <img src={sectioneleventhone} alt="Exclusive Events" className="w-full max-w-[400px] sm:max-w-[521px] h-auto mx-auto mt-2" />
       <h2 className="text-[20px] sm:text-[22px] font-black mb-2 text-left text-[#241443] font-Lato font-sans mt-2 ml-2">

@@ -32,7 +32,7 @@ export default function CoursesSection() {
     </div>
    
     {/* Course Cards */}
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12"> 
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 justify-evenlyw w-full"> 
       {/* Art & Design */}
       <div className="flex items-center border border-r-4 border-b-4 border-[#B3A7FA] rounded-lg p-4 transition-transform duration-300 transform hover:-translate-y-0 hover:shadow-lg lg:h-[166px] h-[100px] w-full hover:border-[#B3A7FA]">
         <div className="flex-shrink-0">
